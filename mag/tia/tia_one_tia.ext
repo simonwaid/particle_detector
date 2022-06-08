@@ -1,0 +1,703 @@
+timestamp 1647868710
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use tia_cur_mirror tia_cur_mirror_0 1 0 910 0 1 -660
+use sky130_fd_pr__cap_mim_m3_2_ZWVPUJ sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0 1 0 891 0 -1 760
+use rf_transistors rf_transistors_0 1 0 -2380 0 1 2280
+use fb_transistor fb_transistor_0 1 0 -4020 0 1 -1780
+use dis_tran dis_tran_0 1 0 -1907 0 1 -3307
+node "m2_n1840_n2910#" 5 3983.92 -1840 -2910 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5288800 28580 1613500 10640 228164 2066 0 0 0 0
+node "m2_1800_2380#" 4 650.949 1800 2380 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 831600 10280 869400 4900 0 0 0 0 0 0
+node "m1_n1960_n3240#" 3 611.41 -1960 -3240 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 275300 5680 0 0 0 0 0 0 0 0 0 0
+node "m1_1540_1550#" 21 3934.05 1540 1550 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 410800 9220 3037700 37740 1452950 7800 0 0 0 0 0 0
+node "m1_1850_2290#" 12 1302.08 1850 2290 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 153200 7740 0 0 0 0 0 0 0 0 0 0
+node "li_1590_1050#" 887 8251.28 1590 1050 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 609000 13020 2716176 39976 1084200 12180 0 0 0 0 0 0 0 0
+node "li_n2010_n3330#" 1593 12309.7 -2010 -3330 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2154700 32960 30408 708 2513200 19660 760600 5380 100464 1268 1508864 10044 0 0
+node "li_n1910_3600#" 1318 7727.82 -1910 3600 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1230900 22680 87408 1468 1810900 18640 291000 2850 110124 1328 361000 2660 0 0
+node "w_1686_386#" 5450 0 1686 386 pw 2816944 6752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_1650_2620#" 16150 5.1 1650 2620 nw 0 0 0 0 1700 360 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m1_1540_1550#" "li_n1910_3600#" 5113.86
+cap "m2_n1840_n2910#" "li_1590_1050#" 548.915
+cap "m1_n1960_n3240#" "m2_n1840_n2910#" 218.826
+cap "m2_1800_2380#" "w_1686_386#" 1016.3
+cap "m1_n1960_n3240#" "li_1590_1050#" 29.1036
+cap "m1_1540_1550#" "m2_1800_2380#" 472.357
+cap "m2_n1840_n2910#" "li_n1910_3600#" 235.656
+cap "li_n1910_3600#" "li_1590_1050#" 2090.22
+cap "m1_1540_1550#" "m1_1850_2290#" 150.247
+cap "m2_1800_2380#" "li_1590_1050#" 2844.37
+cap "m1_1540_1550#" "li_n2010_n3330#" 55.7677
+cap "m2_1800_2380#" "li_n1910_3600#" 1156.5
+cap "li_1590_1050#" "m1_1850_2290#" 3.70174
+cap "w_1650_2620#" "li_n1910_3600#" 1.57207
+cap "m1_1540_1550#" "w_1686_386#" 1218.73
+cap "m2_n1840_n2910#" "li_n2010_n3330#" 10841.6
+cap "li_n1910_3600#" "m1_1850_2290#" 849.605
+cap "li_n2010_n3330#" "li_1590_1050#" 4066.91
+cap "m1_n1960_n3240#" "li_n2010_n3330#" 1808.71
+cap "m2_1800_2380#" "m1_1850_2290#" 99.9414
+cap "m1_1540_1550#" "m2_n1840_n2910#" 8447.46
+cap "li_n1910_3600#" "li_n2010_n3330#" 6.96446
+cap "w_1686_386#" "li_1590_1050#" 3026.08
+cap "m1_1540_1550#" "li_1590_1050#" 2781.34
+cap "rf_transistors_0/a_623_n2862#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 1.82843
+cap "rf_transistors_0/a_623_n2862#" "dis_tran_0/m1_90_2440#" -1.16873
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -167.624
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "dis_tran_0/m1_90_2440#" 1667.54
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "dis_tran_0/m1_90_2440#" -680.296
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/a_623_n2862#" 2.21634
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "dis_tran_0/m1_90_2440#" -492.618
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "dis_tran_0/m1_90_2440#" -1908.54
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 214.374
+cap "dis_tran_0/m1_90_2440#" "tia_cur_mirror_0/a_122_42#" 0.719434
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "dis_tran_0/m1_90_2440#" 1823.38
+cap "rf_transistors_0/a_622_n2244#" "dis_tran_0/m1_90_2440#" 201.029
+cap "rf_transistors_0/a_622_n2244#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -173.649
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/m1_571_n2156#" 1.19957
+cap "rf_transistors_0/a_622_n2244#" "rf_transistors_0/m1_571_n2156#" 0.0205882
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "dis_tran_0/m1_90_2440#" -2853.72
+cap "dis_tran_0/m1_90_2440#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -228.484
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 424.931
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/a_622_n2244#" 8.34131
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -92.031
+cap "rf_transistors_0/a_622_n2244#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -195.024
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/m1_571_n2156#" 0.213828
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -58.2504
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/a_122_42#" -784.176
+cap "rf_transistors_0/a_622_n2244#" "rf_transistors_0/m1_571_n2156#" 5.32907e-15
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/a_622_n2244#" -177.366
+cap "dis_tran_0/m1_90_2440#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -2105.22
+cap "dis_tran_0/m1_90_2440#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -4854.96
+cap "dis_tran_0/m1_90_2440#" "tia_cur_mirror_0/a_122_42#" 5.86121
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -610.301
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -631.699
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" -464.084
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/a_622_n2244#" 26.7814
+cap "rf_transistors_0/a_622_n2244#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -1757.2
+cap "dis_tran_0/m1_90_2440#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -230.751
+cap "rf_transistors_0/a_622_n2244#" "tia_cur_mirror_0/a_122_42#" 1.6375
+cap "dis_tran_0/m1_90_2440#" "rf_transistors_0/a_622_n2244#" 209.181
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -5848.1
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/a_622_n2244#" 543.237
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -23.535
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 4721.78
+cap "tia_cur_mirror_0/a_122_42#" "rf_transistors_0/m1_1649_n1330#" 289.089
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/a_622_n2244#" 218.808
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" 14.0081
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/m1_1649_n1330#" -386.552
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "dis_tran_0/sky130_fd_pr__nfet_01v8_RRWALQ_0/a_n129_531#" 3.18514
+cap "rf_transistors_0/a_622_n2244#" "rf_transistors_0/m1_1649_n1330#" 349.981
+cap "tia_cur_mirror_0/a_122_42#" "dis_tran_0/sky130_fd_pr__nfet_01v8_RRWALQ_0/a_n225_1149#" 1.22396
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "rf_transistors_0/m1_1649_n1330#" 191.955
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/m1_167_370#" -1.47151
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/m1_1649_n1330#" 2769.29
+cap "tia_cur_mirror_0/a_122_42#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -48.209
+cap "tia_cur_mirror_0/a_122_42#" "rf_transistors_0/a_622_n2244#" 7.48
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" -21.7462
+cap "tia_cur_mirror_0/a_122_42#" "li_1590_1050#" 1.0622
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/a_122_42#" 46.5438
+cap "tia_cur_mirror_0/a_122_42#" "dis_tran_0/sky130_fd_pr__nfet_01v8_RRWALQ_0/a_n129_531#" 4.2536
+cap "tia_cur_mirror_0/a_122_42#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 2778
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 2121.98
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "fb_transistor_0/a_5923_2322#" 0.568834
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "tia_cur_mirror_0/a_122_42#" -486.967
+cap "dis_tran_0/m1_90_1830#" "tia_cur_mirror_0/a_122_42#" 0.545087
+cap "tia_cur_mirror_0/a_122_42#" "li_n2010_n3330#" 1478.51
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -222.759
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "fb_transistor_0/dw_5500_1960#" 7.66025
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1665.2
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 1726.37
+cap "li_n2010_n3330#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 42.2024
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" -52.8102
+cap "tia_cur_mirror_0/a_122_42#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 3397.88
+cap "fb_transistor_0/a_5923_2322#" "tia_cur_mirror_0/a_122_42#" 3.90766
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "li_n2010_n3330#" 1014.39
+cap "rf_transistors_0/a_622_n2244#" "tia_cur_mirror_0/a_122_42#" 0.117143
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/a_122_42#" 497.666
+cap "dis_tran_0/m1_90_2440#" "tia_cur_mirror_0/a_122_42#" 0.703591
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 1033.6
+cap "li_n2010_n3330#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 258.807
+cap "li_n2010_n3330#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 49.1398
+cap "rf_transistors_0/m1_571_n712#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -598.998
+cap "rf_transistors_0/a_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -1140.36
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/a_2421_22#" -1112.13
+cap "rf_transistors_0/a_2421_22#" "tia_cur_mirror_0/m1_71_130#" 0.0927718
+cap "rf_transistors_0/m1_571_n712#" "rf_transistors_0/a_2421_22#" 233.323
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" -0.885375
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -134.513
+cap "rf_transistors_0/m1_571_n712#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 667.782
+cap "dis_tran_0/m1_90_2440#" "rf_transistors_0/a_2421_22#" -11.5312
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/a_2421_22#" -352.818
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -58.446
+cap "rf_transistors_0/m1_571_n712#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -338.231
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 3.19921
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -2440.66
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -345.18
+cap "rf_transistors_0/m1_571_n712#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -8467.35
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/m1_167_370#" 2.98797
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/m1_167_370#" -275.279
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/m1_167_370#" -1101.08
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" 10.697
+cap "rf_transistors_0/m1_571_n712#" "tia_cur_mirror_0/m1_167_370#" 322.128
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -68.6037
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/m1_571_n712#" -375.261
+cap "rf_transistors_0/m1_571_n712#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 221.215
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "tia_cur_mirror_0/m1_167_370#" 1.42722
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/m1_167_370#" -11242.7
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" -0.633176
+cap "fb_transistor_0/m1_5811_4163#" "rf_transistors_0/m1_1747_n712#" 338.795
+cap "rf_transistors_0/m1_1747_n712#" "tia_cur_mirror_0/m1_167_370#" -142.353
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 2729.97
+cap "rf_transistors_0/m1_1649_n472#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 1681.57
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "tia_cur_mirror_0/m1_167_370#" 319.635
+cap "tia_cur_mirror_0/a_122_42#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -28.848
+cap "tia_cur_mirror_0/a_122_42#" "rf_transistors_0/m1_1649_n472#" 145.057
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 217.075
+cap "tia_cur_mirror_0/m1_167_370#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 589.686
+cap "fb_transistor_0/m1_5811_4163#" "rf_transistors_0/m1_1649_n472#" 79.5561
+cap "rf_transistors_0/m1_1649_n472#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 130.45
+cap "tia_cur_mirror_0/m1_167_370#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 3250.16
+cap "rf_transistors_0/m1_1649_n472#" "tia_cur_mirror_0/m1_167_370#" 2807.61
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -0.0838636
+cap "rf_transistors_0/m1_1747_n712#" "rf_transistors_0/m1_1649_n472#" -176.428
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/m1_167_370#" 135.219
+cap "rf_transistors_0/m1_1747_n712#" "tia_cur_mirror_0/a_122_42#" 29.8323
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -35.3143
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "rf_transistors_0/m1_1649_n472#" 186.749
+cap "fb_transistor_0/m1_5811_4163#" "tia_cur_mirror_0/m1_167_370#" -57.8039
+cap "tia_cur_mirror_0/m1_167_370#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" -204.886
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" -6.28635
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/m1_167_370#" -0.992126
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/a_122_42#" 870.106
+cap "tia_cur_mirror_0/a_122_42#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 676.277
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/a_5923_3450#" 2279.23
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#" 1613.48
+cap "fb_transistor_0/a_5923_3450#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 1740.54
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#" 1238.63
+cap "fb_transistor_0/m1_5811_4163#" "fb_transistor_0/a_5923_3450#" 226.851
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/m1_167_370#" 1.37218
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -4.72807
+cap "fb_transistor_0/a_5923_3450#" "tia_cur_mirror_0/m1_167_370#" -65.9043
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" 3353.15
+cap "fb_transistor_0/a_5923_3450#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 0.568834
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "rf_transistors_0/m1_3021_n2774#" 0.132095
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#" 33.1988
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#" "tia_cur_mirror_0/m1_167_370#" 98.3882
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 2755.25
+cap "fb_transistor_0/m1_5811_4163#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" 6.03405
+cap "fb_transistor_0/m1_5811_4163#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1621.75
+cap "fb_transistor_0/m1_5811_4163#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 808.824
+cap "tia_cur_mirror_0/a_122_42#" "fb_transistor_0/a_5923_3450#" 13.3922
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/m1_167_370#" 3144.96
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/m1_3021_n2774#" 0.302799
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 602.068
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 503.226
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/m1_167_370#" 2534.92
+cap "fb_transistor_0/m1_5811_4163#" "tia_cur_mirror_0/m1_167_370#" -456.084
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/w_n957_n419#" "fb_transistor_0/m1_6165_3028#" 12.7356
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/w_n957_n419#" 365.719
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 19.9042
+cap "rf_transistors_0/a_623_658#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -103.449
+cap "rf_transistors_0/a_623_658#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -1161.54
+cap "rf_transistors_0/m1_669_n472#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -14.1397
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 794.286
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/m1_571_755#" -1.32401
+cap "rf_transistors_0/a_623_658#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -643.069
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/m1_669_n472#" 424.01
+cap "rf_transistors_0/m1_571_755#" "rf_transistors_0/m1_669_n472#" 779.872
+cap "rf_transistors_0/m1_571_755#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 1.2626
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 43.3527
+cap "rf_transistors_0/m1_571_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -117.847
+cap "rf_transistors_0/m1_571_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 273.643
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 29.103
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/m1_669_n472#" 419.897
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -0.32381
+cap "fb_transistor_0/m1_5811_4163#" "rf_transistors_0/m1_571_755#" 0.0585396
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -508.699
+cap "rf_transistors_0/m1_669_n472#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -266.711
+cap "rf_transistors_0/m1_571_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -222.905
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "tia_cur_mirror_0/m1_167_370#" -1115.45
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 12.1199
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -482.134
+cap "rf_transistors_0/m1_669_n472#" "rf_transistors_0/m1_571_755#" -392.318
+cap "rf_transistors_0/m1_571_755#" "tia_cur_mirror_0/m1_167_370#" 342.994
+cap "rf_transistors_0/m1_669_n472#" "tia_cur_mirror_0/m1_167_370#" -2110.06
+cap "rf_transistors_0/m1_571_755#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 190.603
+cap "rf_transistors_0/m1_669_n472#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" 1.2626
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/m1_167_370#" 164.659
+cap "rf_transistors_0/m1_669_n472#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -559.203
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/m1_571_755#" -6517.94
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "tia_cur_mirror_0/m1_167_370#" -9324.33
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1319.67
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "rf_transistors_0/w_2421_22#" -17.0503
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "tia_cur_mirror_0/m1_167_370#" -335.3
+cap "tia_cur_mirror_0/a_122_42#" "tia_cur_mirror_0/m1_167_370#" 2.58016
+cap "fb_transistor_0/m1_5811_4163#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 85.7989
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/w_2421_22#" 2332.88
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "rf_transistors_0/m1_1747_755#" -6.77792
+cap "tia_cur_mirror_0/m1_167_370#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1716.47
+cap "fb_transistor_0/m1_5811_4163#" "tia_cur_mirror_0/m1_167_370#" 18.8936
+cap "fb_transistor_0/m1_5811_4163#" "rf_transistors_0/w_2421_22#" -3.71097
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 661.76
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "rf_transistors_0/m1_1747_755#" 911.148
+cap "rf_transistors_0/w_2421_22#" "tia_cur_mirror_0/m1_167_370#" 3109.64
+cap "tia_cur_mirror_0/a_122_42#" "rf_transistors_0/m1_1747_755#" 4.96581
+cap "fb_transistor_0/m1_5811_4163#" "rf_transistors_0/m1_1747_755#" 732.419
+cap "rf_transistors_0/m1_1747_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 551.993
+cap "tia_cur_mirror_0/m1_167_370#" "rf_transistors_0/m1_1747_755#" -278.515
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "fb_transistor_0/m1_5811_4163#" -1.50903
+cap "rf_transistors_0/m1_1649_n472#" "tia_cur_mirror_0/m1_167_370#" 178.984
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/m1_1747_755#" 1735.06
+cap "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n605_n200#" "tia_cur_mirror_0/m1_167_370#" 11.4337
+cap "rf_transistors_0/w_2421_22#" "tia_cur_mirror_0/m1_167_370#" -17.0249
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/m1_3153_755#" -7.90053
+cap "fb_transistor_0/m1_5811_4163#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 816.544
+cap "tia_cur_mirror_0/m1_167_370#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" 1.36287
+cap "rf_transistors_0/m1_3153_755#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" -46.0445
+cap "tia_cur_mirror_0/m1_167_370#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 7313.59
+cap "rf_transistors_0/w_2421_22#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -0.123047
+cap "rf_transistors_0/m1_3153_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 5866.45
+cap "tia_cur_mirror_0/m1_167_370#" "fb_transistor_0/m1_5811_4163#" -54.3473
+cap "rf_transistors_0/m1_3153_755#" "fb_transistor_0/m1_5811_4163#" 345.576
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 2632.83
+cap "tia_cur_mirror_0/m1_167_370#" "rf_transistors_0/m1_3153_755#" -129.844
+cap "fb_transistor_0/m1_5811_4163#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 3056.47
+cap "tia_cur_mirror_0/m1_167_370#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" -0.992126
+cap "tia_cur_mirror_0/m1_167_370#" "rf_transistors_0/m1_3021_n1330#" -2.11351
+cap "rf_transistors_0/w_2421_22#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" -61.162
+cap "tia_cur_mirror_0/m1_167_370#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 9307.16
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 2159.33
+cap "rf_transistors_0/w_2421_22#" "fb_transistor_0/m1_5811_4163#" 116.616
+cap "rf_transistors_0/m1_3153_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 7223.1
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/dw_5500_1960#" 670.3
+cap "fb_transistor_0/dw_5500_1960#" "fb_transistor_0/m1_6165_3028#" 25.1034
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/m1_669_n472#" -14.1397
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/m1_669_n472#" 23.8635
+cap "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" -0.32381
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/m1_571_755#" 420.938
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 197.15
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 63.828
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/m1_571_755#" 667.617
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "rf_transistors_0/m1_571_755#" 52.9834
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/a_623_658#" 336.954
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/m1_571_755#" 1169.95
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 81.1304
+cap "rf_transistors_0/a_623_658#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 204.643
+cap "rf_transistors_0/a_623_658#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" 1125.01
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/m1_571_755#" -2194.83
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "fb_transistor_0/m1_5811_4163#" 0.505656
+cap "rf_transistors_0/a_623_658#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" 0.278491
+cap "rf_transistors_0/m1_571_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -3197.63
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "rf_transistors_0/a_623_658#" -2617.2
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/a_623_658#" -1608.78
+cap "rf_transistors_0/m1_669_n472#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -7.82617
+cap "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -16.6452
+cap "rf_transistors_0/m1_571_755#" "rf_transistors_0/a_623_658#" 631.996
+cap "rf_transistors_0/m1_669_n472#" "rf_transistors_0/a_623_658#" 23.0504
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" -865.592
+cap "rf_transistors_0/a_623_658#" "fb_transistor_0/m1_5811_4163#" 0.612009
+cap "rf_transistors_0/a_623_658#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1336.14
+cap "rf_transistors_0/m1_1747_755#" "rf_transistors_0/w_2421_22#" 4011.24
+cap "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" "rf_transistors_0/w_2421_22#" 14.4334
+cap "rf_transistors_0/m1_1747_755#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" -9.9509
+cap "rf_transistors_0/m1_1747_755#" "fb_transistor_0/m1_5811_4163#" -0.274164
+cap "rf_transistors_0/m1_1747_755#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1437.5
+cap "rf_transistors_0/m1_1747_755#" "rf_transistors_0/a_623_658#" 177.671
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "rf_transistors_0/w_2421_22#" -4078.7
+cap "rf_transistors_0/w_2421_22#" "fb_transistor_0/m1_5811_4163#" -195.089
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1056.54
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" -146.929
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "fb_transistor_0/m1_5811_4163#" 125.391
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/a_623_658#" 4184.52
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/m1_5811_4163#" 86.3905
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "rf_transistors_0/a_623_658#" 4.67552
+cap "rf_transistors_0/m1_3153_755#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" -42.0893
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "fb_transistor_0/m1_5811_4163#" 1104.25
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 489.224
+cap "rf_transistors_0/a_623_n908#" "fb_transistor_0/m1_5811_4163#" -1.4312
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/a_623_n908#" -13.8443
+cap "rf_transistors_0/w_2421_22#" "fb_transistor_0/m1_5811_4163#" 196.836
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" 2293.84
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "rf_transistors_0/a_623_n908#" 0.455013
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/m1_5811_4163#" 1754.27
+cap "rf_transistors_0/w_2421_22#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 1622.16
+cap "rf_transistors_0/w_2421_22#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" 1122.29
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "fb_transistor_0/m1_5811_4163#" 892.2
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/m1_3153_755#" -7.41023
+cap "rf_transistors_0/m1_3153_755#" "fb_transistor_0/m1_5811_4163#" -6.15951
+cap "rf_transistors_0/a_2421_658#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" 1.13775
+cap "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" 2921.45
+cap "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "fb_transistor_0/dw_5500_1960#" 266.088
+cap "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" -0.370861
+cap "rf_transistors_0/w_2421_22#" "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" -1.21333
+merge "fb_transistor_0/m1_7233_4403#" "fb_transistor_0/m1_6917_4403#" 16126.7 0 0 0 0 -5518176 -2528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10598290 -31497 0 0 79320350 -16206 0 0 0 0 43520 -828 0 0
+merge "fb_transistor_0/m1_6917_4403#" "fb_transistor_0/m1_6601_4403#"
+merge "fb_transistor_0/m1_6601_4403#" "fb_transistor_0/m1_6285_4403#"
+merge "fb_transistor_0/m1_6285_4403#" "fb_transistor_0/m1_5969_4403#"
+merge "fb_transistor_0/m1_5969_4403#" "rf_transistors_0/m1_3839_995#"
+merge "rf_transistors_0/m1_3839_995#" "rf_transistors_0/m1_3643_995#"
+merge "rf_transistors_0/m1_3643_995#" "rf_transistors_0/m1_3447_995#"
+merge "rf_transistors_0/m1_3447_995#" "rf_transistors_0/w_2421_22#"
+merge "rf_transistors_0/w_2421_22#" "w_1650_2620#"
+merge "w_1650_2620#" "rf_transistors_0/m1_3251_995#"
+merge "rf_transistors_0/m1_3251_995#" "rf_transistors_0/m1_3055_995#"
+merge "rf_transistors_0/m1_3055_995#" "rf_transistors_0/m1_2859_995#"
+merge "rf_transistors_0/m1_2859_995#" "rf_transistors_0/m1_2663_995#"
+merge "rf_transistors_0/m1_2663_995#" "rf_transistors_0/m1_2467_995#"
+merge "rf_transistors_0/m1_2467_995#" "rf_transistors_0/m1_2041_995#"
+merge "rf_transistors_0/m1_2041_995#" "rf_transistors_0/m1_1845_995#"
+merge "rf_transistors_0/m1_1845_995#" "rf_transistors_0/m1_1649_995#"
+merge "rf_transistors_0/m1_1649_995#" "rf_transistors_0/m1_1453_995#"
+merge "rf_transistors_0/m1_1453_995#" "rf_transistors_0/m1_1257_995#"
+merge "rf_transistors_0/m1_1257_995#" "rf_transistors_0/m1_1061_995#"
+merge "rf_transistors_0/m1_1061_995#" "rf_transistors_0/m1_865_995#"
+merge "rf_transistors_0/m1_865_995#" "rf_transistors_0/m1_669_995#"
+merge "rf_transistors_0/m1_669_995#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#"
+merge "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/c2_n2751_n1800#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#"
+merge "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_2/w_n902_n737#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/w_n957_n419#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/w_n957_n419#" "rf_transistors_0/m1_3839_119#"
+merge "rf_transistors_0/m1_3839_119#" "rf_transistors_0/m1_3643_119#"
+merge "rf_transistors_0/m1_3643_119#" "rf_transistors_0/m1_3447_119#"
+merge "rf_transistors_0/m1_3447_119#" "rf_transistors_0/m1_3251_119#"
+merge "rf_transistors_0/m1_3251_119#" "rf_transistors_0/m1_3055_119#"
+merge "rf_transistors_0/m1_3055_119#" "rf_transistors_0/m1_2859_119#"
+merge "rf_transistors_0/m1_2859_119#" "rf_transistors_0/m1_2663_119#"
+merge "rf_transistors_0/m1_2663_119#" "rf_transistors_0/m1_2467_119#"
+merge "rf_transistors_0/m1_2467_119#" "rf_transistors_0/m1_2041_119#"
+merge "rf_transistors_0/m1_2041_119#" "rf_transistors_0/m1_1845_119#"
+merge "rf_transistors_0/m1_1845_119#" "rf_transistors_0/m1_1649_119#"
+merge "rf_transistors_0/m1_1649_119#" "rf_transistors_0/m1_1453_119#"
+merge "rf_transistors_0/m1_1453_119#" "rf_transistors_0/m1_1257_119#"
+merge "rf_transistors_0/m1_1257_119#" "rf_transistors_0/m1_1061_119#"
+merge "rf_transistors_0/m1_1061_119#" "rf_transistors_0/m1_865_119#"
+merge "rf_transistors_0/m1_865_119#" "rf_transistors_0/m1_669_119#"
+merge "rf_transistors_0/m1_669_119#" "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#"
+merge "rf_transistors_0/sky130_fd_pr__pfet_01v8_NZHYX4_1/w_n902_n737#" "li_n1910_3600#"
+merge "rf_transistors_0/m1_3741_359#" "rf_transistors_0/m1_3545_359#" 65229.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9219560 -9056 172489906 -37192 -7357800 0 0 0 0 0 0 0
+merge "rf_transistors_0/m1_3545_359#" "rf_transistors_0/m1_3741_755#"
+merge "rf_transistors_0/m1_3741_755#" "rf_transistors_0/m1_3545_755#"
+merge "rf_transistors_0/m1_3545_755#" "rf_transistors_0/m1_3349_359#"
+merge "rf_transistors_0/m1_3349_359#" "rf_transistors_0/m1_3153_359#"
+merge "rf_transistors_0/m1_3153_359#" "rf_transistors_0/m1_2957_359#"
+merge "rf_transistors_0/m1_2957_359#" "rf_transistors_0/m1_2761_359#"
+merge "rf_transistors_0/m1_2761_359#" "rf_transistors_0/m1_2565_359#"
+merge "rf_transistors_0/m1_2565_359#" "rf_transistors_0/m1_2369_359#"
+merge "rf_transistors_0/m1_2369_359#" "rf_transistors_0/m1_1943_359#"
+merge "rf_transistors_0/m1_1943_359#" "rf_transistors_0/m1_1747_359#"
+merge "rf_transistors_0/m1_1747_359#" "rf_transistors_0/m1_1551_359#"
+merge "rf_transistors_0/m1_1551_359#" "rf_transistors_0/m1_1355_359#"
+merge "rf_transistors_0/m1_1355_359#" "rf_transistors_0/m1_1159_359#"
+merge "rf_transistors_0/m1_1159_359#" "rf_transistors_0/m1_963_359#"
+merge "rf_transistors_0/m1_963_359#" "rf_transistors_0/m1_767_359#"
+merge "rf_transistors_0/m1_767_359#" "rf_transistors_0/m1_571_359#"
+merge "rf_transistors_0/m1_571_359#" "rf_transistors_0/m1_3349_755#"
+merge "rf_transistors_0/m1_3349_755#" "rf_transistors_0/m1_3153_755#"
+merge "rf_transistors_0/m1_3153_755#" "rf_transistors_0/m1_2957_755#"
+merge "rf_transistors_0/m1_2957_755#" "rf_transistors_0/m1_2761_755#"
+merge "rf_transistors_0/m1_2761_755#" "rf_transistors_0/m1_2565_755#"
+merge "rf_transistors_0/m1_2565_755#" "rf_transistors_0/m1_2369_755#"
+merge "rf_transistors_0/m1_2369_755#" "rf_transistors_0/m1_1943_755#"
+merge "rf_transistors_0/m1_1943_755#" "rf_transistors_0/m1_1747_755#"
+merge "rf_transistors_0/m1_1747_755#" "rf_transistors_0/m1_1551_755#"
+merge "rf_transistors_0/m1_1551_755#" "rf_transistors_0/m1_1355_755#"
+merge "rf_transistors_0/m1_1355_755#" "rf_transistors_0/m1_1159_755#"
+merge "rf_transistors_0/m1_1159_755#" "rf_transistors_0/m1_963_755#"
+merge "rf_transistors_0/m1_963_755#" "rf_transistors_0/m1_767_755#"
+merge "rf_transistors_0/m1_767_755#" "rf_transistors_0/m1_571_755#"
+merge "rf_transistors_0/m1_571_755#" "fb_transistor_0/a_5923_2832#"
+merge "fb_transistor_0/a_5923_2832#" "fb_transistor_0/a_5923_3450#"
+merge "fb_transistor_0/a_5923_3450#" "rf_transistors_0/m1_2923_n1090#"
+merge "rf_transistors_0/m1_2923_n1090#" "rf_transistors_0/m1_2727_n1090#"
+merge "rf_transistors_0/m1_2727_n1090#" "rf_transistors_0/m1_2531_n1090#"
+merge "rf_transistors_0/m1_2531_n1090#" "rf_transistors_0/m1_2335_n1090#"
+merge "rf_transistors_0/m1_2335_n1090#" "rf_transistors_0/m1_2139_n1090#"
+merge "rf_transistors_0/m1_2139_n1090#" "rf_transistors_0/m1_1943_n1090#"
+merge "rf_transistors_0/m1_1943_n1090#" "rf_transistors_0/m1_1747_n1090#"
+merge "rf_transistors_0/m1_1747_n1090#" "rf_transistors_0/m1_1551_n1090#"
+merge "rf_transistors_0/m1_1551_n1090#" "rf_transistors_0/m1_1355_n1090#"
+merge "rf_transistors_0/m1_1355_n1090#" "rf_transistors_0/m1_1159_n1090#"
+merge "rf_transistors_0/m1_1159_n1090#" "rf_transistors_0/m1_963_n1090#"
+merge "rf_transistors_0/m1_963_n1090#" "rf_transistors_0/m1_767_n1090#"
+merge "rf_transistors_0/m1_767_n1090#" "rf_transistors_0/m1_571_n1090#"
+merge "rf_transistors_0/m1_571_n1090#" "rf_transistors_0/m1_2923_n712#"
+merge "rf_transistors_0/m1_2923_n712#" "rf_transistors_0/m1_2727_n712#"
+merge "rf_transistors_0/m1_2727_n712#" "rf_transistors_0/m1_2531_n712#"
+merge "rf_transistors_0/m1_2531_n712#" "rf_transistors_0/m1_2335_n712#"
+merge "rf_transistors_0/m1_2335_n712#" "rf_transistors_0/m1_2139_n712#"
+merge "rf_transistors_0/m1_2139_n712#" "rf_transistors_0/m1_1943_n712#"
+merge "rf_transistors_0/m1_1943_n712#" "rf_transistors_0/m1_1747_n712#"
+merge "rf_transistors_0/m1_1747_n712#" "rf_transistors_0/m1_1551_n712#"
+merge "rf_transistors_0/m1_1551_n712#" "rf_transistors_0/m1_1355_n712#"
+merge "rf_transistors_0/m1_1355_n712#" "rf_transistors_0/m1_1159_n712#"
+merge "rf_transistors_0/m1_1159_n712#" "rf_transistors_0/m1_963_n712#"
+merge "rf_transistors_0/m1_963_n712#" "rf_transistors_0/m1_767_n712#"
+merge "rf_transistors_0/m1_767_n712#" "rf_transistors_0/m1_571_n712#"
+merge "rf_transistors_0/m1_571_n712#" "fb_transistor_0/a_5923_2322#"
+merge "fb_transistor_0/a_5923_2322#" "rf_transistors_0/m1_2923_n2534#"
+merge "rf_transistors_0/m1_2923_n2534#" "rf_transistors_0/m1_2727_n2534#"
+merge "rf_transistors_0/m1_2727_n2534#" "rf_transistors_0/m1_2531_n2534#"
+merge "rf_transistors_0/m1_2531_n2534#" "rf_transistors_0/m1_2335_n2534#"
+merge "rf_transistors_0/m1_2335_n2534#" "rf_transistors_0/m1_2139_n2534#"
+merge "rf_transistors_0/m1_2139_n2534#" "rf_transistors_0/m1_1943_n2534#"
+merge "rf_transistors_0/m1_1943_n2534#" "rf_transistors_0/m1_1747_n2534#"
+merge "rf_transistors_0/m1_1747_n2534#" "rf_transistors_0/m1_1551_n2534#"
+merge "rf_transistors_0/m1_1551_n2534#" "rf_transistors_0/m1_1355_n2534#"
+merge "rf_transistors_0/m1_1355_n2534#" "rf_transistors_0/m1_1159_n2534#"
+merge "rf_transistors_0/m1_1159_n2534#" "rf_transistors_0/m1_963_n2534#"
+merge "rf_transistors_0/m1_963_n2534#" "rf_transistors_0/m1_767_n2534#"
+merge "rf_transistors_0/m1_767_n2534#" "rf_transistors_0/m1_571_n2534#"
+merge "rf_transistors_0/m1_571_n2534#" "rf_transistors_0/m1_2923_n2156#"
+merge "rf_transistors_0/m1_2923_n2156#" "rf_transistors_0/m1_2727_n2156#"
+merge "rf_transistors_0/m1_2727_n2156#" "rf_transistors_0/m1_2531_n2156#"
+merge "rf_transistors_0/m1_2531_n2156#" "rf_transistors_0/m1_2335_n2156#"
+merge "rf_transistors_0/m1_2335_n2156#" "rf_transistors_0/m1_2139_n2156#"
+merge "rf_transistors_0/m1_2139_n2156#" "rf_transistors_0/m1_1943_n2156#"
+merge "rf_transistors_0/m1_1943_n2156#" "rf_transistors_0/m1_1747_n2156#"
+merge "rf_transistors_0/m1_1747_n2156#" "rf_transistors_0/m1_1551_n2156#"
+merge "rf_transistors_0/m1_1551_n2156#" "rf_transistors_0/m1_1355_n2156#"
+merge "rf_transistors_0/m1_1355_n2156#" "rf_transistors_0/m1_1159_n2156#"
+merge "rf_transistors_0/m1_1159_n2156#" "rf_transistors_0/m1_963_n2156#"
+merge "rf_transistors_0/m1_963_n2156#" "rf_transistors_0/m1_767_n2156#"
+merge "rf_transistors_0/m1_767_n2156#" "rf_transistors_0/m1_571_n2156#"
+merge "rf_transistors_0/m1_571_n2156#" "m1_1540_1550#"
+merge "fb_transistor_0/m1_7243_3268#" "fb_transistor_0/m1_7047_3268#" 14839.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34845715 -10088 0 0 0 0 0 0 0 0
+merge "fb_transistor_0/m1_7047_3268#" "fb_transistor_0/m1_6851_3268#"
+merge "fb_transistor_0/m1_6851_3268#" "fb_transistor_0/m1_6655_3268#"
+merge "fb_transistor_0/m1_6655_3268#" "fb_transistor_0/m1_6459_3268#"
+merge "fb_transistor_0/m1_6459_3268#" "fb_transistor_0/m1_7391_4163#"
+merge "fb_transistor_0/m1_7391_4163#" "fb_transistor_0/m1_7075_4163#"
+merge "fb_transistor_0/m1_7075_4163#" "fb_transistor_0/m1_6759_4163#"
+merge "fb_transistor_0/m1_6759_4163#" "fb_transistor_0/m1_6443_4163#"
+merge "fb_transistor_0/m1_6443_4163#" "fb_transistor_0/m1_6263_3268#"
+merge "fb_transistor_0/m1_6263_3268#" "fb_transistor_0/m1_6067_3268#"
+merge "fb_transistor_0/m1_6067_3268#" "fb_transistor_0/m1_5871_3268#"
+merge "fb_transistor_0/m1_5871_3268#" "fb_transistor_0/m1_6127_4163#"
+merge "fb_transistor_0/m1_6127_4163#" "fb_transistor_0/m1_5811_4163#"
+merge "fb_transistor_0/m1_5811_4163#" "fb_transistor_0/m1_7243_2410#"
+merge "fb_transistor_0/m1_7243_2410#" "fb_transistor_0/m1_7047_2410#"
+merge "fb_transistor_0/m1_7047_2410#" "fb_transistor_0/m1_6851_2410#"
+merge "fb_transistor_0/m1_6851_2410#" "fb_transistor_0/m1_6655_2410#"
+merge "fb_transistor_0/m1_6655_2410#" "fb_transistor_0/m1_6459_2410#"
+merge "fb_transistor_0/m1_6459_2410#" "fb_transistor_0/m1_6263_2410#"
+merge "fb_transistor_0/m1_6263_2410#" "fb_transistor_0/m1_6067_2410#"
+merge "fb_transistor_0/m1_6067_2410#" "fb_transistor_0/m1_5871_2410#"
+merge "fb_transistor_0/m1_5871_2410#" "m2_1800_2380#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_661_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_503_n297#" -24709.1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40012480 -5160 0 0 0 0 0 0 0 0 0 0
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_503_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_345_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_345_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_187_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_187_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_29_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_29_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n129_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n129_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n287_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n287_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n445_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n445_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n603_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n603_n297#" "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#"
+merge "fb_transistor_0/sky130_fd_pr__pfet_01v8_GYVK57_0/a_n761_n297#" "m1_1850_2290#"
+merge "fb_transistor_0/VSUBS" "dis_tran_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "dis_tran_0/VSUBS" "rf_transistors_0/VSUBS"
+merge "rf_transistors_0/VSUBS" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/VSUBS"
+merge "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/VSUBS" "tia_cur_mirror_0/VSUBS"
+merge "tia_cur_mirror_0/VSUBS" "VSUBS"
+merge "rf_transistors_0/m1_3021_n472#" "rf_transistors_0/m1_2825_n472#" 45558.9 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 47684792 -47124 0 0 273600 -1000 0 0 0 0
+merge "rf_transistors_0/m1_2825_n472#" "rf_transistors_0/m1_2629_n472#"
+merge "rf_transistors_0/m1_2629_n472#" "rf_transistors_0/m1_2433_n472#"
+merge "rf_transistors_0/m1_2433_n472#" "rf_transistors_0/m1_2237_n472#"
+merge "rf_transistors_0/m1_2237_n472#" "rf_transistors_0/m1_2041_n472#"
+merge "rf_transistors_0/m1_2041_n472#" "rf_transistors_0/m1_1845_n472#"
+merge "rf_transistors_0/m1_1845_n472#" "rf_transistors_0/m1_1649_n472#"
+merge "rf_transistors_0/m1_1649_n472#" "rf_transistors_0/m1_1453_n472#"
+merge "rf_transistors_0/m1_1453_n472#" "rf_transistors_0/m1_1257_n472#"
+merge "rf_transistors_0/m1_1257_n472#" "rf_transistors_0/m1_1061_n472#"
+merge "rf_transistors_0/m1_1061_n472#" "rf_transistors_0/m1_865_n472#"
+merge "rf_transistors_0/m1_865_n472#" "rf_transistors_0/m1_669_n472#"
+merge "rf_transistors_0/m1_669_n472#" "rf_transistors_0/m1_3021_n1916#"
+merge "rf_transistors_0/m1_3021_n1916#" "rf_transistors_0/m1_2825_n1916#"
+merge "rf_transistors_0/m1_2825_n1916#" "rf_transistors_0/m1_2629_n1916#"
+merge "rf_transistors_0/m1_2629_n1916#" "rf_transistors_0/m1_2433_n1916#"
+merge "rf_transistors_0/m1_2433_n1916#" "rf_transistors_0/m1_2237_n1916#"
+merge "rf_transistors_0/m1_2237_n1916#" "rf_transistors_0/m1_2041_n1916#"
+merge "rf_transistors_0/m1_2041_n1916#" "rf_transistors_0/m1_1845_n1916#"
+merge "rf_transistors_0/m1_1845_n1916#" "rf_transistors_0/m1_1649_n1916#"
+merge "rf_transistors_0/m1_1649_n1916#" "rf_transistors_0/m1_1453_n1916#"
+merge "rf_transistors_0/m1_1453_n1916#" "rf_transistors_0/m1_1257_n1916#"
+merge "rf_transistors_0/m1_1257_n1916#" "rf_transistors_0/m1_1061_n1916#"
+merge "rf_transistors_0/m1_1061_n1916#" "rf_transistors_0/m1_865_n1916#"
+merge "rf_transistors_0/m1_865_n1916#" "rf_transistors_0/m1_669_n1916#"
+merge "rf_transistors_0/m1_669_n1916#" "rf_transistors_0/m1_3021_n1330#"
+merge "rf_transistors_0/m1_3021_n1330#" "rf_transistors_0/m1_2825_n1330#"
+merge "rf_transistors_0/m1_2825_n1330#" "rf_transistors_0/m1_2629_n1330#"
+merge "rf_transistors_0/m1_2629_n1330#" "rf_transistors_0/m1_2433_n1330#"
+merge "rf_transistors_0/m1_2433_n1330#" "rf_transistors_0/m1_2237_n1330#"
+merge "rf_transistors_0/m1_2237_n1330#" "rf_transistors_0/m1_2041_n1330#"
+merge "rf_transistors_0/m1_2041_n1330#" "rf_transistors_0/m1_1845_n1330#"
+merge "rf_transistors_0/m1_1845_n1330#" "rf_transistors_0/m1_1649_n1330#"
+merge "rf_transistors_0/m1_1649_n1330#" "rf_transistors_0/m1_1453_n1330#"
+merge "rf_transistors_0/m1_1453_n1330#" "rf_transistors_0/m1_1257_n1330#"
+merge "rf_transistors_0/m1_1257_n1330#" "rf_transistors_0/m1_1061_n1330#"
+merge "rf_transistors_0/m1_1061_n1330#" "rf_transistors_0/m1_865_n1330#"
+merge "rf_transistors_0/m1_865_n1330#" "rf_transistors_0/m1_669_n1330#"
+merge "rf_transistors_0/m1_669_n1330#" "dis_tran_0/m1_2382_397#"
+merge "dis_tran_0/m1_2382_397#" "dis_tran_0/m1_2190_397#"
+merge "dis_tran_0/m1_2190_397#" "dis_tran_0/m1_1998_397#"
+merge "dis_tran_0/m1_1998_397#" "dis_tran_0/m1_1806_397#"
+merge "dis_tran_0/m1_1806_397#" "dis_tran_0/m1_1614_397#"
+merge "dis_tran_0/m1_1614_397#" "dis_tran_0/m1_1422_397#"
+merge "dis_tran_0/m1_1422_397#" "dis_tran_0/m1_1230_397#"
+merge "dis_tran_0/m1_1230_397#" "dis_tran_0/m1_1038_397#"
+merge "dis_tran_0/m1_1038_397#" "dis_tran_0/m1_846_397#"
+merge "dis_tran_0/m1_846_397#" "dis_tran_0/m1_654_397#"
+merge "dis_tran_0/m1_654_397#" "dis_tran_0/m1_462_397#"
+merge "dis_tran_0/m1_462_397#" "dis_tran_0/m1_270_397#"
+merge "dis_tran_0/m1_270_397#" "dis_tran_0/m1_78_397#"
+merge "dis_tran_0/m1_78_397#" "dis_tran_0/m1_2382_775#"
+merge "dis_tran_0/m1_2382_775#" "dis_tran_0/m1_2190_775#"
+merge "dis_tran_0/m1_2190_775#" "dis_tran_0/m1_1998_775#"
+merge "dis_tran_0/m1_1998_775#" "dis_tran_0/m1_1806_775#"
+merge "dis_tran_0/m1_1806_775#" "dis_tran_0/m1_1614_775#"
+merge "dis_tran_0/m1_1614_775#" "dis_tran_0/m1_1422_775#"
+merge "dis_tran_0/m1_1422_775#" "dis_tran_0/m1_1230_775#"
+merge "dis_tran_0/m1_1230_775#" "dis_tran_0/m1_1038_775#"
+merge "dis_tran_0/m1_1038_775#" "dis_tran_0/m1_846_775#"
+merge "dis_tran_0/m1_846_775#" "dis_tran_0/m1_654_775#"
+merge "dis_tran_0/m1_654_775#" "dis_tran_0/m1_462_775#"
+merge "dis_tran_0/m1_462_775#" "dis_tran_0/m1_270_775#"
+merge "dis_tran_0/m1_270_775#" "dis_tran_0/m1_78_775#"
+merge "dis_tran_0/m1_78_775#" "dis_tran_0/m1_2382_1633#"
+merge "dis_tran_0/m1_2382_1633#" "dis_tran_0/m1_2190_1633#"
+merge "dis_tran_0/m1_2190_1633#" "dis_tran_0/m1_1998_1633#"
+merge "dis_tran_0/m1_1998_1633#" "dis_tran_0/m1_1806_1633#"
+merge "dis_tran_0/m1_1806_1633#" "dis_tran_0/m1_1614_1633#"
+merge "dis_tran_0/m1_1614_1633#" "dis_tran_0/m1_1422_1633#"
+merge "dis_tran_0/m1_1422_1633#" "dis_tran_0/m1_1230_1633#"
+merge "dis_tran_0/m1_1230_1633#" "dis_tran_0/m1_1038_1633#"
+merge "dis_tran_0/m1_1038_1633#" "dis_tran_0/m1_846_1633#"
+merge "dis_tran_0/m1_846_1633#" "dis_tran_0/m1_654_1633#"
+merge "dis_tran_0/m1_654_1633#" "dis_tran_0/m1_462_1633#"
+merge "dis_tran_0/m1_462_1633#" "dis_tran_0/m1_270_1633#"
+merge "dis_tran_0/m1_270_1633#" "dis_tran_0/m1_78_1633#"
+merge "dis_tran_0/m1_78_1633#" "dis_tran_0/m1_2382_2011#"
+merge "dis_tran_0/m1_2382_2011#" "dis_tran_0/m1_2190_2011#"
+merge "dis_tran_0/m1_2190_2011#" "dis_tran_0/m1_1998_2011#"
+merge "dis_tran_0/m1_1998_2011#" "dis_tran_0/m1_1806_2011#"
+merge "dis_tran_0/m1_1806_2011#" "dis_tran_0/m1_1614_2011#"
+merge "dis_tran_0/m1_1614_2011#" "dis_tran_0/m1_1422_2011#"
+merge "dis_tran_0/m1_1422_2011#" "dis_tran_0/m1_1230_2011#"
+merge "dis_tran_0/m1_1230_2011#" "dis_tran_0/m1_1038_2011#"
+merge "dis_tran_0/m1_1038_2011#" "dis_tran_0/m1_846_2011#"
+merge "dis_tran_0/m1_846_2011#" "dis_tran_0/m1_654_2011#"
+merge "dis_tran_0/m1_654_2011#" "dis_tran_0/m1_462_2011#"
+merge "dis_tran_0/m1_462_2011#" "dis_tran_0/m1_270_2011#"
+merge "dis_tran_0/m1_270_2011#" "dis_tran_0/m1_78_2011#"
+merge "dis_tran_0/m1_78_2011#" "rf_transistors_0/m1_3021_n2774#"
+merge "rf_transistors_0/m1_3021_n2774#" "rf_transistors_0/m1_2825_n2774#"
+merge "rf_transistors_0/m1_2825_n2774#" "rf_transistors_0/m1_2629_n2774#"
+merge "rf_transistors_0/m1_2629_n2774#" "rf_transistors_0/m1_2433_n2774#"
+merge "rf_transistors_0/m1_2433_n2774#" "rf_transistors_0/m1_2237_n2774#"
+merge "rf_transistors_0/m1_2237_n2774#" "rf_transistors_0/m1_2041_n2774#"
+merge "rf_transistors_0/m1_2041_n2774#" "rf_transistors_0/m1_1845_n2774#"
+merge "rf_transistors_0/m1_1845_n2774#" "rf_transistors_0/m1_1649_n2774#"
+merge "rf_transistors_0/m1_1649_n2774#" "rf_transistors_0/m1_1453_n2774#"
+merge "rf_transistors_0/m1_1453_n2774#" "rf_transistors_0/m1_1257_n2774#"
+merge "rf_transistors_0/m1_1257_n2774#" "rf_transistors_0/m1_1061_n2774#"
+merge "rf_transistors_0/m1_1061_n2774#" "rf_transistors_0/m1_865_n2774#"
+merge "rf_transistors_0/m1_865_n2774#" "rf_transistors_0/m1_669_n2774#"
+merge "rf_transistors_0/m1_669_n2774#" "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#"
+merge "sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/m4_n2851_n1900#" "m2_n1840_n2910#"
+merge "rf_transistors_0/a_2421_658#" "rf_transistors_0/a_2421_550#" -82732 -202176 -6752 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9844328 -12248 -112979848 -35300 -51971820 -7880 0 0 0 0 0 0 0 0
+merge "rf_transistors_0/a_2421_550#" "rf_transistors_0/a_2421_1186#"
+merge "rf_transistors_0/a_2421_1186#" "rf_transistors_0/a_623_550#"
+merge "rf_transistors_0/a_623_550#" "rf_transistors_0/a_623_658#"
+merge "rf_transistors_0/a_623_658#" "fb_transistor_0/m1_7341_3028#"
+merge "fb_transistor_0/m1_7341_3028#" "fb_transistor_0/m1_7145_3028#"
+merge "fb_transistor_0/m1_7145_3028#" "fb_transistor_0/m1_6949_3028#"
+merge "fb_transistor_0/m1_6949_3028#" "fb_transistor_0/m1_6753_3028#"
+merge "fb_transistor_0/m1_6753_3028#" "fb_transistor_0/m1_6557_3028#"
+merge "fb_transistor_0/m1_6557_3028#" "fb_transistor_0/m1_6361_3028#"
+merge "fb_transistor_0/m1_6361_3028#" "fb_transistor_0/m1_6165_3028#"
+merge "fb_transistor_0/m1_6165_3028#" "fb_transistor_0/m1_5969_3028#"
+merge "fb_transistor_0/m1_5969_3028#" "rf_transistors_0/a_623_22#"
+merge "rf_transistors_0/a_623_22#" "rf_transistors_0/a_623_n908#"
+merge "rf_transistors_0/a_623_n908#" "rf_transistors_0/a_622_n290#"
+merge "rf_transistors_0/a_622_n290#" "rf_transistors_0/a_2421_22#"
+merge "rf_transistors_0/a_2421_22#" "fb_transistor_0/m1_7341_2650#"
+merge "fb_transistor_0/m1_7341_2650#" "fb_transistor_0/m1_7145_2650#"
+merge "fb_transistor_0/m1_7145_2650#" "fb_transistor_0/m1_6949_2650#"
+merge "fb_transistor_0/m1_6949_2650#" "fb_transistor_0/m1_6753_2650#"
+merge "fb_transistor_0/m1_6753_2650#" "fb_transistor_0/m1_6557_2650#"
+merge "fb_transistor_0/m1_6557_2650#" "fb_transistor_0/m1_6361_2650#"
+merge "fb_transistor_0/m1_6361_2650#" "fb_transistor_0/m1_6165_2650#"
+merge "fb_transistor_0/m1_6165_2650#" "fb_transistor_0/m1_5969_2650#"
+merge "fb_transistor_0/m1_5969_2650#" "fb_transistor_0/w_5706_2166#"
+merge "fb_transistor_0/w_5706_2166#" "w_1686_386#"
+merge "w_1686_386#" "tia_cur_mirror_0/m1_167_370#"
+merge "tia_cur_mirror_0/m1_167_370#" "rf_transistors_0/a_623_n1418#"
+merge "rf_transistors_0/a_623_n1418#" "rf_transistors_0/a_623_n2352#"
+merge "rf_transistors_0/a_623_n2352#" "rf_transistors_0/a_622_n2244#"
+merge "rf_transistors_0/a_622_n2244#" "rf_transistors_0/a_623_n2862#"
+merge "rf_transistors_0/a_623_n2862#" "li_1590_1050#"
+merge "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_1/a_n1356_n683#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_854667_0/a_n905_n374#" -62571 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -62427212 -48000 0 0 6858858 -24236 0 0 0 0 3043200 -3700 0 0
+merge "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_854667_0/a_n905_n374#" "dis_tran_0/m1_2478_157#"
+merge "dis_tran_0/m1_2478_157#" "dis_tran_0/m1_2286_157#"
+merge "dis_tran_0/m1_2286_157#" "dis_tran_0/m1_2094_157#"
+merge "dis_tran_0/m1_2094_157#" "dis_tran_0/m1_1902_157#"
+merge "dis_tran_0/m1_1902_157#" "dis_tran_0/m1_1710_157#"
+merge "dis_tran_0/m1_1710_157#" "dis_tran_0/m1_1518_157#"
+merge "dis_tran_0/m1_1518_157#" "dis_tran_0/m1_1326_157#"
+merge "dis_tran_0/m1_1326_157#" "dis_tran_0/m1_1134_157#"
+merge "dis_tran_0/m1_1134_157#" "dis_tran_0/m1_942_157#"
+merge "dis_tran_0/m1_942_157#" "dis_tran_0/m1_750_157#"
+merge "dis_tran_0/m1_750_157#" "dis_tran_0/m1_558_157#"
+merge "dis_tran_0/m1_558_157#" "dis_tran_0/m1_366_157#"
+merge "dis_tran_0/m1_366_157#" "dis_tran_0/m1_174_157#"
+merge "dis_tran_0/m1_174_157#" "dis_tran_0/m1_2478_1015#"
+merge "dis_tran_0/m1_2478_1015#" "dis_tran_0/m1_2286_1015#"
+merge "dis_tran_0/m1_2286_1015#" "dis_tran_0/m1_2094_1015#"
+merge "dis_tran_0/m1_2094_1015#" "dis_tran_0/m1_1902_1015#"
+merge "dis_tran_0/m1_1902_1015#" "dis_tran_0/m1_1710_1015#"
+merge "dis_tran_0/m1_1710_1015#" "dis_tran_0/m1_1518_1015#"
+merge "dis_tran_0/m1_1518_1015#" "dis_tran_0/m1_1326_1015#"
+merge "dis_tran_0/m1_1326_1015#" "dis_tran_0/m1_1134_1015#"
+merge "dis_tran_0/m1_1134_1015#" "dis_tran_0/m1_942_1015#"
+merge "dis_tran_0/m1_942_1015#" "dis_tran_0/m1_750_1015#"
+merge "dis_tran_0/m1_750_1015#" "dis_tran_0/m1_558_1015#"
+merge "dis_tran_0/m1_558_1015#" "dis_tran_0/m1_366_1015#"
+merge "dis_tran_0/m1_366_1015#" "dis_tran_0/m1_174_1015#"
+merge "dis_tran_0/m1_174_1015#" "dis_tran_0/m1_2478_1393#"
+merge "dis_tran_0/m1_2478_1393#" "dis_tran_0/m1_2286_1393#"
+merge "dis_tran_0/m1_2286_1393#" "dis_tran_0/m1_2094_1393#"
+merge "dis_tran_0/m1_2094_1393#" "dis_tran_0/m1_1902_1393#"
+merge "dis_tran_0/m1_1902_1393#" "dis_tran_0/m1_1710_1393#"
+merge "dis_tran_0/m1_1710_1393#" "dis_tran_0/m1_1518_1393#"
+merge "dis_tran_0/m1_1518_1393#" "dis_tran_0/m1_1326_1393#"
+merge "dis_tran_0/m1_1326_1393#" "dis_tran_0/m1_1134_1393#"
+merge "dis_tran_0/m1_1134_1393#" "dis_tran_0/m1_942_1393#"
+merge "dis_tran_0/m1_942_1393#" "dis_tran_0/m1_750_1393#"
+merge "dis_tran_0/m1_750_1393#" "dis_tran_0/m1_558_1393#"
+merge "dis_tran_0/m1_558_1393#" "dis_tran_0/m1_366_1393#"
+merge "dis_tran_0/m1_366_1393#" "dis_tran_0/m1_174_1393#"
+merge "dis_tran_0/m1_174_1393#" "dis_tran_0/m1_2478_2251#"
+merge "dis_tran_0/m1_2478_2251#" "dis_tran_0/m1_2286_2251#"
+merge "dis_tran_0/m1_2286_2251#" "dis_tran_0/m1_2094_2251#"
+merge "dis_tran_0/m1_2094_2251#" "dis_tran_0/m1_1902_2251#"
+merge "dis_tran_0/m1_1902_2251#" "dis_tran_0/m1_1710_2251#"
+merge "dis_tran_0/m1_1710_2251#" "dis_tran_0/m1_1518_2251#"
+merge "dis_tran_0/m1_1518_2251#" "dis_tran_0/m1_1326_2251#"
+merge "dis_tran_0/m1_1326_2251#" "dis_tran_0/m1_1134_2251#"
+merge "dis_tran_0/m1_1134_2251#" "dis_tran_0/m1_942_2251#"
+merge "dis_tran_0/m1_942_2251#" "dis_tran_0/m1_750_2251#"
+merge "dis_tran_0/m1_750_2251#" "dis_tran_0/m1_558_2251#"
+merge "dis_tran_0/m1_558_2251#" "dis_tran_0/m1_366_2251#"
+merge "dis_tran_0/m1_366_2251#" "dis_tran_0/m1_174_2251#"
+merge "dis_tran_0/m1_174_2251#" "dis_tran_0/sky130_fd_pr__nfet_01v8_RRWALQ_0/a_n1331_n1301#"
+merge "dis_tran_0/sky130_fd_pr__nfet_01v8_RRWALQ_0/a_n1331_n1301#" "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_0/a_n1356_n683#"
+merge "rf_transistors_0/sky130_fd_pr__nfet_01v8_lvt_ZRA4RB_0/a_n1356_n683#" "tia_cur_mirror_0/m1_71_n690#"
+merge "tia_cur_mirror_0/m1_71_n690#" "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#"
+merge "tia_cur_mirror_0/sky130_fd_pr__nfet_01v8_F8VELN_0/a_n707_n374#" "li_n2010_n3330#"
+merge "dis_tran_0/m1_90_70#" "dis_tran_0/m1_90_590#" -7847.46 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14633431 -1258 0 0 0 0 0 0 0 0 0 0
+merge "dis_tran_0/m1_90_590#" "dis_tran_0/m1_90_1210#"
+merge "dis_tran_0/m1_90_1210#" "dis_tran_0/m1_90_1830#"
+merge "dis_tran_0/m1_90_1830#" "dis_tran_0/m1_90_2440#"
+merge "dis_tran_0/m1_90_2440#" "m1_n1960_n3240#"

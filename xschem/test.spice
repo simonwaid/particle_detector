@@ -1,0 +1,94 @@
+** sch_path: /home/simon/code/particle_detector/xschem/test.sch
+**.subckt test
+xpw GND GND GND GND net1 net2 GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND
++ GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND GND io_analog[10]
++ io_analog[9] io_analog[8] io_analog[7] io_analog[6] io_analog[5] io_analog[4] io_analog[3] io_analog[2]
++ io_analog[1] io_analog[0] GND GND GND GND GND GND GND GND GND GND user_analog_project_wrapper
+V1 net1 GND 1.8
+I0 io_analog[10] GND pulse 0 5e-6 5n 1n 1n 5n 20n
+R1 tia2_outp tia2_outn 50 m=1
+R3 io_analog[2] tia1_outp 1 m=1
+R2 io_analog[3] tia1_outn 1 m=1
+R4 io_analog[0] tia2_outp 1 m=1
+R5 io_analog[1] tia2_outn 1 m=1
+C1 tia2_outn GND 10p m=1
+C2 tia2_outp GND 10p m=1
+C3 tia1_outn GND 10p m=1
+C4 tia1_outp GND 10p m=1
+R6 io_analog[4] GND 1 m=1
+R7 io_analog[5] GND 1 m=1
+R8 io_analog[9] GND 1k m=1
+I1 net2 io_analog[8] 10u
+V2 net2 GND 1.8
+**** begin user architecture code
+
+
+*.options savecurrents
+.option warn=1
+.control
+set wr_vecnames
+set wr_singlescale
+set hcopydevtype=svg
+
+tran 200p 15n
+plot tia1_outp tia1_outn
+plot tia2_outp tia2_outn
+plot xpw.xsub.tia_ref xpw.xsub.tia_out
+
+
+.endc
+
+
+
+
+
+.include outdriver.spice
+.include user_analog_project_wrapper.spice
+.include esd_diodes.spice
+.include mpw6_submission.spice
+.include current_mirrorx8.spice
+.include low_pvt_source.spice
+.include current_mirror_channel.spice
+.include tia_rgc_core.spice
+.include feedback_sukwani.spice
+.include transmitter.spice
+.include comparator_complete.spice
+.include comp_amp_20db_no_cmm.spice
+.include comp_adv3.spice
+.include comp_to_logic.spice
+.include comp_amp_di_40db_no_cmm.spice
+.include comp_adv3_di.spice
+
+
+
+* .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice #model#
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red tt
+* .lib /home/simon/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red tt
+.include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
+
+
+**** end user architecture code
+**.ends

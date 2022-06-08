@@ -1,0 +1,32 @@
+
+* expanding   symbol:  comp/comparator_complete.sym # of pins=14
+** sym_path: /home/simon/code/particle_detector/xschem/comp/comparator_complete.sym
+** sch_path: /home/simon/code/particle_detector/xschem/comp/comparator_complete.sch
+.subckt comparator_complete  VP InRef In Bias_comp1 Digital_out RefA Bias_comp2 Bias_to_logic
++ Bias_comp4 Bias_comp6 Bias_comp5 RefB Bias_comp3 VN
+*.ipin InRef
+*.iopin VP
+*.opin Digital_out
+*.ipin In
+*.ipin Bias_comp1
+*.ipin Bias_comp2
+*.iopin VN
+*.ipin Bias_comp4
+*.ipin Bias_comp6
+*.ipin Bias_comp3
+*.ipin Bias_comp5
+*.ipin RefA
+*.ipin RefB
+*.ipin Bias_to_logic
+xamp1 VP net1 net2 Outp_20db Bias_comp1 Bias_comp2 Outn_20db VN comp_amp_20db_no_cmm
+xl VP Digital_out Outp Outn Bias_to_logic VN comp_to_logic
+xamp2 VP net3 Outp_20db Outp RefA Bias_comp4 Bias_comp6 Bias_comp5 Outn RefB Bias_comp3 VN
++ comp_amp_di_40db_no_cmm
+XR6 net1 InRef VN sky130_fd_pr__res_xhigh_po_0p35 L=40 mult=1 m=1
+XR7 net1 net2 VN sky130_fd_pr__res_xhigh_po_0p35 L=40 mult=1 m=1
+XR8 net3 Outp_20db VN sky130_fd_pr__res_xhigh_po_0p35 L=40 mult=1 m=1
+XC1 VN net1 sky130_fd_pr__cap_mim_m3_2 W=30 L=20 VM=1 m=1
+XC2 net2 In sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+XC3 net3 Outn_20db sky130_fd_pr__cap_mim_m3_1 W=5 L=5 MF=1 m=1
+.ends
+

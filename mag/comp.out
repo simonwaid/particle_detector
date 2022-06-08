@@ -1,0 +1,725 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_8K9944 in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell diffamp_element_nodi in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_V6SMGN in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell currm_comp in circuit comp_adv3 (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_HR8DH9 in circuit comp_adv3 (1)(1 instance)
+
+Class comp_adv3 (1):  Merged 19 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_adv3                       |Circuit 2: comp_adv3                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (24->5)        |sky130_fd_pr__nfet_01v8_lvt (24->5)        
+sky130_fd_pr__res_xhigh_po_2p85 (2)        |sky130_fd_pr__res_xhigh_po_2p85 (2)        
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: comp_adv3                       |Circuit 2: comp_adv3                       
+-------------------------------------------|-------------------------------------------
+bias                                       |bias                                       
+VN                                         |VN                                         
+Inn                                        |diffamp_element_nodi_0/a_890_330# **Mismat 
+Inp                                        |diffamp_element_nodi_1/a_890_330# **Mismat 
+VP                                         |VP                                         
+OutP                                       |OutP                                       
+OutN                                       |Outn                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_adv3 and comp_adv3 altered to match.
+Flattening unmatched subcell currm_comp in circuit comp_adv3_di (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_HR8DH9 in circuit comp_adv3_di (1)(1 instance)
+Flattening unmatched subcell diffamp_element in circuit comp_adv3_di (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_DG2JGC in circuit comp_adv3_di (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_TY94YJ in circuit comp_adv3_di (1)(2 instances)
+
+Class comp_adv3_di (1):  Merged 19 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_adv3_di                    |Circuit 2: comp_adv3_di                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (30->11)       |sky130_fd_pr__nfet_01v8_lvt (30->11)       
+sky130_fd_pr__res_xhigh_po_2p85 (2)        |sky130_fd_pr__res_xhigh_po_2p85 (2)        
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: comp_adv3_di                    |Circuit 2: comp_adv3_di                    
+-------------------------------------------|-------------------------------------------
+VP                                         |VP                                         
+Inn2                                       |(no matching pin)                          
+Inp2                                       |(no matching pin)                          
+bias                                       |bias                                       
+VN                                         |VN                                         
+Inn                                        |diffamp_element_0/a_890_840# **Mismatch**  
+Inp                                        |diffamp_element_1/a_890_840# **Mismatch**  
+OutP                                       |Outp                                       
+OutN                                       |Outn                                       
+Inn2                                       |(no matching pin)                          
+Inp2                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_adv3_di and comp_adv3_di altered to match.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Class sky130_fd_sc_hs__inv_16 (0):  Merged 30 parallel devices.
+Class sky130_fd_sc_hs__inv_16 (1):  Merged 30 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hs__inv_16         |Circuit 2: sky130_fd_sc_hs__inv_16         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16->1)            |sky130_fd_pr__pfet_01v8 (16->1)            
+sky130_fd_pr__nfet_01v8_lvt (16->1)        |sky130_fd_pr__nfet_01v8_lvt (16->1)        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hs__inv_16         |Circuit 2: sky130_fd_sc_hs__inv_16         
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hs__inv_16 and sky130_fd_sc_hs__inv_16 are equivalent.
+
+Class sky130_fd_sc_hs__inv_4 (0):  Merged 6 parallel devices.
+Class sky130_fd_sc_hs__inv_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hs__inv_4          |Circuit 2: sky130_fd_sc_hs__inv_4          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (4->1)         |sky130_fd_pr__nfet_01v8_lvt (4->1)         
+sky130_fd_pr__pfet_01v8 (4->1)             |sky130_fd_pr__pfet_01v8 (4->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hs__inv_4          |Circuit 2: sky130_fd_sc_hs__inv_4          
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hs__inv_4 and sky130_fd_sc_hs__inv_4 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XJ7GBL in circuit comp_to_logic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U47ZGH in circuit comp_to_logic (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GV8PGY in circuit comp_to_logic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X4XKHL in circuit comp_to_logic (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LH2JGW in circuit comp_to_logic (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_YT8PGU in circuit comp_to_logic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PL8DH5 in circuit comp_to_logic (1)(1 instance)
+
+Class comp_to_logic (1):  Merged 40 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_to_logic                   |Circuit 2: comp_to_logic                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (8->4)         |sky130_fd_pr__nfet_01v8_lvt (8->4)         
+sky130_fd_pr__pfet_01v8 (24->9)            |sky130_fd_pr__pfet_01v8 (24->9)            
+sky130_fd_pr__nfet_01v8 (27->6)            |sky130_fd_pr__nfet_01v8 (27->6)            
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: comp_to_logic                   |Circuit 2: comp_to_logic                   
+-------------------------------------------|-------------------------------------------
+Out                                        |Out                                        
+VP                                         |VP                                         
+VN                                         |VSUBS **Mismatch**                         
+I_Bias                                     |I_Bias                                     
+In_n                                       |In_n                                       
+In_p                                       |In_p                                       
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_to_logic and comp_to_logic altered to match.
+Flattening unmatched subcell lvds_currm_n in circuit transmitter (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HR8DH9 in circuit transmitter (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XZXALN in circuit transmitter (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_ZPVFQL in circuit transmitter (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_RS2YEK in circuit transmitter (1)(1 instance)
+Flattening unmatched subcell lvds_currm_p in circuit transmitter (1)(31 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8DK6RJ in circuit transmitter (1)(31 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9Z5L4S in circuit transmitter (1)(31 instances)
+Flattening unmatched subcell lvds_switch_p in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VCB4SW in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_N3PKNJ in circuit transmitter (1)(1 instance)
+Flattening unmatched subcell lvds_nswitch in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_RE4MKQ in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3 in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell lvds_diffamp in circuit transmitter (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZHX6G9 in circuit transmitter (1)(2 instances)
+
+Class transmitter (0):  Merged 1 parallel devices.
+Class transmitter (1):  Merged 4463 parallel devices.
+Class transmitter (1):  Merged 5 series devices.
+Subcircuit summary:
+Circuit 1: transmitter                     |Circuit 2: transmitter                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_0p35 (4)        |sky130_fd_pr__res_xhigh_po_0p35 (9->4)     
+sky130_fd_pr__pfet_01v8 (2412->8)          |sky130_fd_pr__pfet_01v8 (2412->8)          
+sky130_fd_pr__nfet_01v8 (1920->6)          |sky130_fd_pr__nfet_01v8 (1920->6)          
+sky130_fd_pr__nfet_01v8_lvt (148->4)       |sky130_fd_pr__nfet_01v8_lvt (148->4)       
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_sc_hs__inv_16 (10)               |sky130_fd_sc_hs__inv_16 (10)               
+sky130_fd_sc_hs__inv_4 (2)                 |sky130_fd_sc_hs__inv_4 (2)                 
+sky130_fd_pr__cap_mim_m3_2 (2->1)          |sky130_fd_pr__cap_mim_m3_2 (2->1)          
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 25                         |Number of nets: 25                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 2 symmetries.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__cap_mim_m3_2:C1 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+
+Subcircuit pins:
+Circuit 1: transmitter                     |Circuit 2: transmitter                     
+-------------------------------------------|-------------------------------------------
+In                                         |In                                         
+Bias                                       |m1_20_640# **Mismatch**                    
+VP                                         |(no matching pin)                          
+VN                                         |VN                                         
+OutN                                       |(no matching pin)                          
+OutP                                       |(no matching pin)                          
+VP                                         |(no matching pin)                          
+OutP                                       |(no matching pin)                          
+OutN                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for transmitter and transmitter altered to match.
+Flattening unmatched subcell outdriver in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell current_mirrorx8 in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell low_pvt_source in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell current_mirror_channel in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell tia_rgc_core in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell feedback_sukwani in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell comparator_complete in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell comp_amp_20db_no_cmm in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell comp_amp_di_40db_no_cmm in circuit ../xschem/mpw6_submission.spice (0)(1 instance)
+Flattening unmatched subcell curr_mirror_distribution in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell bias_curm_p in circuit mpw6_submission.spice (1)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit mpw6_submission.spice (1)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit mpw6_submission.spice (1)(9 instances)
+Flattening unmatched subcell tia_core in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_CDW43Z in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell tia_cur_mirror in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_F8VELN in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_854667 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell tia_one_tia in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell tia_cur_mirror in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_F8VELN in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_854667 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell rf_transistors in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZRA4RB in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_NZHYX4 in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_ZWVPUJ in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell dis_tran in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_RRWALQ in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell fb_transistor in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GYVK57 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_62U3RB in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_GCYTE7 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_J5CT7Z in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_var_lvt_MZUN4J in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_SC2JGL in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#2 in circuit mpw6_submission.spice (1)(11 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell outd_stage2 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_PA2QZX in circuit mpw6_submission.spice (1)(16 instances)
+Flattening unmatched subcell outd_diffamp in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit mpw6_submission.spice (1)(8 instances)
+Flattening unmatched subcell outd_cmirror_64t in circuit mpw6_submission.spice (1)(5 instances)
+Flattening unmatched subcell outd_cmirror_transistors in circuit mpw6_submission.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit mpw6_submission.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit mpw6_submission.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_DJG2KN in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage3 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage2 in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_PA2QZX in circuit mpw6_submission.spice (1)(64 instances)
+Flattening unmatched subcell outd_diffamp in circuit mpw6_submission.spice (1)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit mpw6_submission.spice (1)(32 instances)
+Flattening unmatched subcell outd_cmirror_64t in circuit mpw6_submission.spice (1)(20 instances)
+Flattening unmatched subcell outd_cmirror_transistors in circuit mpw6_submission.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit mpw6_submission.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit mpw6_submission.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_LH2JGW in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage1 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_cmirror_64t in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_cmirror_transistors in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell outd_diffamp in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_8GE2XM in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell curr_mirror_channel in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell bias_curm_p in circuit mpw6_submission.spice (1)(18 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit mpw6_submission.spice (1)(18 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit mpw6_submission.spice (1)(18 instances)
+Flattening unmatched subcell bias_curm_n in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6YE2KS in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QQ8PGA in circuit mpw6_submission.spice (1)(4 instances)
+Flattening unmatched subcell eight-mirrors-p in circuit mpw6_submission.spice (1)(7 instances)
+Flattening unmatched subcell bias_curm_p in circuit mpw6_submission.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit mpw6_submission.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit mpw6_submission.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_26U9NK in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell comparator in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL in circuit mpw6_submission.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_MJMGTW in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_H9XL9H in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell fb_dark_current in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell currm_n in circuit mpw6_submission.spice (1)(40 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PJG2KG in circuit mpw6_submission.spice (1)(40 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_82JNGJ in circuit mpw6_submission.spice (1)(40 instances)
+Flattening unmatched subcell currm_p in circuit mpw6_submission.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4LMUGG in circuit mpw6_submission.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_LKHJAY in circuit mpw6_submission.spice (1)(22 instances)
+Flattening unmatched subcell currm_ps in circuit mpw6_submission.spice (1)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PD4XN5 in circuit mpw6_submission.spice (1)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PWGH in circuit mpw6_submission.spice (1)(12 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H2JYD in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_N3PKNJ in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_9A2JGL in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VCBWSW in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_MJMGTW#0 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_E6B2KN in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UAQRRG in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LH2JGW#0 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell isource in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ#0 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_out in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_834VMG in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv_tsmal in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_26RGPZ in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_transistor in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell isource_cmirror#0 in circuit mpw6_submission.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ACY9XJ#0#0 in circuit mpw6_submission.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_J24RLQ#0#0 in circuit mpw6_submission.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_JAGHGM in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv_tsmal_nwell in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_26RGPZ in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_startup in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_QDYTZD in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_U3V43Z in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_E9U3PA in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_transistor in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_5transistors in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell isource_ref_transistor in circuit mpw6_submission.spice (1)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit mpw6_submission.spice (1)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TV3VM6 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_WY4VMC in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_cmirror in circuit mpw6_submission.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ACY9XJ#0 in circuit mpw6_submission.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_J24RLQ#0 in circuit mpw6_submission.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_BQY2W7 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_WY4VMC in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_J2NVFM in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell isource_diffamp in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZZ3Y87 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#1 in circuit mpw6_submission.spice (1)(2 instances)
+
+Class ../xschem/mpw6_submission.spice (0):  Merged 21 parallel devices.
+Class ../xschem/mpw6_submission.spice (0):  Merged 12 series devices.
+Class mpw6_submission.spice (1):  Merged 9176 parallel devices.
+Class mpw6_submission.spice (1):  Merged 21 series devices.
+Subcircuit summary:
+Circuit 1: ../xschem/mpw6_submission.spice |Circuit 2: mpw6_submission.spice           
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (1276->16)     |sky130_fd_pr__nfet_01v8_lvt (1276->16)     
+sky130_fd_pr__nfet_01v8 (5677->55)         |sky130_fd_pr__nfet_01v8 (5677->55)         
+sky130_fd_pr__res_high_po_5p73 (80->4)     |sky130_fd_pr__res_high_po_5p73 (80->4)     
+sky130_fd_pr__res_high_po_2p85 (8->2)      |sky130_fd_pr__res_high_po_2p85 (8->2)      
+sky130_fd_pr__cap_mim_m3_2 (27->12)        |sky130_fd_pr__cap_mim_m3_2 (26->11) **Mism 
+sky130_fd_pr__cap_mim_m3_1 (7->5)          |sky130_fd_pr__cap_mim_m3_1 (7->5)          
+sky130_fd_pr__pfet_01v8 (2051->68)         |sky130_fd_pr__pfet_01v8 (2051->68)         
+sky130_fd_pr__res_xhigh_po_1p41 (15->3)    |sky130_fd_pr__res_xhigh_po_1p41 (15->3)    
+sky130_fd_pr__cap_var_lvt (5->1)           |sky130_fd_pr__cap_var_lvt (5->1)           
+sky130_fd_pr__pfet_01v8_lvt (220->12)      |sky130_fd_pr__pfet_01v8_lvt (220->12)      
+sky130_fd_pr__res_xhigh_po_0p69 (1)        |(no matching element)                      
+transmitter (1)                            |transmitter (1)                            
+comp_adv3 (5)                              |comp_adv3 (5)                              
+comp_to_logic (1)                          |comp_to_logic (1)                          
+comp_adv3_di (1)                           |comp_adv3_di (1)                           
+sky130_fd_pr__res_xhigh_po_0p35 (3)        |sky130_fd_pr__res_xhigh_po_0p35 (12->3)    
+Number of devices: 190 **Mismatch**        |Number of devices: 188 **Mismatch**        
+Number of nets: 143 **Mismatch**           |Number of nets: 146 **Mismatch**           
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ../xschem/mpw6_submission.spice |Circuit 2: mpw6_submission.spice           
+
+---------------------------------------------------------------------------------------
+Net: VP_an                                 |Net: /fb_dark_current_0/currm_n_43/m1_68_1 
+  sky130_fd_pr__res_high_po_5p73/(1|2) = 4 |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__res_high_po_2p85/(1|2) = 2 |                                           
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 38       |                                           
+  sky130_fd_pr__pfet_01v8/4 = 68           |                                           
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
+  sky130_fd_pr__cap_mim_m3_2/1 = 6         |                                           
+  sky130_fd_pr__pfet_01v8_lvt/4 = 12       |                                           
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    |                                           
+  comp_adv3/VP = 5                         |                                           
+  comp_to_logic/VP = 1                     |                                           
+  comp_adv3_di/VP = 1                      |                                           
+                                           |                                           
+Net: Comp_Bias_2                           |Net: /fb_dark_current_0/m2_200_n880#       
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  comp_adv3/bias = 1                       |                                           
+                                           |                                           
+Net: Comp_Bias_1                           |Net: /fb_dark_current_0/m2_4260_3100#      
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+  comp_adv3/bias = 1                       |                                           
+                                           |                                           
+Net: feedback_sukwani:1/net2               |Net: /fb_dark_current_0/currm_p_0/m1_60_n3 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: feedback_sukwani:1/net22              |Net: /fb_dark_current_0/currm_p_1/m1_60_n3 
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: feedback_sukwani:1/net4               |Net: /fb_dark_current_0/currm_p_12/m1_60_n 
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
+                                           |                                           
+Net: feedback_sukwani:1/net7               |Net: /fb_dark_current_0/m2_250_740#        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: feedback_sukwani:1/net8               |Net: /fb_dark_current_0/Out                
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: feedback_sukwani:1/net3               |Net: /fb_dark_current_0/currm_n_33/m1_68_1 
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: feedback_sukwani:1/net23              |Net: outd_0/InputRef                       
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
+                                           |  sky130_fd_pr__cap_mim_m3_2/1 = 1         
+                                           |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
+                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
+                                           |                                           
+Net: Tia_ref                               |Net: /curr_mirror_channel_0/FB_Bias_1      
+  sky130_fd_pr__cap_mim_m3_2/1 = 1         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8_lvt/2 = 2        |                                           
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  |                                           
+                                           |                                           
+Net: In_TIA                                |Net: /comparator_0/comp_adv3_0/bias        
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  comp_adv3/bias = 1                       
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
+  sky130_fd_pr__nfet_01v8_lvt/4 = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: VN                                    |Net: VN                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 31       |  sky130_fd_pr__nfet_01v8/(1|3) = 31       
+  sky130_fd_pr__nfet_01v8/4 = 55           |  sky130_fd_pr__nfet_01v8/4 = 55           
+  sky130_fd_pr__nfet_01v8_lvt/4 = 5        |  sky130_fd_pr__nfet_01v8_lvt/4 = 5        
+  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
+  sky130_fd_pr__cap_mim_m3_1/1 = 2         |  sky130_fd_pr__cap_mim_m3_1/1 = 2         
+  sky130_fd_pr__cap_var_lvt/2 = 1          |  sky130_fd_pr__cap_var_lvt/2 = 1          
+  sky130_fd_pr__cap_var_lvt/(1|3) = 1      |  sky130_fd_pr__cap_var_lvt/(1|3) = 1      
+  sky130_fd_pr__cap_mim_m3_2/2 = 2         |  sky130_fd_pr__cap_mim_m3_2/2 = 2         
+  transmitter/VN = 1                       |  transmitter/VN = 1                       
+  sky130_fd_pr__cap_mim_m3_2/1 = 3         |  sky130_fd_pr__cap_mim_m3_2/1 = 3         
+  sky130_fd_pr__res_high_po_5p73/3 = 4     |  sky130_fd_pr__res_high_po_5p73/3 = 4     
+  sky130_fd_pr__res_high_po_2p85/3 = 2     |  sky130_fd_pr__res_high_po_2p85/3 = 2     
+  sky130_fd_pr__res_xhigh_po_0p35/3 = 3    |  sky130_fd_pr__res_xhigh_po_0p35/3 = 3    
+  comp_adv3_di/VN = 1                      |  comp_adv3_di/VN = 1                      
+  comp_adv3/VN = 5                         |  comp_adv3/VN = 5                         
+  sky130_fd_pr__res_xhigh_po_0p69/3 = 1    |  comp_to_logic/VSUBS = 1                  
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
+  sky130_fd_pr__res_xhigh_po_1p41/(1|2) =  |  sky130_fd_pr__res_xhigh_po_1p41/(1|2) =  
+  sky130_fd_pr__res_xhigh_po_1p41/3 = 3    |  sky130_fd_pr__res_xhigh_po_1p41/3 = 3    
+  comp_to_logic/VN = 1                     |                                           
+                                           |                                           
+Net: feedback_sukwani:1/VM16D              |Net: tia_core_0/Input                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_lvt/2 = 6        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__cap_mim_m3_2/1 = 1         |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |  sky130_fd_pr__nfet_01v8_lvt/4 = 1        
+                                           |                                           
+Net: net11                                 |Net: /fb_dark_current_0/m1_970_2720#       
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 6        
+  sky130_fd_pr__nfet_01v8/2 = 8            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
+                                           |                                           
+Net: feedback_sukwani:1/VM34D              |Net: /fb_dark_current_0/m1_9810_5770#      
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/2 = 4            
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |                                           
+(no matching net)                          |Net: /fb_dark_current_0/m1_7940_2770#      
+                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 6        
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+                                           |                                           
+(no matching net)                          |Net: VP                                    
+                                           |  sky130_fd_pr__pfet_01v8/4 = 68           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 38       
+                                           |  sky130_fd_pr__cap_mim_m3_2/1 = 7         
+                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+                                           |  sky130_fd_pr__res_high_po_5p73/(1|2) = 4 
+                                           |  sky130_fd_pr__res_high_po_2p85/(1|2) = 2 
+                                           |  comp_adv3_di/VP = 1                      
+                                           |  comp_adv3/VP = 5                         
+                                           |  comp_to_logic/VP = 1                     
+                                           |  sky130_fd_pr__pfet_01v8_lvt/4 = 12       
+                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    
+                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+                                           |                                           
+(no matching net)                          |Net: /comparator_0/comp_adv3_1/bias        
+                                           |  comp_adv3/bias = 1                       
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: current_mirror_channel:7/vm12d        |Net: /curr_mirror_channel_0/vm12d          
+  sky130_fd_pr__pfet_01v8/2 = 22           |  sky130_fd_pr__pfet_01v8/2 = 22           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: Dis_FB                                |Net: /fb_dark_current_0/Disable_FB         
+  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: feedback_sukwani:1/VM13D              |Net: /fb_dark_current_0/m1_950_1560#       
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: feedback_sukwani:1/VM9D               |Net: /fb_dark_current_0/m1_n6550_3300#     
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 4            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: feedback_sukwani:1/net5               |Net: /fb_dark_current_0/m1_n5100_670#      
+  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 4            
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: feedback_sukwani:1/VM14D              |Net: /fb_dark_current_0/I_Bias             
+  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/2 = 8            
+  sky130_fd_pr__cap_mim_m3_2/2 = 2         |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8_lvt/2 = 6        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
+  sky130_fd_pr__cap_mim_m3_2/1 = 1         |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ../xschem/mpw6_submission.spice |Circuit 2: mpw6_submission.spice           
+
+---------------------------------------------------------------------------------------
+Instance: outdriver:4/sky130_fd_pr__cap_mi |Instance: tia_core_0/sky130_fd_pr__cap_mim 
+  1 = 7                                    |  1 = 147                                  
+  2 = 127                                  |  2 = 126                                  
+                                           |                                           
+Instance: outdriver:4/sky130_fd_pr__cap_mi |Instance: outd_0/sky130_fd_pr__cap_mim_m3_ 
+  1 = 127                                  |  1 = 126                                  
+  2 = 146                                  |  2 = 147                                  
+                                           |                                           
+Instance: current_mirror_channel:7/sky130_ |Instance: outd_0/sky130_fd_pr__cap_mim_m3_ 
+  1 = 146                                  |  1 = 7                                    
+  2 = 127                                  |  2 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
+  1 = 127                                  |  1 = 147                                  
+  2 = 12                                   |  2 = 9                                    
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
+  1 = 146                                  |  1 = 147                                  
+  2 = 11                                   |  2 = 9                                    
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//sky130_fd_pr_ 
+  1 = 10                                   |  1 = 126                                  
+  2 = 11                                   |  2 = 11                                   
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |(no matching instance)                     
+  1 = 11                                   |                                           
+  2 = 2                                    |                                           
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |(no matching instance)                     
+  (1,2) = (10,2)                           |                                           
+  3 = 127                                  |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_1//sk 
+  (1,3) = (10,2)                           |  (1,3) = (147,2)                          
+  2 = 10                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_1//sk 
+  (1,3) = (146,2)                          |  (1,3) = (9,2)                            
+  2 = 10                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_0//sk 
+  (1,3) = (9,2)                            |  (1,3) = (147,2)                          
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_0//sk 
+  (1,3) = (146,2)                          |  (1,3) = (9,2)                            
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_12//s 
+  (1,3) = (146,2)                          |  (1,3) = (147,2)                          
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_20//s 
+  (1,3) = (146,2)                          |  (1,3) = (147,2)                          
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_20//s 
+  (1,3) = (6,2)                            |  (1,3) = (9,2)                            
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_12//s 
+  (1,3) = (11,2)                           |  (1,3) = (6,2)                            
+  2 = 11                                   |  2 = 9                                    
+  4 = 146                                  |  4 = 147                                  
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
+  (1,3) = (146,2)                          |                                           
+  2 = 25                                   |                                           
+  4 = 146                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 25                                   |                                           
+  4 = 146                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
+  (1,3) = (146,2)                          |                                           
+  2 = 25                                   |                                           
+  4 = 146                                  |                                           
+                                           |                                           
+                                           |                                           
+Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
+  (1,3) = (2,2)                            |                                           
+  2 = 25                                   |                                           
+  4 = 146                                  |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_33//s 
+  (1,3) = (9,2)                            |  (1,3) = (8,2)                            
+  2 = 12                                   |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_33//s 
+  (1,3) = (127,2)                          |  (1,3) = (126,2)                          
+  2 = 12                                   |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_45//s 
+  (1,3) = (12,2)                           |  (1,3) = (126,2)                          
+  2 = 12                                   |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_43//s 
+  (1,3) = (127,2)                          |  (1,3) = (9,2)                            
+  2 = 12                                   |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_43//s 
+  (1,3) = (8,2)                            |  (1,3) = (126,2)                          
+  2 = 12                                   |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_2//sk 
+  (1,3) = (11,3)                           |  (1,3) = (126,2)                          
+  2 = 7                                    |  2 = 11                                   
+  4 = 127                                  |  4 = 126                                  
+                                           |                                           
+(no matching instance)                     |Instance: fb_dark_current_0//currm_n_45//s 
+                                           |  (1,3) = (11,2)                           
+                                           |  2 = 11                                   
+                                           |  4 = 126                                  
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: fb_dark_current_0//currm_n_2//sk 
+                                           |  (1,3) = (3,2)                            
+                                           |  2 = 11                                   
+                                           |  4 = 126                                  
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
+  (1,3) = (127,12)                         |  (1,3) = (126,11)                         
+  2 = 4                                    |  2 = 4                                    
+  4 = 127                                  |  4 = 126                                  
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Cells failed matching, or top level cell failed pin matching.
+The following cells had property errors:
+ transmitter

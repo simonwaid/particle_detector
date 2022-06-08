@@ -1,18 +1,45 @@
-# Caravel Analog User
+# Particle Detector Frontend
+This is a simple analog frontend for detecting single particles such as cosmic rays, alpha or beta particles. The user can attach a detector, such as a silicon PIN diode to the input. When a particle hits the detector, it will create a current pulse. The current pulse is amplified by the transimpedance amplifier and detected by the comparator. The output of the comparator is made available as an low voltage differential signalling (LVDS) signal at the output and can be further processed by an FPGA, e.g. to count the number of inpinging particles per second.
 
+The ASIC contains the following blocks:
+
+
+The overall bandwidth is intended to be approx. 1GHz. The design aims to enable the detection of pulses with a peak current of 5µA and length of 0.5 ns.
+
+The blocks are inteded to be re-used as IP blocks in future projects. Therefore for each block both schematic as well as a magic layout are available.
+
+
+License:
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![CI](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/user_project_ci.yml) [![Caravan Build](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml/badge.svg)](https://github.com/efabless/caravel_user_project_analog/actions/workflows/caravan_build.yml)
 
----
+—
+## Biasing circuit and Transimpedance Amplifier
+The Biasing circuit and TIA have been previously published and were submitted to the MPW-5. They are documented here:
 
-| :exclamation: Important Note            |
-|-----------------------------------------|
+## Active dark current compensation
+The dark current of the detector may lead to saturation of the input TIA. To prevent this, an active dark current compensation circuit was implemente. The circuit is based on [1].
 
-## Please fill in your project documentation in this README.md file 
+*Schematic:*
+*Layout:*
+
+## Comparator
+The functional blocks of the comparator are shown in the following:
 
 
-:warning: | Use this sample project for analog user projects. 
-:---: | :---
+The comparator is composed of saturation tollerant difference amplifiers stages. Each stage has a typical amplification of 10dB. By cascading 6 stages an overall amplification of approx. 60dB is attained. The threshold of the comparator is set by injecting an offset current into the 3rd difference amplifier stage. Prior to the 3rd aplifier stage AC coupling eliminates the offset introduced by the previous amplifer stages. After the difference amplifer stages, a schmidt trigger is used to convert the differential analog signal to a single ended digital signal. The schmidt trigger contains a difference amplifer with a positive feedback making it bi-stable. The output of this difference amplifer is converted to a digitial signal via current mirrors and 3 cascaded inverter stages.
 
----
+From a user perspective, the threshold is set via an input current on one of the two input pins. Supplying the current can be attained e.g. via a resistor or a current DAC.
 
-Refer to [README](docs/source/index.rst) for this sample project documentation. 
+The following shows the reaction of the comparator to a voltage pulse of 1.5mV.
+
+
+*Schematic:*
+*Layout:*
+
+## LVDS driver
+
+*Schematic:*
+*Layout:*
+
+## References
+[1]

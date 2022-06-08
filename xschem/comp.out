@@ -1,0 +1,20 @@
+Equate elements:  no current cell.
+Flattening unmatched subcell bias_curm_p in circuit ../../asic/layout/bias/curr_mirror_distribution.spice (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit ../../asic/layout/bias/curr_mirror_distribution.spice (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit ../../asic/layout/bias/curr_mirror_distribution.spice (0)(9 instances)
+
+Class ../../asic/layout/bias/curr_mirror_distribution.spice (0):  Merged 162 parallel devices.
+Subcircuit summary:
+Circuit 1: ../../asic/layout/bias/curr_mir |Circuit 2: current_mirrorx8.spice          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (180->18)          |sky130_fd_pr__pfet_01v8 (180->18)          
+Number of devices: 18                      |Number of devices: 18                      
+Number of nets: 19                         |Number of nets: 19                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 4 symmetries.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes ../../asic/layout/bias/curr_mirror_distribution.spice and current_mirrorx8.spice are equivalent.
+Circuits match uniquely.

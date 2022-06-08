@@ -1,0 +1,298 @@
+timestamp 1647868710
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use isource_ref_transistor isource_ref_transistor_4 1 0 493 0 1 3777
+use isource_ref_transistor isource_ref_transistor_3 1 0 493 0 1 2557
+use isource_ref_transistor isource_ref_transistor_1 1 0 493 0 1 1337
+use isource_ref_transistor isource_ref_transistor_0 1 0 493 0 1 117
+node "m2_620_1490#" 1 1344.28 620 1490 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 24000 760 1034900 7530 0 0 0 0 0 0
+node "m2_220_270#" 3 1735.65 220 270 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 72000 2280 1129200 8220 0 0 0 0 0 0
+node "m2_12120_850#" 2 1336.36 12120 850 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 48000 1680 750200 7980 0 0 0 0 0 0
+node "m1_12450_1060#" 11 3038.4 12450 1060 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 140800 4800 176000 5360 996700 10580 0 0 0 0 0 0
+node "li_40_1160#" 1372 6383.41 40 1160 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1543200 25960 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_12820_1440#" 32 290.982 12820 1440 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16000 560 39408 820 0 0 0 0 0 0 0 0 0 0
+node "li_20_1440#" 43 280.318 20 1440 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12000 520 34928 780 0 0 0 0 0 0 0 0 0 0
+node "li_40_2380#" 1372 6092.73 40 2380 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1543200 25960 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_20_3600#" 1372 6093.21 20 3600 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1543200 25960 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_40_4820#" 1372 6401.57 40 4820 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1543200 25960 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "m2_220_270#" "li_40_2380#" 89.3896
+cap "m2_12120_850#" "li_40_1160#" 72.6189
+cap "li_12820_1440#" "li_40_1160#" 14
+cap "m2_620_1490#" "li_40_4820#" 94.7177
+cap "li_20_1440#" "li_40_1160#" 7
+cap "m1_12450_1060#" "li_40_1160#" 72.6189
+cap "m2_12120_850#" "m1_12450_1060#" 1522.65
+cap "li_20_3600#" "m2_620_1490#" 89.3938
+cap "li_20_3600#" "m2_12120_850#" 70.9467
+cap "m1_12450_1060#" "li_40_4820#" 81.8291
+cap "li_20_3600#" "li_40_4820#" 326.836
+cap "m2_220_270#" "li_40_1160#" 117.181
+cap "m2_620_1490#" "m2_220_270#" 1434.97
+cap "li_20_3600#" "m1_12450_1060#" 70.9467
+cap "li_40_2380#" "li_40_1160#" 327.345
+cap "m2_620_1490#" "li_40_2380#" 89.3896
+cap "m2_12120_850#" "li_40_2380#" 70.9439
+cap "li_12820_1440#" "li_40_2380#" 3.02703
+cap "li_20_3600#" "m2_220_270#" 89.3938
+cap "li_20_1440#" "li_40_2380#" 1.51351
+cap "li_40_2380#" "m1_12450_1060#" 70.9439
+cap "li_20_3600#" "li_40_2380#" 326.836
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -143.77
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_3/m1_n370_110#" 310.201
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/m1_n370_110#" 111.683
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_3/m1_n370_110#" -20.4609
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 56.3023
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" -1.79856e-14
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 18.7329
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/m1_n370_110#" 488.864
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 186.415
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.053
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -154.374
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 215.042
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_3/m1_n370_110#" -10.3456
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 62.2983
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -2.84217e-14
+cap "isource_ref_transistor_3/m1_n370_110#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 0.351032
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -160.817
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 216.277
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" 62.2872
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" -160.808
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -10.3454
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 216.277
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" 62.2228
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 20.9645
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" 62.2872
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 216.277
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" -160.817
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 216.277
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" 62.2228
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" -10.3454
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" -160.808
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 20.9645
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -160.817
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" 62.2872
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 216.277
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 1.13687e-13
+cap "isource_ref_transistor_0/m1_890_680#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -160.808
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 4.19354
+cap "isource_ref_transistor_0/m1_890_680#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 62.2228
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" 3.0727
+cap "isource_ref_transistor_0/m1_890_680#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" -10.3454
+cap "isource_ref_transistor_0/m1_890_680#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 162.15
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 66.3128
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_0/m1_890_680#" 48.5321
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 159.048
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5003_n400#" 1.21625
+cap "isource_ref_transistor_0/m1_890_680#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" -72.2494
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_0/m1_890_680#" -13.5833
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 49.7742
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 178.191
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 2.45626
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_0/m1_890_680#" 29.646
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 0.351032
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_0/m1_890_680#" 7.70409
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -143.77
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 190.022
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 167.683
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 18.7329
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 18.7329
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 370.147
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_4/m1_n370_110#" 459.756
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/m1_n370_110#" -27.8606
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 56.3023
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 255.526
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -0.451089
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 112.782
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 367.885
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 124.597
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 194.989
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -154.374
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -19.7092
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 62.2983
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_4/m1_n370_110#" 2.66171
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.053
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -146.904
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -146.904
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.053
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -9.37459
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -134.541
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -8.65557
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -8.65557
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 124.574
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -134.541
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 195.313
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -160.817
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" 62.2872
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -10.3454
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" 62.2228
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" -160.808
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 195.313
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" 124.446
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -160.779
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -160.779
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" -122.587
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" -7.88653
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" 124.574
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" -7.88653
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" 62.2872
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" -160.817
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" -122.587
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 195.313
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 20.9645
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" 62.2228
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 195.313
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" -160.808
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" -160.778
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" 124.446
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" -160.778
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" -10.3454
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -160.817
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -122.057
+cap "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 195.313
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 20.9645
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" -7.8524
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -122.057
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" 62.2872
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" 124.574
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" -7.8524
+cap "isource_ref_transistor_3/m1_890_680#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 62.2228
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" -32.1407
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" -168.053
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" -1.13687e-13
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_3/m1_890_680#" 129.796
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -142.406
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 112.253
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/m1_890_680#" 634.902
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/m1_890_680#" 271.41
+cap "isource_ref_transistor_3/m1_890_680#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 2.55
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 6.20185
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 0.408487
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 4.09948
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 196.939
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 276.741
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 212.105
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_4/m1_n370_110#" -0.451089
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/m1_n370_110#" 331.09
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 257.542
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/m1_n370_110#" -27.7612
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 167.683
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_4/m1_n370_110#" 379.638
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 330.692
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 18.7329
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_4/m1_n370_110#" 359.803
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -143.77
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" -146.904
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 114.251
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 194.989
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -154.374
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.053
+cap "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -9.37459
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.9645
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -8.65557
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" 124.574
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" -160.817
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -134.541
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 195.313
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" 124.446
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 195.313
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" -160.808
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 20.9645
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" -160.779
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n3803_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2545_n400#" -10.3454
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" -160.817
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 20.9645
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" -122.587
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 195.313
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" 124.574
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1287_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" -7.88653
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" 124.446
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" -160.778
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" -10.3454
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n29_n400#" -160.808
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 195.313
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" -7.8524
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -122.057
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_1229_n400#" 124.574
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 195.313
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_2487_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" -160.817
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -1.13687e-13
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/m1_890_680#" 124.446
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -160.808
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 3.0727
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" -10.3454
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -156.586
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" -11.9755
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" -52.2128
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 488.04
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" 11.9853
+cap "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" 335.891
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" -19.3171
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" 8.37959
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 277.074
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 118.271
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/m1_890_680#" 10.2541
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/m1_890_680#" -13.7768
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_4/m1_890_680#" 91.6705
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 0.383045
+cap "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 15.0024
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" 5.04651
+cap "m2_620_1490#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 425.044
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5061_n400#" "m2_620_1490#" 359.285
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "m2_620_1490#" -10.585
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 18.7329
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.053
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6261_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n5003_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n2487_n488#" 20.9645
+cap "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n1229_n488#" 20.9645
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_29_n488#" 20.9645
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" 3.13349
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_4/m1_890_680#" 259.938
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_3745_n400#" "isource_ref_transistor_4/m1_890_680#" -68.4042
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "isource_ref_transistor_4/m1_890_680#" -9.31101
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_4/m1_890_680#" 34.9937
+cap "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" -26.0944
+merge "isource_ref_transistor_4/VSUBS" "isource_ref_transistor_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "isource_ref_transistor_0/VSUBS" "isource_ref_transistor_1/VSUBS"
+merge "isource_ref_transistor_1/VSUBS" "isource_ref_transistor_3/VSUBS"
+merge "isource_ref_transistor_3/VSUBS" "VSUBS"
+merge "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "li_40_4820#" 6408.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 45293616 -130760 4603646 -1046 -6010800 -760 133200 -1780 0 0 0 0 0 0
+merge "li_40_4820#" "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#"
+merge "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "li_20_3600#"
+merge "li_20_3600#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#"
+merge "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_6261_n400#" "li_12820_1440#"
+merge "li_12820_1440#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6319_n400#"
+merge "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6319_n400#" "m2_620_1490#"
+merge "m2_620_1490#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#"
+merge "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "li_40_1160#"
+merge "li_40_1160#" "li_20_1440#"
+merge "li_20_1440#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#"
+merge "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_n6421_n574#" "li_40_2380#"
+merge "isource_ref_transistor_4/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" 26014.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44221120 -4024 -3069560 -974 0 0 0 0 0 0 0 0
+merge "isource_ref_transistor_0/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_1/m1_890_680#"
+merge "isource_ref_transistor_1/m1_890_680#" "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#"
+merge "isource_ref_transistor_1/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#"
+merge "isource_ref_transistor_3/sky130_fd_pr__nfet_01v8_HZ8P49_0/a_5061_n488#" "m1_12450_1060#"
+merge "isource_ref_transistor_4/m1_n370_110#" "isource_ref_transistor_0/m1_n370_110#" -12416.4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24972920 -2280 0 0 0 0 0 0 0 0
+merge "isource_ref_transistor_0/m1_n370_110#" "isource_ref_transistor_3/m1_n370_110#"
+merge "isource_ref_transistor_3/m1_n370_110#" "m2_220_270#"
+merge "isource_ref_transistor_4/m1_890_680#" "isource_ref_transistor_3/m1_890_680#" -3300.3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4991640 -1680 0 0 0 0 0 0 0 0
+merge "isource_ref_transistor_3/m1_890_680#" "isource_ref_transistor_0/m1_890_680#"
+merge "isource_ref_transistor_0/m1_890_680#" "m2_12120_850#"

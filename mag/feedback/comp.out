@@ -1,0 +1,50 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Flattening unmatched subcell currm_p in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_4LMUGG in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_LKHJAY in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell currm_ps in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PD4XN5 in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PWGH in circuit fb_amp.spice (1)(22 instances)
+Flattening unmatched subcell currm_n in circuit fb_amp.spice (1)(50 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PJG2KG in circuit fb_amp.spice (1)(50 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_82JNGJ in circuit fb_amp.spice (1)(50 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H2JYD in circuit fb_amp.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U47ZGH in circuit fb_amp.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_N3PKNJ in circuit fb_amp.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_MJMGTW in circuit fb_amp.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_LH2JGW in circuit fb_amp.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_E6B2KN in circuit fb_amp.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UAQRRG in circuit fb_amp.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit fb_amp.spice (1)(2 instances)
+
+Class ../../analog/tia/feedback_sukwani_amp3.spice (0):  Merged 5 parallel devices.
+Class fb_amp.spice (1):  Merged 656 parallel devices.
+Subcircuit summary:
+Circuit 1: ../../analog/tia/feedback_sukwa |Circuit 2: fb_amp.spice                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (261->30)          |sky130_fd_pr__nfet_01v8 (261->30)          
+sky130_fd_pr__cap_mim_m3_2 (6->3)          |sky130_fd_pr__cap_mim_m3_2 (6->3)          
+sky130_fd_pr__pfet_01v8_lvt (220->12)      |sky130_fd_pr__pfet_01v8_lvt (220->12)      
+sky130_fd_pr__pfet_01v8 (229->15)          |sky130_fd_pr__pfet_01v8 (229->15)          
+Number of devices: 60                      |Number of devices: 60                      
+Number of nets: 42                         |Number of nets: 42                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+sky130_fd_pr__cap_mim_m3_2:C3 vs. sky130_fd_pr__cap_mim_m3_2_N3PKNJ_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+sky130_fd_pr__cap_mim_m3_2:C20 vs. sky130_fd_pr__cap_mim_m3_2_MJMGTW_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+sky130_fd_pr__cap_mim_m3_2:C8 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG_2/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+Cells have no pins;  pin matching not needed.
+Device classes ../../analog/tia/feedback_sukwani_amp3.spice and fb_amp.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ ../../analog/tia/feedback_sukwani_amp3.spice

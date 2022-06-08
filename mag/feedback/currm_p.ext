@@ -1,0 +1,59 @@
+timestamp 1653925904
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__pfet_01v8_lvt_LKHJAY sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0 1 0 365 0 1 429
+use sky130_fd_pr__pfet_01v8_lvt_4LMUGG sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0 1 0 619 0 1 -391
+node "m1_190_n590#" 3 397.832 190 -590 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 54400 2000 134100 2280 0 0 0 0 0 0 0 0
+node "m1_60_n360#" 5 704.733 60 -360 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84200 3040 259200 4080 0 0 0 0 0 0 0 0
+node "m1_70_460#" 1 242.028 70 460 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27200 1000 99300 1560 0 0 0 0 0 0 0 0
+node "m1_n50_n680#" 11 1326.85 -50 -680 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 227800 9000 0 0 0 0 0 0 0 0 0 0
+node "li_n20_n20#" 234 869.281 -20 -20 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 192500 3960 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_n20_n20#" "m1_60_n360#" 86.9385
+cap "m1_n50_n680#" "m1_70_460#" 302.384
+cap "li_n20_n20#" "m1_n50_n680#" 83.7475
+cap "m1_n50_n680#" "m1_60_n360#" 889.286
+cap "m1_190_n590#" "m1_60_n360#" 394.91
+cap "m1_190_n590#" "m1_n50_n680#" 394.18
+cap "li_n20_n20#" "m1_70_460#" 184.843
+cap "m1_60_n360#" "m1_70_460#" 102.294
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" 651.559
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" 1146.05
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" 117.476
+cap "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" 165.922
+cap "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" 678.338
+cap "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" 36.9875
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" 216.43
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" 31.5446
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" 40.2976
+cap "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#" 0.254273
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_413_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_285_n297#" -2332.87 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1641888 -5360 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_285_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_157_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_157_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_29_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_29_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n99_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n99_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n227_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n227_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n355_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n355_n297#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n483_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n483_n297#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_29_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_29_n297#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#"
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n229_n297#" "m1_n50_n680#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/VSUBS" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/VSUBS" "VSUBS"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_355_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_99_n200#" -579.957 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -313864 -1728 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_99_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n157_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n157_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n413_n200#" "m1_190_n590#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_483_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_227_n200#" -781.632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -166466 -2602 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_227_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n29_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n29_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n285_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n285_n200#" "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n541_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/a_n541_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n29_n200#" "m1_60_n360#"
+merge "sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0/w_n679_n419#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_229_n200#" -1505.88 0 0 0 0 -15300 -1736 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -287720 -7052 -28264 -860 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_229_n200#" "m1_70_460#"
+merge "m1_70_460#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n287_n200#"
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/a_n287_n200#" "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#"
+merge "sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0/w_n425_n419#" "li_n20_n20#"

@@ -1,0 +1,105 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+
+Class sky130_fd_sc_hs__inv_16 (0):  Merged 30 parallel devices.
+Class sky130_fd_sc_hs__inv_16 (1):  Merged 30 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hs__inv_16         |Circuit 2: sky130_fd_sc_hs__inv_16         
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (16->1)            |sky130_fd_pr__pfet_01v8 (16->1)            
+sky130_fd_pr__nfet_01v8_lvt (16->1)        |sky130_fd_pr__nfet_01v8_lvt (16->1)        
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hs__inv_16         |Circuit 2: sky130_fd_sc_hs__inv_16         
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hs__inv_16 and sky130_fd_sc_hs__inv_16 are equivalent.
+
+Class sky130_fd_sc_hs__inv_4 (0):  Merged 6 parallel devices.
+Class sky130_fd_sc_hs__inv_4 (1):  Merged 6 parallel devices.
+Subcircuit summary:
+Circuit 1: sky130_fd_sc_hs__inv_4          |Circuit 2: sky130_fd_sc_hs__inv_4          
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (4->1)         |sky130_fd_pr__nfet_01v8_lvt (4->1)         
+sky130_fd_pr__pfet_01v8 (4->1)             |sky130_fd_pr__pfet_01v8 (4->1)             
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_sc_hs__inv_4          |Circuit 2: sky130_fd_sc_hs__inv_4          
+-------------------------------------------|-------------------------------------------
+Y                                          |Y                                          
+A                                          |A                                          
+VPWR                                       |VPWR                                       
+VPB                                        |VPB                                        
+VGND                                       |VGND                                       
+VNB                                        |VNB                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_sc_hs__inv_4 and sky130_fd_sc_hs__inv_4 are equivalent.
+Flattening unmatched subcell lvds_currm_n in circuit transmitter.spice (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HR8DH9 in circuit transmitter.spice (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XZXALN in circuit transmitter.spice (1)(32 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_ZPVFQL in circuit transmitter.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_RS2YEK in circuit transmitter.spice (1)(1 instance)
+Flattening unmatched subcell lvds_currm_p in circuit transmitter.spice (1)(31 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_8DK6RJ in circuit transmitter.spice (1)(31 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_9Z5L4S in circuit transmitter.spice (1)(31 instances)
+Flattening unmatched subcell lvds_switch_p in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VCB4SW in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_N3PKNJ in circuit transmitter.spice (1)(1 instance)
+Flattening unmatched subcell lvds_nswitch in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_RE4MKQ in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell lvds_diffamp in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZHX6G9 in circuit transmitter.spice (1)(2 instances)
+
+Class ../../analog/test/transmitter.spice (0):  Merged 1 parallel devices.
+Class transmitter.spice (1):  Merged 4463 parallel devices.
+Class transmitter.spice (1):  Merged 5 series devices.
+Subcircuit summary:
+Circuit 1: ../../analog/test/transmitter.s |Circuit 2: transmitter.spice               
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__res_xhigh_po_0p35 (4)        |sky130_fd_pr__res_xhigh_po_0p35 (9->4)     
+sky130_fd_pr__pfet_01v8 (2412->8)          |sky130_fd_pr__pfet_01v8 (2412->8)          
+sky130_fd_pr__nfet_01v8 (1920->6)          |sky130_fd_pr__nfet_01v8 (1920->6)          
+sky130_fd_pr__nfet_01v8_lvt (148->4)       |sky130_fd_pr__nfet_01v8_lvt (148->4)       
+sky130_fd_pr__cap_mim_m3_1 (1)             |sky130_fd_pr__cap_mim_m3_1 (1)             
+sky130_fd_sc_hs__inv_16 (10)               |sky130_fd_sc_hs__inv_16 (10)               
+sky130_fd_sc_hs__inv_4 (2)                 |sky130_fd_sc_hs__inv_4 (2)                 
+sky130_fd_pr__cap_mim_m3_2 (2->1)          |sky130_fd_pr__cap_mim_m3_2 (2->1)          
+Number of devices: 36                      |Number of devices: 36                      
+Number of nets: 25                         |Number of nets: 25                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 2 symmetries.
+Circuits match correctly.
+There were property errors.
+sky130_fd_pr__cap_mim_m3_2:C1 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+Cells have no pins;  pin matching not needed.
+Device classes ../../analog/test/transmitter.spice and transmitter.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ ../../analog/test/transmitter.spice

@@ -1,0 +1,17 @@
+
+* expanding   symbol:  comp/comp_amp_20db_no_cmm.sym # of pins=8
+** sym_path: /home/simon/code/particle_detector/xschem/comp/comp_amp_20db_no_cmm.sym
+** sch_path: /home/simon/code/particle_detector/xschem/comp/comp_amp_20db_no_cmm.sch
+.subckt comp_amp_20db_no_cmm  VP In_n In_p out_p Bias1 Bias2 out_n VN
+*.ipin In_n
+*.ipin In_p
+*.iopin VP
+*.opin out_p
+*.opin out_n
+*.ipin Bias1
+*.ipin Bias2
+*.iopin VN
+xcmp2 VP out_p out_n OutP1 OutN1 Bias2 VN comp_adv3
+xcmp1 VP OutP1 OutN1 In_n In_p Bias1 VN comp_adv3
+.ends
+

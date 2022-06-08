@@ -1,0 +1,141 @@
+**.subckt comp Inp bias Inn VP VN OutN OutP
+*.ipin Inp
+*.ipin bias
+*.ipin Inn
+*.iopin VP
+*.iopin VN
+*.opin OutN
+*.opin OutP
+XM1 OutN Inp VIq VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 OutP Inn VIq VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 OutP bias VN VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 OutN bias VN VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM7 bias bias VN VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM9 VIq bias VN VN sky130_fd_pr__nfet_01v8_lvt L=0.3 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM5 OutP net1 VP VP sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM6 OutN net1 VP VP sky130_fd_pr__pfet_01v8_lvt L=0.35 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XR1 OutN net1 GND sky130_fd_pr__res_xhigh_po_0p35 L=3 mult=1 m=1
+XR2 net1 OutP GND sky130_fd_pr__res_xhigh_po_0p35 L=3 mult=1 m=1
+**** begin user architecture code
+
+*.lib /home/simon/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /home/simon/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice.tt.red tt
+
+
+
+*.options savecurrents
+.option warn=1
+.control
+set wr_vecnames
+set wr_singlescale
+* Power consumption
+op
+* save all
+* #OP#
+print @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+print vdd#branch
+print v(vm2d)
+print v(vm3d)
+print v(UD_M5)
+wrdata 'result_op.csv' vdd#branch
+ac dec 10 1 10G
+meas ac dc_gain_vm2d FIND vdb(vm2d) AT=1
+let bw_amp_vm2d=dc_gain_vm2d-3
+meas ac dc_gain_vm3d FIND vdb(vm3d) AT=1
+let bw_amp_vm3d=dc_gain_vm3d-3
+meas ac bw_vm2d when vdb(vm2d)=bw_amp_vm2d
+meas ac bw_vm3d when vdb(vm3d)=bw_amp_vm3d
+*MEAS AC phasem FIND vp(vm2d) WHEN vdb(vm2d)=0
+* wrdata 'result_ac.csv' dc_gain bw
+* plot vdb(vm2D) log
+*
+*print WM3D
+run
+reset
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm1.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm2.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm2.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm2.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm3.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm3.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm3.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm3.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm4.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm4.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm4.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm4.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm5.msky130_fd_pr__pfet_01v8_lvt[gds]
+save @m.xm5.msky130_fd_pr__pfet_01v8_lvt[cgs]
+save @m.xm5.msky130_fd_pr__pfet_01v8_lvt[cdg]
+save @m.xm6.msky130_fd_pr__pfet_01v8_lvt[gm]
+save @m.xm6.msky130_fd_pr__pfet_01v8_lvt[gds]
+save @m.xm6.msky130_fd_pr__pfet_01v8_lvt[cgs]
+save @m.xm6.msky130_fd_pr__pfet_01v8_lvt[cdg]
+save @m.xm7.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm7.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm7.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm7.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm8.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm8.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm8.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm8.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gm]
+save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[gds]
+save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[cgs]
+save @m.xm9.msky130_fd_pr__nfet_01v8_lvt[cdg]
+save v(Voutp)
+save v(Voutn)
+save v(VIa)
+save v(VIq)
+
+save v(Vinn)
+save v(Vinp)
+save v(VM8G)
+
+op
+write comp.raw
+run
+*reset
+*noise v(vm1d) I1 dec 100 1 10G
+*print all
+*setplot noise2
+*write noise2.raw
+*run
+reset
+ac dec 10 1 1T
+plot vdb(Voutp) vdb(Voutn)
+plot phase(Voutp)/pi*180 phase(Voutn)/pi*180
+run
+reset
+tran 1ps 10ns
+plot v(Vinp) v(Voutn) v(Voutp)
+run
+.endc
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+** flattened .save nodes
+.end

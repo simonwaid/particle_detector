@@ -1,0 +1,18 @@
+timestamp 1654072730
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__res_xhigh_po l=l w=w
+parameters sky130_fd_pr__res_xhigh_po_5p73 l=l
+parameters sky130_fd_pr__res_xhigh_po_2p85 l=l
+parameters sky130_fd_pr__res_xhigh_po_1p41 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p69 l=l
+parameters sky130_fd_pr__res_xhigh_po_0p35 l=l
+node "a_n285_n582#" 77 1059.9 -285 -582 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 492480 4008 229858 1942 0 0 0 0 0 0 0 0 0 0
+node "a_n285_n150#" 3800 0 -285 -150 xres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 171000 1740 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n285_150#" 77 1061.65 -285 150 xpc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 492480 4008 229858 1942 0 0 0 0 0 0 0 0 0 0
+substrate "a_n415_n712#" 0 0 -415 -712 ppd 0 0 0 0 0 0 0 0 0 0 148648 8744 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 148648 8744 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_n285_n582#" "a_n285_150#" 117.603
+device rsubckt sky130_fd_pr__res_xhigh_po_2p85 -285 -150 -284 -149 l=300 "a_n415_n712#" "a_n285_n150#" 0 0 "a_n285_n582#" 570 0 "a_n285_150#" 570 0

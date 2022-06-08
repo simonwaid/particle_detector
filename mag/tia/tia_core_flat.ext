@@ -1,0 +1,772 @@
+timestamp 0
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_var_lvt l=l w=w a1=as a2=ad p1=ps p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+parameters sky130_fd_pr__cap_mim_m3_2 w=w l=l
+port "Disable_TIA" 5 6390 -9510 6450 -9410 m3
+port "I_Bias1" 7 5080 -8250 5190 -8090 m3
+port "Out_2" 2 2900 1040 3170 1170 m3
+port "Out_1" 4 1040 1990 1140 2120 m3
+port "Input" 6 -1840 -1240 -1560 -1040 m1
+port "VPP" 1 11130 -5060 11230 -4890 m5
+port "VN" 8 11480 -4560 11690 -4360 m4
+node "Disable_TIA" 4128 4880.2 6390 -9510 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 202980 7740 0 0 38420 2872 217268 6612 18200 800 94950 2430 0 0 0 0 0 0
+node "VM6D" 11781 3625.32 3498 -8490 ndif 0 0 0 0 0 0 0 0 251200 9256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138720 8840 225120 9434 579000 5840 0 0 0 0 0 0 0 0
+node "VM36D" 11781 3751.73 1602 -8490 ndif 0 0 0 0 0 0 0 0 251200 9256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138720 8840 225120 9434 579000 5840 0 0 0 0 0 0 0 0
+node "VM40D" 221 113237 -1208 -11110 ndif 0 0 0 0 0 0 0 0 2572800 96064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1442688 91936 2346240 98176 5319142 29712 1613500 10640 21872800 20084 1216640 8244 0 0
+node "VM31D" 31379 1949.19 2412 -5577 pdif 0 0 0 0 0 0 0 0 371200 14656 139200 5496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305184 19448 496320 20768 834794 10400 869400 4900 0 0 0 0 0 0
+node "Out_ref" 74030 6852.46 -1188 -8454 ndif 0 0 0 0 0 0 0 0 1206400 47632 742400 29312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 912432 36272 0 0 1360816 86032 2448962 91412 3084084 39524 1452950 7800 0 0 0 0 0 0
+node "Disable_TIA_B" 629 69364.4 -1164 -11198 p 0 0 0 0 0 0 0 0 5800 316 5800 316 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5911200 247760 0 0 592144 49248 3904509 85586 533500 9920 0 0 0 0 0 0 0 0
+node "VM5D" 11781 3385.96 1602 -1420 ndif 0 0 0 0 0 0 0 0 251200 9256 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 138720 8840 225120 9434 579000 5840 0 0 0 0 0 0 0 0
+node "I_Bias1" 16776 92601.5 5080 -8250 m3 0 0 0 0 0 0 0 0 236000 8380 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2997432 72000 0 0 598536 38676 2986280 65584 324100 5120 17517050 28146 494592 10688 0 0 0 0
+node "VM28D" 221 113419 -1208 -4040 ndif 0 0 0 0 0 0 0 0 2572800 96064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1442688 91936 2346240 98176 5319142 29712 1613500 10640 21858722 20066 1216640 8244 0 0
+node "Out_2" 31379 1795.96 2900 1040 m3 0 0 0 0 0 0 0 0 371200 14656 139200 5496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 305184 19448 496320 20768 834794 10400 869400 4900 0 0 0 0 0 0
+node "Out_1" 74030 6418.27 1040 1990 m3 0 0 0 0 0 0 0 0 1206400 47632 742400 29312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 912432 36272 0 0 1360816 86032 2448962 91412 3084084 39524 1452950 7800 0 0 0 0 0 0
+node "VM39D" 63224 29422.3 2300 -7574 pw 2816944 6752 0 0 0 0 0 0 529600 20248 206040 12120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4920900 195252 0 0 2024752 95128 4213736 89156 1255926 14144 0 0 0 0 0 0 0 0
+node "Input" 63224 28646.5 -1840 -1240 m1 2816944 6752 0 0 0 0 0 0 529600 20248 206040 12120 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4920900 195252 0 0 2024752 95128 4327496 90104 1255926 14144 0 0 0 0 0 0 0 0
+node "VPP" 14377 245773 11130 -5060 m5 0 0 8755200 16800 18597032 53100 0 0 2492120 106840 1722600 68100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4790488 156752 1868704 73456 4754398 54916 582000 5700 220248 2656 110685356 101694 0 0
+substrate "VN" 0 0 11480 -4560 m4 0 0 0 0 4115880 19020 0 0 4064600 132900 3285488 193264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1188000 27760 0 0 17387924 283020 3605448 152376 6274868 54616 1744600 14280 98655013 81752 7464344 47844 0 0
+cap "Disable_TIA" "VM6D" 12.4454
+cap "Disable_TIA_B" "VM5D" 5.53309
+cap "VM28D" "Input" 28294.9
+cap "VM28D" "VM39D" 247.815
+cap "Out_ref" "VM31D" 6662.16
+cap "Disable_TIA_B" "VM36D" 37.9601
+cap "VM39D" "Out_ref" 42802
+cap "VM28D" "Out_2" 3933.13
+cap "Disable_TIA_B" "VPP" 776.825
+cap "I_Bias1" "VM5D" 4642.33
+cap "Disable_TIA_B" "VM6D" 33.3635
+cap "I_Bias1" "VM36D" 5774.97
+cap "I_Bias1" "VPP" 3787.81
+cap "VM28D" "Out_ref" 205.14
+cap "I_Bias1" "VM6D" 15212.2
+cap "Out_1" "Disable_TIA_B" 270.495
+cap "Disable_TIA_B" "Input" 1423.65
+cap "VM40D" "VM36D" 1413.18
+cap "Disable_TIA_B" "VM39D" 6841.05
+cap "Out_1" "I_Bias1" 166.456
+cap "VM40D" "VPP" 42977.9
+cap "I_Bias1" "VM31D" 418.593
+cap "VM40D" "VM6D" 484.05
+cap "I_Bias1" "Input" 2161.16
+cap "I_Bias1" "VM39D" 3090.05
+cap "Disable_TIA_B" "VM28D" 17435.7
+cap "I_Bias1" "Out_2" 49.0684
+cap "Disable_TIA_B" "Out_ref" 1026.78
+cap "I_Bias1" "VM28D" 2025.89
+cap "VM5D" "VPP" 15.182
+cap "VM40D" "VM31D" 3840.58
+cap "I_Bias1" "Out_ref" 370.372
+cap "VM36D" "VPP" 15.182
+cap "VM40D" "VM39D" 27451.7
+cap "Disable_TIA" "Disable_TIA_B" 770.185
+cap "VM36D" "VM6D" 444.164
+cap "VM6D" "VPP" 233.675
+cap "Out_1" "VM5D" 671.192
+cap "I_Bias1" "Disable_TIA" 761.68
+cap "VM40D" "Out_ref" 103433
+cap "VM5D" "Input" 10794
+cap "Out_1" "VPP" 61817.6
+cap "VM36D" "VM31D" 25.5578
+cap "VPP" "VM31D" 7713.63
+cap "VM5D" "Out_2" 25.5578
+cap "I_Bias1" "Disable_TIA_B" 3483.6
+cap "VM39D" "VM36D" 11005
+cap "VPP" "Input" 35428.2
+cap "VM39D" "VPP" 34593.5
+cap "VM6D" "VM31D" 25.1722
+cap "VM28D" "VM5D" 1487.49
+cap "VM39D" "VM6D" 352.756
+cap "Out_2" "VPP" 7431.04
+cap "VM28D" "VPP" 42932.8
+cap "VM36D" "Out_ref" 671.192
+cap "VM40D" "Disable_TIA_B" 19273.8
+cap "VPP" "Out_ref" 61755.4
+cap "Out_1" "Input" 42576.1
+cap "VM6D" "Out_ref" 28.1901
+cap "Out_1" "Out_2" 6554.27
+cap "VM39D" "VM31D" 28931.4
+cap "VM40D" "I_Bias1" 3177.87
+cap "Out_1" "VM28D" 103607
+cap "Out_2" "Input" 28542.7
+cap "Disable_TIA" "VPP" 1167.95
+device csubckt sky130_fd_pr__cap_mim_m3_2 5624 -11409 5625 -11408 w=6000 l=6000 "None" "VPP" 23680 0 "VN" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -1246 -9000 -1245 -8999 w=5000 l=3600 "None" "VPP" 16880 0 "VM40D" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 -1246 -1930 -1245 -1929 w=5000 l=3600 "None" "VPP" 16880 0 "VM28D" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_2 5624 -4099 5625 -4098 w=6000 l=6000 "None" "VPP" 23680 0 "VN" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1740 -11580 1741 -11579 w=3000 l=2400 "None" "VN" 10480 0 "I_Bias1" 0 0
+device csubckt sky130_fd_pr__cap_mim_m3_1 1730 -4490 1731 -4489 w=3000 l=2400 "None" "VN" 10480 0 "I_Bias1" 0 0
+device msubckt sky130_fd_pr__nfet_01v8 6376 -10870 6377 -10869 l=200 w=100 "VN" "Disable_TIA" 400 0 "Disable_TIA_B" 100 0 "VN" 100 0
+device msubckt sky130_fd_pr__pfet_01v8 6376 -10311 6377 -10310 l=200 w=100 "VPP" "Disable_TIA" 400 0 "Disable_TIA_B" 100 0 "VPP" 100 0
+device subckt sky130_fd_pr__cap_var_lvt 5373 -10922 5374 -10921 l=400 w=1000 "VN" "Disable_TIA_B" 800 0 "VN" 2000 0
+device subckt sky130_fd_pr__cap_var_lvt 4453 -10922 4454 -10921 l=400 w=1000 "VN" "Disable_TIA_B" 800 0 "VN" 2000 0
+device subckt sky130_fd_pr__cap_var_lvt 3533 -10922 3534 -10921 l=400 w=1000 "VN" "Disable_TIA_B" 800 0 "VN" 2000 0
+device subckt sky130_fd_pr__cap_var_lvt 2613 -10922 2614 -10921 l=400 w=1000 "VN" "Disable_TIA_B" 800 0 "VN" 2000 0
+device subckt sky130_fd_pr__cap_var_lvt 1693 -10922 1694 -10921 l=400 w=1000 "VN" "Disable_TIA_B" 800 0 "VN" 2000 0
+device msubckt sky130_fd_pr__nfet_01v8 5894 -9310 5895 -9309 l=30 w=400 "VN" "Disable_TIA" 60 0 "I_Bias1" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 5798 -9310 5799 -9309 l=30 w=400 "VN" "Disable_TIA" 60 0 "VN" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 5702 -9310 5703 -9309 l=30 w=400 "VN" "Disable_TIA" 60 0 "I_Bias1" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 5606 -9310 5607 -9309 l=30 w=400 "VN" "Disable_TIA" 60 0 "VN" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 5510 -9310 5511 -9309 l=30 w=400 "VN" "Disable_TIA" 60 0 "I_Bias1" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4846 -9310 4847 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM6D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4588 -9310 4589 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4330 -9310 4331 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM6D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4072 -9310 4073 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3814 -9310 3815 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM6D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3556 -9310 3557 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2950 -9310 2951 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM36D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2692 -9310 2693 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2434 -9310 2435 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM36D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2176 -9310 2177 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1918 -9310 1919 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VM36D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1660 -9310 1661 -9309 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -11110 1159 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -11110 1063 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -11110 967 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -11110 871 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -11110 775 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -11110 679 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -11110 583 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -11110 487 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -11110 391 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -11110 295 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -11110 199 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -11110 103 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -11110 7 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -11110 -89 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -11110 -185 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -11110 -281 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -11110 -377 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -11110 -473 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -11110 -569 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -11110 -665 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -11110 -761 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -11110 -857 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -11110 -953 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -11110 -1049 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -11110 -1145 -11109 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -10492 1159 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -10492 1063 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -10492 967 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -10492 871 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -10492 775 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -10492 679 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -10492 583 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -10492 487 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -10492 391 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -10492 295 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -10492 199 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -10492 103 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -10492 7 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -10492 -89 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -10492 -185 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -10492 -281 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -10492 -377 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -10492 -473 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -10492 -569 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -10492 -665 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -10492 -761 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -10492 -857 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -10492 -953 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -10492 -1049 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -10492 -1145 -10491 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -9874 1159 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -9874 1063 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -9874 967 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -9874 871 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -9874 775 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -9874 679 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -9874 583 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -9874 487 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -9874 391 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -9874 295 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -9874 199 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -9874 103 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -9874 7 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -9874 -89 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -9874 -185 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -9874 -281 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -9874 -377 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -9874 -473 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -9874 -569 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -9874 -665 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -9874 -761 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -9874 -857 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -9874 -953 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -9874 -1049 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -9874 -1145 -9873 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -9256 1159 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -9256 1063 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -9256 967 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -9256 871 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -9256 775 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -9256 679 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -9256 583 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -9256 487 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -9256 391 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -9256 295 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -9256 199 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -9256 103 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -9256 7 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -9256 -89 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -9256 -185 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -9256 -281 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -9256 -377 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -9256 -473 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -9256 -569 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -9256 -665 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -9256 -761 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -9256 -857 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -9256 -953 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -9256 -1049 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -9256 -1145 -9255 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM40D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4616 -8490 4617 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4520 -8490 4521 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4424 -8490 4425 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4328 -8490 4329 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4232 -8490 4233 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4136 -8490 4137 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 4040 -8490 4041 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3944 -8490 3945 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3848 -8490 3849 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3752 -8490 3753 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3656 -8490 3657 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "I_Bias1" 400 0 "VM6D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 3560 -8490 3561 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM6D" 400 0 "I_Bias1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2720 -8490 2721 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2624 -8490 2625 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2528 -8490 2529 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2432 -8490 2433 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2336 -8490 2337 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2240 -8490 2241 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2144 -8490 2145 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2048 -8490 2049 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1952 -8490 1953 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1856 -8490 1857 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1760 -8490 1761 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM39D" 400 0 "VM36D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1664 -8490 1665 -8489 l=30 w=400 "VN" "I_Bias1" 60 0 "VM36D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3902 -7330 3903 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3804 -7330 3805 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3706 -7330 3707 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3608 -7330 3609 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3510 -7330 3511 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3412 -7330 3413 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3314 -7330 3315 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3216 -7330 3217 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3118 -7330 3119 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3020 -7330 3021 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2922 -7330 2923 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2824 -7330 2825 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2726 -7330 2727 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2628 -7330 2629 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2530 -7330 2531 -7329 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3902 -6712 3903 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3804 -6712 3805 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3706 -6712 3707 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3608 -6712 3609 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3510 -6712 3511 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3412 -6712 3413 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3314 -6712 3315 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3216 -6712 3217 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3118 -6712 3119 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3020 -6712 3021 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2922 -6712 2923 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2824 -6712 2825 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2726 -6712 2727 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2628 -6712 2629 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM39D" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2530 -6712 2531 -6711 l=40 w=400 "VM39D" "Out_ref" 80 0 "VM31D" 400 0 "VM39D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -8454 1223 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -8454 1125 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -8454 1027 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -8454 929 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -8454 831 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -8454 733 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -8454 635 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -8454 537 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -8454 439 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -8454 341 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -8454 243 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -8454 145 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -8454 47 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -8454 -51 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -8454 -149 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -8454 -247 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -8454 -345 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -8454 -443 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -8454 -541 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -8454 -639 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -8454 -737 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -8454 -835 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -8454 -933 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -8454 -1031 -8453 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -8454 -1129 -8453 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -7836 1223 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -7836 1125 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -7836 1027 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -7836 929 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -7836 831 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -7836 733 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -7836 635 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -7836 537 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -7836 439 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -7836 341 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -7836 243 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -7836 145 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -7836 47 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -7836 -51 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -7836 -149 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -7836 -247 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -7836 -345 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -7836 -443 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -7836 -541 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -7836 -639 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -7836 -737 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -7836 -835 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -7836 -933 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -7836 -1031 -7835 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -7836 -1129 -7835 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -7010 1223 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -7010 1125 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -7010 1027 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -7010 929 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -7010 831 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -7010 733 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -7010 635 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -7010 537 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -7010 439 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -7010 341 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -7010 243 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -7010 145 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -7010 47 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -7010 -51 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -7010 -149 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -7010 -247 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -7010 -345 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -7010 -443 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -7010 -541 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -7010 -639 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -7010 -737 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -7010 -835 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -7010 -933 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -7010 -1031 -7009 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -7010 -1129 -7009 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -6392 1223 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -6392 1125 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -6392 1027 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -6392 929 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -6392 831 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -6392 733 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -6392 635 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -6392 537 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -6392 439 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -6392 341 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -6392 243 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -6392 145 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -6392 47 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -6392 -51 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -6392 -149 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -6392 -247 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -6392 -345 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -6392 -443 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -6392 -541 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -6392 -639 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -6392 -737 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -6392 -835 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -6392 -933 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -6392 -1031 -6391 l=40 w=400 "VN" "VM39D" 80 0 "VM40D" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -6392 -1129 -6391 l=40 w=400 "VN" "VM39D" 80 0 "Out_ref" 400 0 "VM40D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3892 -5577 3893 -5576 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3734 -5577 3735 -5576 l=100 w=400 "VPP" "VN" 200 0 "VM31D" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3576 -5577 3577 -5576 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3418 -5577 3419 -5576 l=100 w=400 "VPP" "VN" 200 0 "VM31D" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3260 -5577 3261 -5576 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3102 -5577 3103 -5576 l=100 w=400 "VPP" "VN" 200 0 "VM31D" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2944 -5577 2945 -5576 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2786 -5577 2787 -5576 l=100 w=400 "VPP" "VN" 200 0 "VM31D" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2628 -5577 2629 -5576 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "VM31D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2470 -5577 2471 -5576 l=100 w=400 "VPP" "VN" 200 0 "VM31D" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2040 -5561 2041 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1942 -5561 1943 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1844 -5561 1845 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1746 -5561 1747 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1648 -5561 1649 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1550 -5561 1551 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1452 -5561 1453 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1354 -5561 1355 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1256 -5561 1257 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1158 -5561 1159 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1060 -5561 1061 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 962 -5561 963 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 864 -5561 865 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 766 -5561 767 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 668 -5561 669 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2040 -4925 2041 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1942 -4925 1943 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1844 -4925 1845 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1746 -4925 1747 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1648 -4925 1649 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1550 -4925 1551 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1452 -4925 1453 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1354 -4925 1355 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1256 -4925 1257 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1158 -4925 1159 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1060 -4925 1061 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 962 -4925 963 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 864 -4925 865 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 766 -4925 767 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 668 -4925 669 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 242 -5561 243 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 144 -5561 145 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 46 -5561 47 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -52 -5561 -51 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -150 -5561 -149 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -248 -5561 -247 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -346 -5561 -345 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -444 -5561 -443 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -542 -5561 -541 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -640 -5561 -639 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -738 -5561 -737 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -836 -5561 -835 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -934 -5561 -933 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1032 -5561 -1031 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 -5561 -1129 -5560 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 242 -4925 243 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 144 -4925 145 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 46 -4925 47 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -52 -4925 -51 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -150 -4925 -149 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -248 -4925 -247 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -346 -4925 -345 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -444 -4925 -443 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -542 -4925 -541 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -640 -4925 -639 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -738 -4925 -737 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -836 -4925 -835 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -934 -4925 -933 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1032 -4925 -1031 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "VPP" 400 0 "Out_ref" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 -4925 -1129 -4924 l=40 w=400 "VPP" "VM39D" 80 0 "Out_ref" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2950 -2240 2951 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VM5D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2692 -2240 2693 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2434 -2240 2435 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VM5D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2176 -2240 2177 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1918 -2240 1919 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VM5D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1660 -2240 1661 -2239 l=200 w=400 "VN" "I_Bias1" 400 0 "VN" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -4040 1159 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -4040 1063 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -4040 967 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -4040 871 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -4040 775 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -4040 679 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -4040 583 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -4040 487 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -4040 391 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -4040 295 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -4040 199 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -4040 103 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -4040 7 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -4040 -89 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -4040 -185 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -4040 -281 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -4040 -377 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -4040 -473 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -4040 -569 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -4040 -665 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -4040 -761 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -4040 -857 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -4040 -953 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -4040 -1049 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -4040 -1145 -4039 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -3422 1159 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -3422 1063 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -3422 967 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -3422 871 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -3422 775 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -3422 679 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -3422 583 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -3422 487 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -3422 391 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -3422 295 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -3422 199 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -3422 103 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -3422 7 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -3422 -89 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -3422 -185 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -3422 -281 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -3422 -377 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -3422 -473 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -3422 -569 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -3422 -665 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -3422 -761 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -3422 -857 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -3422 -953 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -3422 -1049 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -3422 -1145 -3421 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -2804 1159 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -2804 1063 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -2804 967 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -2804 871 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -2804 775 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -2804 679 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -2804 583 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -2804 487 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -2804 391 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -2804 295 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -2804 199 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -2804 103 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -2804 7 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -2804 -89 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -2804 -185 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -2804 -281 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -2804 -377 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -2804 -473 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -2804 -569 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -2804 -665 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -2804 -761 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -2804 -857 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -2804 -953 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -2804 -1049 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -2804 -1145 -2803 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1158 -2186 1159 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1062 -2186 1063 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 966 -2186 967 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 870 -2186 871 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 774 -2186 775 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 678 -2186 679 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 582 -2186 583 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 486 -2186 487 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 390 -2186 391 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 294 -2186 295 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 198 -2186 199 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 102 -2186 103 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 6 -2186 7 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -90 -2186 -89 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -186 -2186 -185 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -282 -2186 -281 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -378 -2186 -377 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -474 -2186 -473 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -570 -2186 -569 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -666 -2186 -665 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -762 -2186 -761 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -858 -2186 -857 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -954 -2186 -953 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1050 -2186 -1049 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VN" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 -1146 -2186 -1145 -2185 l=30 w=400 "VN" "Disable_TIA_B" 60 0 "VM28D" 400 0 "VN" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2720 -1420 2721 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2624 -1420 2625 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2528 -1420 2529 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2432 -1420 2433 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2336 -1420 2337 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2240 -1420 2241 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2144 -1420 2145 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 2048 -1420 2049 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1952 -1420 1953 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1856 -1420 1857 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1760 -1420 1761 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "Input" 400 0 "VM5D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8 1664 -1420 1665 -1419 l=30 w=400 "VN" "I_Bias1" 60 0 "VM5D" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3902 -260 3903 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3804 -260 3805 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3706 -260 3707 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3608 -260 3609 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3510 -260 3511 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3412 -260 3413 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3314 -260 3315 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3216 -260 3217 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3118 -260 3119 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3020 -260 3021 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2922 -260 2923 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2824 -260 2825 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2726 -260 2727 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2628 -260 2629 -259 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2530 -260 2531 -259 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3902 358 3903 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3804 358 3805 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3706 358 3707 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3608 358 3609 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3510 358 3511 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3412 358 3413 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3314 358 3315 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3216 358 3217 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3118 358 3119 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 3020 358 3021 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2922 358 2923 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2824 358 2825 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2726 358 2727 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2628 358 2629 359 l=40 w=400 "Input" "Out_1" 80 0 "Input" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 2530 358 2531 359 l=40 w=400 "Input" "Out_1" 80 0 "Out_2" 400 0 "Input" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -1384 1223 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -1384 1125 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -1384 1027 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -1384 929 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -1384 831 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -1384 733 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -1384 635 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -1384 537 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -1384 439 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -1384 341 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -1384 243 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -1384 145 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -1384 47 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -1384 -51 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -1384 -149 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -1384 -247 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -1384 -345 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -1384 -443 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -1384 -541 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -1384 -639 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -1384 -737 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -1384 -835 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -1384 -933 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -1384 -1031 -1383 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -1384 -1129 -1383 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 -766 1223 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 -766 1125 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 -766 1027 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 -766 929 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 -766 831 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 -766 733 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 -766 635 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 -766 537 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 -766 439 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 -766 341 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 -766 243 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 -766 145 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 -766 47 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 -766 -51 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 -766 -149 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 -766 -247 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 -766 -345 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 -766 -443 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 -766 -541 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 -766 -639 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 -766 -737 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 -766 -835 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 -766 -933 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 -766 -1031 -765 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 -766 -1129 -765 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 60 1223 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 60 1125 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 60 1027 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 60 929 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 60 831 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 60 733 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 60 635 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 60 537 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 60 439 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 60 341 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 60 243 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 60 145 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 60 47 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 60 -51 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 60 -149 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 60 -247 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 60 -345 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 60 -443 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 60 -541 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 60 -639 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 60 -737 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 60 -835 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 60 -933 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 60 -1031 61 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 60 -1129 61 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1222 678 1223 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1124 678 1125 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 1026 678 1027 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 928 678 929 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 830 678 831 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 732 678 733 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 634 678 635 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 536 678 537 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 438 678 439 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 340 678 341 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 242 678 243 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 144 678 145 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt 46 678 47 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -52 678 -51 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -150 678 -149 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -248 678 -247 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -346 678 -345 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -444 678 -443 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -542 678 -541 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -640 678 -639 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -738 678 -737 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -836 678 -835 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -934 678 -933 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1032 678 -1031 679 l=40 w=400 "VN" "Input" 80 0 "VM28D" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__nfet_01v8_lvt -1130 678 -1129 679 l=40 w=400 "VN" "Input" 80 0 "Out_1" 400 0 "VM28D" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3892 1493 3893 1494 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3734 1493 3735 1494 l=100 w=400 "VPP" "VN" 200 0 "Out_2" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3576 1493 3577 1494 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3418 1493 3419 1494 l=100 w=400 "VPP" "VN" 200 0 "Out_2" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3260 1493 3261 1494 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 3102 1493 3103 1494 l=100 w=400 "VPP" "VN" 200 0 "Out_2" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2944 1493 2945 1494 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2786 1493 2787 1494 l=100 w=400 "VPP" "VN" 200 0 "Out_2" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2628 1493 2629 1494 l=100 w=400 "VPP" "VN" 200 0 "VPP" 400 0 "Out_2" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2470 1493 2471 1494 l=100 w=400 "VPP" "VN" 200 0 "Out_2" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2040 1509 2041 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1942 1509 1943 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1844 1509 1845 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1746 1509 1747 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1648 1509 1649 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1550 1509 1551 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1452 1509 1453 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1354 1509 1355 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1256 1509 1257 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1158 1509 1159 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1060 1509 1061 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 962 1509 963 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 864 1509 865 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 766 1509 767 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 668 1509 669 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 2040 2145 2041 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1942 2145 1943 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1844 2145 1845 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1746 2145 1747 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1648 2145 1649 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1550 2145 1551 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1452 2145 1453 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1354 2145 1355 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1256 2145 1257 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1158 2145 1159 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 1060 2145 1061 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 962 2145 963 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 864 2145 865 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 766 2145 767 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 668 2145 669 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 242 1509 243 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 144 1509 145 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 46 1509 47 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -52 1509 -51 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -150 1509 -149 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -248 1509 -247 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -346 1509 -345 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -444 1509 -443 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -542 1509 -541 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -640 1509 -639 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -738 1509 -737 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -836 1509 -835 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -934 1509 -933 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1032 1509 -1031 1510 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 1509 -1129 1510 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 242 2145 243 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 144 2145 145 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 46 2145 47 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -52 2145 -51 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -150 2145 -149 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -248 2145 -247 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -346 2145 -345 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -444 2145 -443 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -542 2145 -541 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -640 2145 -639 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -738 2145 -737 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -836 2145 -835 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -934 2145 -933 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1032 2145 -1031 2146 l=40 w=400 "VPP" "Input" 80 0 "VPP" 400 0 "Out_1" 400 0
+device msubckt sky130_fd_pr__pfet_01v8 -1130 2145 -1129 2146 l=40 w=400 "VPP" "Input" 80 0 "Out_1" 400 0 "VPP" 400 0

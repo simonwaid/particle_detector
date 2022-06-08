@@ -1,0 +1,142 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_8K9944 in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell diffamp_element_nodi in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_V6SMGN in circuit comp_adv3 (1)(2 instances)
+Flattening unmatched subcell currm_comp in circuit comp_adv3 (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_HR8DH9 in circuit comp_adv3 (1)(1 instance)
+
+Class comp_adv3 (1):  Merged 19 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_adv3                       |Circuit 2: comp_adv3                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (24->5)        |sky130_fd_pr__nfet_01v8_lvt (24->5)        
+sky130_fd_pr__res_xhigh_po_2p85 (2)        |sky130_fd_pr__res_xhigh_po_2p85 (2)        
+Number of devices: 7                       |Number of devices: 7                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: comp_adv3                       |Circuit 2: comp_adv3                       
+-------------------------------------------|-------------------------------------------
+bias                                       |(no matching pin)                          
+VN                                         |VN                                         
+Inn                                        |diffamp_element_nodi_0/a_890_330# **Mismat 
+Inp                                        |diffamp_element_nodi_1/a_890_330# **Mismat 
+VP                                         |VP                                         
+OutP                                       |OutP                                       
+OutN                                       |Outn                                       
+bias                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_adv3 and comp_adv3 altered to match.
+Flattening unmatched subcell currm_comp in circuit comp_adv3_di (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_HR8DH9 in circuit comp_adv3_di (1)(1 instance)
+Flattening unmatched subcell diffamp_element in circuit comp_adv3_di (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_DG2JGC in circuit comp_adv3_di (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_2p85_TY94YJ in circuit comp_adv3_di (1)(2 instances)
+
+Class comp_adv3_di (1):  Merged 19 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_adv3_di                    |Circuit 2: comp_adv3_di                    
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (30->11)       |sky130_fd_pr__nfet_01v8_lvt (30->11)       
+sky130_fd_pr__res_xhigh_po_2p85 (2)        |sky130_fd_pr__res_xhigh_po_2p85 (2)        
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 10                         |Number of nets: 10                         
+---------------------------------------------------------------------------------------
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match uniquely.
+Circuits match correctly.
+
+Subcircuit pins:
+Circuit 1: comp_adv3_di                    |Circuit 2: comp_adv3_di                    
+-------------------------------------------|-------------------------------------------
+VP                                         |VP                                         
+Inn2                                       |(no matching pin)                          
+Inp2                                       |(no matching pin)                          
+bias                                       |(no matching pin)                          
+VN                                         |VN                                         
+Inn                                        |diffamp_element_0/a_890_840# **Mismatch**  
+Inp                                        |diffamp_element_1/a_890_840# **Mismatch**  
+OutP                                       |Outp                                       
+OutN                                       |Outn                                       
+Inn2                                       |(no matching pin)                          
+Inp2                                       |(no matching pin)                          
+bias                                       |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_adv3_di and comp_adv3_di altered to match.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XJ7GBL in circuit comp_to_logic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U47ZGH in circuit comp_to_logic (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GV8PGY in circuit comp_to_logic (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_X4XKHL in circuit comp_to_logic (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LH2JGW in circuit comp_to_logic (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_YT8PGU in circuit comp_to_logic (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_PL8DH5 in circuit comp_to_logic (1)(1 instance)
+
+Class comp_to_logic (1):  Merged 40 parallel devices.
+Subcircuit summary:
+Circuit 1: comp_to_logic                   |Circuit 2: comp_to_logic                   
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8_lvt (8->4)         |sky130_fd_pr__nfet_01v8_lvt (8->4)         
+sky130_fd_pr__pfet_01v8 (24->9)            |sky130_fd_pr__pfet_01v8 (24->9)            
+sky130_fd_pr__nfet_01v8 (27->6)            |sky130_fd_pr__nfet_01v8 (27->6)            
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 13                         |Number of nets: 13                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: comp_to_logic                   |Circuit 2: comp_to_logic                   
+-------------------------------------------|-------------------------------------------
+Out                                        |(no matching pin)                          
+VP                                         |VP                                         
+VN                                         |VSUBS **Mismatch**                         
+I_Bias                                     |(no matching pin)                          
+In_n                                       |In_n                                       
+In_p                                       |In_p                                       
+Out                                        |(no matching pin)                          
+I_Bias                                     |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for comp_to_logic and comp_to_logic altered to match.
+Flattening unmatched subcell comp_amp_20db_no_cmm in circuit ../../analog/test/comparator_complete.spice (0)(1 instance)
+Flattening unmatched subcell comp_amp_di_40db_no_cmm in circuit ../../analog/test/comparator_complete.spice (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL in circuit comparator.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_MJMGTW in circuit comparator.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_H9XL9H in circuit comparator.spice (1)(2 instances)
+
+Class comparator.spice (1):  Merged 9 series devices.
+Subcircuit summary:
+Circuit 1: ../../analog/test/comparator_co |Circuit 2: comparator.spice                
+-------------------------------------------|-------------------------------------------
+comp_adv3 (5)                              |comp_adv3 (5)                              
+comp_to_logic (1)                          |comp_to_logic (1)                          
+comp_adv3_di (1)                           |comp_adv3_di (1)                           
+sky130_fd_pr__res_xhigh_po_0p35 (3)        |sky130_fd_pr__res_xhigh_po_0p35 (12->3)    
+sky130_fd_pr__cap_mim_m3_2 (1)             |sky130_fd_pr__cap_mim_m3_2 (1)             
+sky130_fd_pr__cap_mim_m3_1 (2)             |sky130_fd_pr__cap_mim_m3_1 (2)             
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 29                         |Number of nets: 29                         
+---------------------------------------------------------------------------------------
+Circuits match uniquely.
+Property errors were found.
+Netlists match uniquely.
+There were property errors.
+sky130_fd_pr__cap_mim_m3_2:C1 vs. sky130_fd_pr__cap_mim_m3_2_MJMGTW_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+Cells have no pins;  pin matching not needed.
+Device classes ../../analog/test/comparator_complete.spice and comparator.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
+The following cells had property errors:
+ ../../analog/test/comparator_complete.spice
