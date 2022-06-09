@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1647868710
+timestamp 1654760956
 << dnwell >>
 rect 70 8020 3300 9920
 << nwell >>
@@ -230,19 +230,19 @@ rect 440 9600 450 9980
 rect 980 9600 5040 9980
 rect 440 9590 5040 9600
 use outd_cmirror_64t  outd_cmirror_64t_0
-timestamp 1647868710
+timestamp 1654760956
 transform 1 0 -10 0 1 76
 box 0 -76 2862 7840
 use outd_diffamp  outd_diffamp_0
-timestamp 1647868710
+timestamp 1654760956
 transform 1 0 300 0 1 320
 box 0 7930 2768 9368
 use sky130_fd_pr__res_high_po_2p85_8GE2XM  sky130_fd_pr__res_high_po_2p85_8GE2XM_0
-timestamp 1647868710
+timestamp 1654760956
 transform 1 0 18 0 1 11208
 box -1678 -1198 1678 1198
 use sky130_fd_pr__res_high_po_2p85_8GE2XM  sky130_fd_pr__res_high_po_2p85_8GE2XM_1
-timestamp 1647868710
+timestamp 1654760956
 transform 1 0 3358 0 1 11208
 box -1678 -1198 1678 1198
 << labels >>

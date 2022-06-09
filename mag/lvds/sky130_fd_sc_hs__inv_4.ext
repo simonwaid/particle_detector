@@ -1,4 +1,4 @@
-timestamp 1649384327
+timestamp 1654760956
 version 8.3
 tech sky130A
 style ngspice()
@@ -22,15 +22,15 @@ node "VPWR" 3515 105.234 0 617 m1 0 0 0 0 0 0 0 0 0 0 39872 1700 0 0 0 0 0 0 0 0
 node "A" 3343 337.445 31 316 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 81084 4776 0 0 28810 842 0 0 0 0 0 0 0 0 0 0 0 0
 node "VPB" 1420 620.496 0 617 nw 0 0 0 0 206832 1856 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VNB" 0 0 0 0 pw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "A" "VPB" 209.136
-cap "Y" "VPWR" 610.997
-cap "A" "VGND" 86.4776
+cap "VGND" "A" 86.4776
 cap "VPB" "VPWR" 327.401
+cap "VPB" "A" 209.136
 cap "A" "VPWR" 71.8301
+cap "Y" "VGND" 523.278
+cap "VPB" "Y" 32.0157
+cap "Y" "VPWR" 610.997
+cap "Y" "A" 513.852
 cap "VGND" "VPWR" 33.2502
-cap "Y" "VPB" 32.0157
-cap "A" "Y" 513.852
-cap "VGND" "Y" 523.278
 device msubckt sky130_fd_pr__nfet_01v8_lvt 366 74 367 75 l=30 w=148 "VNB" "A" 60 0 "Y" 148 0 "VGND" 148 0
 device msubckt sky130_fd_pr__nfet_01v8_lvt 280 74 281 75 l=30 w=148 "VNB" "A" 60 0 "VGND" 148 0 "Y" 148 0
 device msubckt sky130_fd_pr__nfet_01v8_lvt 184 74 185 75 l=30 w=148 "VNB" "A" 60 0 "Y" 148 0 "VGND" 148 0

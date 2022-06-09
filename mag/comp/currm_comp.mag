@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654072472
+timestamp 1654760956
 << error_s >>
 rect 117 642 175 648
 rect 235 642 293 648
@@ -144,7 +144,7 @@ rect 1240 160 1294 170
 rect 1476 330 1530 340
 rect 1476 160 1530 170
 use sky130_fd_pr__nfet_01v8_lvt_HR8DH9  sky130_fd_pr__nfet_01v8_lvt_HR8DH9_0
-timestamp 1654072472
+timestamp 1654760956
 transform 1 0 795 0 1 370
 box -875 -410 875 410
 << end >>

@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654701805
+timestamp 1654760956
 << metal4 >>
 rect -3351 1559 3351 1600
 rect -3351 -1559 3095 1559

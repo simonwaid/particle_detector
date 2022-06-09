@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654166568
+timestamp 1654760956
 << locali >>
 rect 1450 760 1840 2070
 rect 640 750 1840 760
@@ -86,23 +86,23 @@ rect 1900 -720 1910 -560
 rect 1600 -725 1910 -720
 rect 420 -730 710 -725
 use currm_comp  currm_comp_0
-timestamp 1654072472
+timestamp 1654760956
 transform 1 0 510 0 1 -890
 box -80 -40 1670 780
 use diffamp_element  diffamp_element_0
-timestamp 1654015619
+timestamp 1654760956
 transform 1 0 1060 0 1 -308
 box 420 208 1618 1028
 use diffamp_element  diffamp_element_1
-timestamp 1654015619
+timestamp 1654760956
 transform 1 0 -120 0 1 -308
 box 420 208 1618 1028
 use sky130_fd_pr__res_xhigh_po_2p85_TY94YJ  sky130_fd_pr__res_xhigh_po_2p85_TY94YJ_0
-timestamp 1654072472
+timestamp 1654760956
 transform 1 0 1051 0 1 1408
 box -451 -698 451 698
 use sky130_fd_pr__res_xhigh_po_2p85_TY94YJ  sky130_fd_pr__res_xhigh_po_2p85_TY94YJ_1
-timestamp 1654072472
+timestamp 1654760956
 transform 1 0 2231 0 1 1408
 box -451 -698 451 698
 << labels >>

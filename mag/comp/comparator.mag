@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654750515
+timestamp 1654760956
 << locali >>
 rect -8350 40 -8250 3160
 rect -7010 40 -6890 3080
@@ -780,55 +780,55 @@ rect -134 -2484 344 -2460
 rect 2766 -2484 3244 -2460
 rect 5066 -2484 5544 -2460
 use comp_adv3  comp_adv3_0
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -5750 0 1 910
 box 600 -910 2410 2206
 use comp_adv3  comp_adv3_1
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -7550 0 1 910
 box 600 -910 2410 2206
 use comp_adv3  comp_adv3_2
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -240 0 1 910
 box 600 -910 2410 2206
 use comp_adv3  comp_adv3_3
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 1560 0 1 910
 box 600 -910 2410 2206
 use comp_adv3  comp_adv3_4
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 3360 0 1 910
 box 600 -910 2410 2206
 use comp_adv3_di  comp_adv3_di_0
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -2310 0 1 930
 box 300 -930 2682 2106
 use comp_to_logic  comp_to_logic_0
-timestamp 1654750515
+timestamp 1654760956
 transform 1 0 -570 0 1 -3920
 box 890 1440 6340 3910
 use sky130_fd_pr__cap_mim_m3_1_H9XL9H  sky130_fd_pr__cap_mim_m3_1_H9XL9H_0
-timestamp 1654166568
+timestamp 1654760956
 transform -1 0 -2671 0 -1 2500
 box -650 -600 649 600
 use sky130_fd_pr__cap_mim_m3_1_H9XL9H  sky130_fd_pr__cap_mim_m3_1_H9XL9H_1
-timestamp 1654166568
+timestamp 1654760956
 transform -1 0 -9011 0 -1 2410
 box -650 -600 649 600
 use sky130_fd_pr__cap_mim_m3_2_MJMGTW  sky130_fd_pr__cap_mim_m3_2_MJMGTW_0
-timestamp 1654166568
+timestamp 1654760956
 transform -1 0 -6247 0 -1 -379
 box -3351 -2101 3373 2101
 use sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL  sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL_0
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -2672 0 1 1598
 box -678 -1598 678 1598
 use sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL  sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL_1
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -8972 0 1 1598
 box -678 -1598 678 1598
 use sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL  sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL_2
-timestamp 1654166568
+timestamp 1654760956
 transform 1 0 -7632 0 1 1598
 box -678 -1598 678 1598
 << labels >>

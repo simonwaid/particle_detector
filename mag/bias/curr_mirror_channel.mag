@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654704381
+timestamp 1654760956
 << metal1 >>
 rect 2240 8950 2290 9310
 rect 3040 9250 3400 9310
@@ -579,131 +579,131 @@ rect 2940 40 3650 450
 rect 4030 40 19640 450
 rect -20 10 19640 40
 use bias_curm_n  bias_curm_n_0
-timestamp 1654697490
+timestamp 1654760956
 transform 1 0 60 0 1 50
 box -50 -50 1052 2198
 use bias_curm_n  bias_curm_n_1
-timestamp 1654697490
+timestamp 1654760956
 transform 1 0 1150 0 1 50
 box -50 -50 1052 2198
 use bias_curm_n  bias_curm_n_2
-timestamp 1654697490
+timestamp 1654760956
 transform 1 0 2240 0 1 50
 box -50 -50 1052 2198
 use bias_curm_n  bias_curm_n_3
-timestamp 1654697490
+timestamp 1654760956
 transform 1 0 3330 0 1 50
 box -50 -50 1052 2198
 use bias_curm_p  bias_curm_p_0
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 20 0 1 3170
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_1
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 1110 0 1 3170
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_2
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 2200 0 1 3170
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_3
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 2200 0 1 5460
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_4
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 2200 0 1 7750
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_5
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 2200 0 1 10040
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_6
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 3290 0 1 10040
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_7
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 20 0 1 5450
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_8
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5470 0 1 10040
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_9
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 3290 0 1 7750
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_10
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 3290 0 1 5460
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_11
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 3290 0 1 3170
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_12
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5470 0 1 7750
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_13
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 4380 0 1 7750
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_14
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 4380 0 1 5460
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_15
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 4380 0 1 3170
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_16
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5470 0 1 5460
 box -10 -910 1100 1390
 use bias_curm_p  bias_curm_p_17
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5470 0 1 3170
 box -10 -910 1100 1390
 use eight-mirrors-p  eight-mirrors-p_0
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 6550 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_1
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 8730 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_2
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 13090 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_3
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 10910 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_4
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 17450 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_5
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 15270 0 1 2260
 box 0 0 2200 9140
 use eight-mirrors-p  eight-mirrors-p_6
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 19630 0 1 2260
 box 0 0 2200 9140
 use sky130_fd_pr__cap_mim_m3_2_26U9NK  sky130_fd_pr__cap_mim_m3_2_26U9NK_0
-timestamp 1654701805
+timestamp 1654760956
 transform 0 1 2831 -1 0 5953
 box -3351 -1601 3373 1601
 use sky130_fd_pr__cap_mim_m3_2_26U9NK  sky130_fd_pr__cap_mim_m3_2_26U9NK_1
-timestamp 1654701805
+timestamp 1654760956
 transform 0 1 6611 -1 0 5943
 box -3351 -1601 3373 1601
 use sky130_fd_pr__cap_mim_m3_2_LJ5JLG  sky130_fd_pr__cap_mim_m3_2_LJ5JLG_1
-timestamp 1654701805
+timestamp 1654760956
 transform 0 1 13261 -1 0 7053
 box -3351 -3101 3373 3101
 << labels >>

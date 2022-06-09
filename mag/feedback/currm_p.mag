@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1653925904
+timestamp 1654760956
 << locali >>
 rect -10 70 100 630
 rect 630 70 740 630
@@ -85,11 +85,11 @@ rect 460 -600 520 -590
 rect 720 -600 780 -590
 rect 970 -600 1030 -590
 use sky130_fd_pr__pfet_01v8_lvt_4LMUGG  sky130_fd_pr__pfet_01v8_lvt_4LMUGG_0
-timestamp 1653925904
+timestamp 1654760956
 transform 1 0 619 0 1 -391
 box -679 -419 679 419
 use sky130_fd_pr__pfet_01v8_lvt_LKHJAY  sky130_fd_pr__pfet_01v8_lvt_LKHJAY_0
-timestamp 1653925904
+timestamp 1654760956
 transform 1 0 365 0 1 429
 box -425 -419 425 419
 << end >>

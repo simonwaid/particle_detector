@@ -1,6 +1,6 @@
 magic
-tech sky130B
-timestamp 1654704381
+tech sky130A
+timestamp 1654760956
 << metal1 >>
 rect 25 3340 50 3510
 rect 440 3480 605 3510
@@ -76,35 +76,35 @@ rect 615 970 750 975
 rect 840 330 985 4050
 rect 295 220 985 330
 use bias_curm_p  bias_curm_p_0
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5 0 1 455
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_1
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 550 0 1 455
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_2
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5 0 1 1595
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_3
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 550 0 1 1595
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_4
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 550 0 1 2735
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_5
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5 0 1 2735
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_6
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 550 0 1 3875
 box -5 -455 550 695
 use bias_curm_p  bias_curm_p_7
-timestamp 1654704381
+timestamp 1654760956
 transform 1 0 5 0 1 3875
 box -5 -455 550 695
 << end >>
