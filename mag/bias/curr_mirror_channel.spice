@@ -1,4 +1,4 @@
-* SPICE3 file created from curr_mirror_channel.ext - technology: sky130B
+* SPICE3 file created from curr_mirror_channel.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_01v8_U4PLGH a_n321_n518# a_n33_118# a_15_549# a_207_n615#
 + a_n225_118# a_n413_118# a_111_21# a_n369_n615# a_207_549# a_n33_n518# a_111_n87#
@@ -105,7 +105,7 @@ X0 c2_n3251_n1500# m4_n3351_n1600# sky130_fd_pr__cap_mim_m3_2 l=1.5e+07u w=3e+07
 X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
-
+.subckt curr_mirror_channel
 Xbias_curm_p_6 TIA_Bias m2_3110_8460# vm12d VP bias_curm_p
 Xbias_curm_n_3 m2_3220_480# vm12d I_in VSUBS bias_curm_n
 Xbias_curm_p_7 FB_Bias_1 bias_curm_p_7/m1_120_n692# vm4d VP bias_curm_p
@@ -138,5 +138,5 @@ Xbias_curm_n_1 bias_curm_n_1/m1_80_970# vm4d I_in VSUBS bias_curm_n
 Xbias_curm_n_0 bias_curm_n_0/m1_80_970# I_in I_in VSUBS bias_curm_n
 Xbias_curm_p_5 TIA_Bias m2_3110_8460# vm12d VP bias_curm_p
 Xbias_curm_n_2 m2_3220_480# vm12d I_in VSUBS bias_curm_n
-
+.ends
 

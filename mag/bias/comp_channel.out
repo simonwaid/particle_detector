@@ -1,0 +1,356 @@
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Equate elements:  no current cell.
+Flattening unmatched subcell bias_curm_p in circuit curr_mirror_channel.spice (1)(18 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit curr_mirror_channel.spice (1)(18 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit curr_mirror_channel.spice (1)(18 instances)
+Flattening unmatched subcell bias_curm_n in circuit curr_mirror_channel.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6YE2KS in circuit curr_mirror_channel.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_QQ8PGA in circuit curr_mirror_channel.spice (1)(4 instances)
+Flattening unmatched subcell eight-mirrors-p in circuit curr_mirror_channel.spice (1)(7 instances)
+Flattening unmatched subcell bias_curm_p in circuit curr_mirror_channel.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PLGH in circuit curr_mirror_channel.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PDCJZ5 in circuit curr_mirror_channel.spice (1)(56 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_26U9NK in circuit curr_mirror_channel.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit curr_mirror_channel.spice (1)(1 instance)
+
+Class ../../xschem/bias/current_mirror_channel.spice (0):  Merged 3 parallel devices.
+Class curr_mirror_channel.spice (1):  Merged 1528 parallel devices.
+Subcircuit summary:
+Circuit 1: ../../xschem/bias/current_mirro |Circuit 2: curr_mirror_channel.spice       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (30->6)            |sky130_fd_pr__nfet_01v8 (80->6)            
+sky130_fd_pr__pfet_01v8 (460->6)           |sky130_fd_pr__pfet_01v8 (1480->26) **Misma 
+sky130_fd_pr__cap_mim_m3_2 (6->3)          |sky130_fd_pr__cap_mim_m3_2 (3)             
+Number of devices: 15 **Mismatch**         |Number of devices: 35 **Mismatch**         
+Number of nets: 13 **Mismatch**            |Number of nets: 32 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: ../../xschem/bias/current_mirro |Circuit 2: curr_mirror_channel.spice       
+
+---------------------------------------------------------------------------------------
+Net: I_in_channel                          |Net: m2_3110_8460#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__nfet_01v8/2 = 6            |                                           
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
+                                           |                                           
+Net: net1                                  |Net: m2_6380_8570#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net2                                  |Net: m2_5290_6250#                         
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net3                                  |Net: bias_curm_p_1/m1_120_n692#            
+  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net5                                  |Net: /eight-mirrors-p_0/m2_920_6270#       
+  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+Net: net4                                  |Net: /eight-mirrors-p_1/m2_920_6270#       
+  sky130_fd_pr__pfet_01v8/2 = 6            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+                                           |                                           
+Net: TIA_I_Bias2                           |Net: /eight-mirrors-p_2/m2_920_6270#       
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: /eight-mirrors-p_3/m2_920_6270#       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: /eight-mirrors-p_4/m2_920_6270#       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: /eight-mirrors-p_5/m2_920_6270#       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: /eight-mirrors-p_6/m2_920_6270#       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: m2_3220_480#                          
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: bias_curm_p_7/m1_120_n692#            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: bias_curm_p_0/m1_120_n692#            
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
+                                           |                                           
+(no matching net)                          |Net: TIA_Bias                              
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: ctl_Bias                              
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Bias_Analog_out                       
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Comp_Bias_1                           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Comp_Bias_2                           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: m3_14070_2720#                        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Comp_Bias_3                           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Comp_Bias_6                           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: Comp_Bias_5                           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: LVDS_Bias                             
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: FB_Bias_1                             
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: vm12d                                 
+                                           |  sky130_fd_pr__pfet_01v8/2 = 22           
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: VP                                    
+                                           |  sky130_fd_pr__pfet_01v8/4 = 26           
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 13       
+                                           |  sky130_fd_pr__cap_mim_m3_2/1 = 3         
+                                           |                                           
+(no matching net)                          |Net: VSUBS                                 
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
+                                           |  sky130_fd_pr__nfet_01v8/4 = 6            
+                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: vm4d                                  
+                                           |  sky130_fd_pr__pfet_01v8/2 = 4            
+                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: I_in                                  
+                                           |  sky130_fd_pr__nfet_01v8/2 = 6            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VP                                    |(no matching net)                          
+  sky130_fd_pr__pfet_01v8/(1|3) = 3        |                                           
+  sky130_fd_pr__pfet_01v8/4 = 6            |                                           
+  sky130_fd_pr__cap_mim_m3_2/1 = 1         |                                           
+  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
+                                           |                                           
+Net: VN                                    |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/4 = 6            |                                           
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |                                           
+  sky130_fd_pr__cap_mim_m3_2/1 = 2         |                                           
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: ../../xschem/bias/current_mirro |Circuit 2: curr_mirror_channel.spice       
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:M2       |Instance: bias_curm_p_6//sky130_fd_pr__pfe 
+  (1,3) = (11,2)                           |  (1,3) = (2,1)                            
+  2 = 9                                    |  2 = 25                                   
+  4 = 11                                   |  4 = 42                                   
+                                           |                                           
+Instance: sky130_fd_pr__pfet_01v8:M4       |Instance: bias_curm_p_6//sky130_fd_pr__pfe 
+  (1,3) = (9,2)                            |  (1,3) = (42,2)                           
+  2 = 9                                    |  2 = 25                                   
+  4 = 11                                   |  4 = 42                                   
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_8//sky130_fd_pr__pfe 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_8//sky130_fd_pr__pfe 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_9//sky130_fd_pr__pfe 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_9//sky130_fd_pr__pfe 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_0//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_0//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_1//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_1//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_2//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_2//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_3//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_3//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_4//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_4//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_5//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_5//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_6//bias_curm_p_6 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: eight-mirrors-p_6//bias_curm_p_6 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_1//sky130_fd_pr__pfe 
+                                           |  (1,3) = (25,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_1//sky130_fd_pr__pfe 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 25                                   
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_7//sky130_fd_pr__pfe 
+                                           |  (1,3) = (2,1)                            
+                                           |  2 = 7                                    
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_7//sky130_fd_pr__pfe 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 7                                    
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_0//sky130_fd_pr__pfe 
+                                           |  (1,3) = (42,2)                           
+                                           |  2 = 7                                    
+                                           |  4 = 42                                   
+                                           |                                           
+                                           |                                           
+(no matching instance)                     |Instance: bias_curm_p_0//sky130_fd_pr__pfe 
+                                           |  (1,3) = (7,2)                            
+                                           |  2 = 7                                    
+                                           |  4 = 42                                   
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__cap_mim_m3_2:C1    |Instance: sky130_fd_pr__cap_mim_m3_2_26U9N 
+  1 = 11                                   |  1 = 42                                   
+  2 = 11                                   |  2 = 7                                    
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__nfet_01v8:M8       |(no matching instance)                     
+  (1,3) = (11,2)                           |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M7       |(no matching instance)                     
+  (1,3) = (11,2)                           |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M3       |(no matching instance)                     
+  (1,3) = (11,2)                           |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M6       |(no matching instance)                     
+  (1,3) = (2,1)                            |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M5       |(no matching instance)                     
+  (1,3) = (9,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+                                           |                                           
+Instance: sky130_fd_pr__nfet_01v8:M1       |(no matching instance)                     
+  (1,3) = (8,2)                            |                                           
+  2 = 8                                    |                                           
+  4 = 11                                   |                                           
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Netlists do not match.

@@ -1,4 +1,4 @@
-* SPICE3 file created from curr_mirror_distribution.ext - technology: sky130B
+* SPICE3 file created from curr_mirror_distribution.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_01v8_U4PLGH a_n321_n518# a_n33_118# a_15_549# a_207_n615#
 + a_n225_118# a_n413_118# a_111_21# a_n369_n615# a_207_549# a_n33_n518# a_111_n87#
@@ -43,7 +43,7 @@ Xsky130_fd_pr__pfet_01v8_PDCJZ5_0 m1_120_n692# a_172_n788# a_172_n788# a_172_n78
 + w_172_376# a_172_n788# m1_120_n692# w_172_376# m1_120_n692# w_172_376# sky130_fd_pr__pfet_01v8_PDCJZ5
 .ends
 
-
+.subckt curr_mirror_distribution
 Xbias_curm_p_6 m2_290_1950# I_out4 I_in bias_curm_p
 Xbias_curm_p_7 m2_290_1950# I_out8 I_in bias_curm_p
 Xbias_curm_p_8 m2_290_1950# I_out7 I_in bias_curm_p
@@ -53,5 +53,5 @@ Xbias_curm_p_2 m2_290_1950# I_out2 I_in bias_curm_p
 Xbias_curm_p_3 m2_290_1950# I_out3 I_in bias_curm_p
 Xbias_curm_p_4 m2_290_1950# I_out6 I_in bias_curm_p
 Xbias_curm_p_5 m2_290_1950# I_out5 I_in bias_curm_p
-
+.ends
 

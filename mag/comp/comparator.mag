@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654178388
+timestamp 1654750515
 << locali >>
 rect -8350 40 -8250 3160
 rect -7010 40 -6890 3080
@@ -804,7 +804,7 @@ timestamp 1654166568
 transform 1 0 -2310 0 1 930
 box 300 -930 2682 2106
 use comp_to_logic  comp_to_logic_0
-timestamp 1654174923
+timestamp 1654750515
 transform 1 0 -570 0 1 -3920
 box 890 1440 6340 3910
 use sky130_fd_pr__cap_mim_m3_1_H9XL9H  sky130_fd_pr__cap_mim_m3_1_H9XL9H_0

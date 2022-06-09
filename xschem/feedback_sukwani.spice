@@ -1,8 +1,5 @@
-
-* expanding   symbol:  tia/feedback_sukwani.sym # of pins=7
-** sym_path: /home/simon/code/particle_detector/xschem/tia/feedback_sukwani.sym
 ** sch_path: /home/simon/code/particle_detector/xschem/tia/feedback_sukwani.sch
-.subckt feedback_sukwani  VP Disable_FB Out I_Bias InN InP VN
+**.subckt feedback_sukwani VN VP I_Bias Disable_FB InP InN Out
 *.iopin VN
 *.iopin VP
 *.ipin I_Bias
@@ -34,7 +31,6 @@ XM47 net6 net5 VN VN sky130_fd_pr__nfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * 
 XM48 net5 net5 net6 VN sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=4 m=4
-XC8 VP VM14D sky130_fd_pr__cap_mim_m3_2 W=30 L=30 VM=1 m=1
 XC20 VP VN sky130_fd_pr__cap_mim_m3_2 W=30 L=20 VM=1 m=1
 XM55 I_Bias Disable_FB VN VN sky130_fd_pr__nfet_01v8_lvt L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
 + as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
@@ -155,8 +151,8 @@ XM1 VM31D Disable_FB VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=5*2 m=5*2
 XC1 VN I_Bias sky130_fd_pr__cap_mim_m3_2 W=30 L=10 VM=1 m=1
-XC4 VM16D VM14D sky130_fd_pr__cap_mim_m3_2 W=15 L=15 VM=1 m=1
+XC4 VM14D VM16D sky130_fd_pr__cap_mim_m3_2 W=15 L=15 VM=1 m=1
 XC2 VM14D net23 sky130_fd_pr__cap_mim_m3_2 W=30 L=30 VM=1 m=1
 XR1 net23 VM16D VN sky130_fd_pr__res_xhigh_po_0p69 L=2 mult=1 m=1
-.ends
-
+**.ends
+.end

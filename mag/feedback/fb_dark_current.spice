@@ -1,4 +1,22 @@
-* SPICE3 file created from fb_dark_current.ext - technology: sky130B
+* SPICE3 file created from fb_dark_current.ext - technology: sky130A
+
+.subckt sky130_fd_pr__nfet_01v8_PJG2KG a_50_n200# a_n108_n200# a_n50_n288# a_n210_n374#
+X0 a_50_n200# a_n50_n288# a_n108_n200# a_n210_n374# sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=500000u
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_82JNGJ a_n221_n200# a_n129_n200# a_63_n200# a_111_222#
++ a_n33_n200# a_15_n288# a_n81_222# a_n177_n288# a_159_n200# a_n323_n374#
+X0 a_n33_n200# a_n81_222# a_n129_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=6.6e+11p pd=4.66e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
+X1 a_159_n200# a_111_222# a_63_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=6.2e+11p pd=4.62e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
+X2 a_63_n200# a_15_n288# a_n33_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X3 a_n129_n200# a_n177_n288# a_n221_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=6.2e+11p ps=4.62e+06u w=2e+06u l=150000u
+.ends
+
+.subckt currm_n m1_68_150# m1_164_390# a_122_62# VSUBS
+Xsky130_fd_pr__nfet_01v8_PJG2KG_0 VSUBS m1_68_150# a_122_62# VSUBS sky130_fd_pr__nfet_01v8_PJG2KG
+Xsky130_fd_pr__nfet_01v8_82JNGJ_0 m1_68_150# m1_164_390# m1_164_390# a_122_62# m1_68_150#
++ a_122_62# a_122_62# a_122_62# m1_68_150# VSUBS sky130_fd_pr__nfet_01v8_82JNGJ
+.ends
 
 .subckt sky130_fd_pr__pfet_01v8_lvt_4LMUGG a_355_n200# a_413_n297# a_n285_n200# a_29_n297#
 + a_n227_n297# a_285_n297# a_227_n200# a_n157_n200# a_n541_n200# w_n679_n419# a_n483_n297#
@@ -26,24 +44,6 @@ Xsky130_fd_pr__pfet_01v8_lvt_4LMUGG_0 m1_190_n590# m1_n50_n680# m1_60_n360# m1_n
 + sky130_fd_pr__pfet_01v8_lvt_4LMUGG
 Xsky130_fd_pr__pfet_01v8_lvt_LKHJAY_0 m1_n50_n680# m1_70_460# m1_n50_n680# m1_70_460#
 + m1_70_460# m1_60_n360# sky130_fd_pr__pfet_01v8_lvt_LKHJAY
-.ends
-
-.subckt sky130_fd_pr__nfet_01v8_PJG2KG a_50_n200# a_n108_n200# a_n50_n288# a_n210_n374#
-X0 a_50_n200# a_n50_n288# a_n108_n200# a_n210_n374# sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=500000u
-.ends
-
-.subckt sky130_fd_pr__nfet_01v8_82JNGJ a_n221_n200# a_n129_n200# a_63_n200# a_111_222#
-+ a_n33_n200# a_15_n288# a_n81_222# a_n177_n288# a_159_n200# a_n323_n374#
-X0 a_n33_n200# a_n81_222# a_n129_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=6.6e+11p pd=4.66e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
-X1 a_159_n200# a_111_222# a_63_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=6.2e+11p pd=4.62e+06u as=6.6e+11p ps=4.66e+06u w=2e+06u l=150000u
-X2 a_63_n200# a_15_n288# a_n33_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
-X3 a_n129_n200# a_n177_n288# a_n221_n200# a_n323_n374# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=6.2e+11p ps=4.62e+06u w=2e+06u l=150000u
-.ends
-
-.subckt currm_n m1_68_150# m1_164_390# a_122_62# VSUBS
-Xsky130_fd_pr__nfet_01v8_PJG2KG_0 VSUBS m1_68_150# a_122_62# VSUBS sky130_fd_pr__nfet_01v8_PJG2KG
-Xsky130_fd_pr__nfet_01v8_82JNGJ_0 m1_68_150# m1_164_390# m1_164_390# a_122_62# m1_68_150#
-+ a_122_62# a_122_62# a_122_62# m1_68_150# VSUBS sky130_fd_pr__nfet_01v8_82JNGJ
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_PD4XN5 a_29_n297# a_n129_n297# a_129_n200# w_n325_n419#
@@ -75,6 +75,10 @@ Xsky130_fd_pr__pfet_01v8_U4PWGH_0 m1_170_170# m1_170_170# m1_80_400# a_132_72# a
 
 .subckt sky130_fd_pr__nfet_01v8_6H2JYD a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
 X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
+.ends
+
+.subckt sky130_fd_pr__res_xhigh_po_0p69_PAXYNN a_n69_n632# a_n199_n762# a_n69_200#
+X0 a_n69_n632# a_n69_200# a_n199_n762# sky130_fd_pr__res_xhigh_po_0p69 l=2e+06u
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_2_N3PKNJ c2_n3251_n1000# m4_n3351_n1100#
@@ -130,6 +134,10 @@ X19 a_n33_n200# a_n81_231# a_n129_n200# w_n1127_n419# sky130_fd_pr__pfet_01v8 ad
 X0 c2_n3251_n2000# m4_n3351_n2100# sky130_fd_pr__cap_mim_m3_2 l=2e+07u w=3e+07u
 .ends
 
+.subckt sky130_fd_pr__cap_mim_m3_2_D7CHNQ c2_n1751_n1500# m4_n1851_n1600#
+X0 c2_n1751_n1500# m4_n1851_n1600# sky130_fd_pr__cap_mim_m3_2 l=1.5e+07u w=1.5e+07u
+.ends
+
 .subckt sky130_fd_pr__nfet_01v8_E6B2KN a_129_n200# a_29_n288# a_n129_n288# a_n289_n374#
 + a_n29_n200# a_n187_n200#
 X0 a_129_n200# a_29_n288# a_n29_n200# a_n289_n374# sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=500000u
@@ -151,50 +159,51 @@ X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
 
-Xcurrm_p_5 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
 Xcurrm_n_2 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_6 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_5 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_n_3 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_7 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_6 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_0 m1_9810_5770# m1_9810_5770# VP currm_ps_0/m1_80_400# currm_ps
 Xcurrm_n_4 currm_n_4/m1_68_150# m1_n5100_670# m1_n5100_670# VN currm_n
-Xcurrm_p_9 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_7 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_1 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_8 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
-Xcurrm_ps_19 m1_n6550_3300# m1_n6550_3300# VP currm_ps_19/m1_80_400# currm_ps
-Xcurrm_ps_18 m1_9390_670# m1_n6550_3300# VP currm_ps_18/m1_80_400# currm_ps
 Xcurrm_n_5 currm_n_5/m1_68_150# m1_4960_670# m1_4960_670# VN currm_n
 Xsky130_fd_pr__nfet_01v8_6H2JYD_0 m1_n830_1270# Disable_FB VN VN sky130_fd_pr__nfet_01v8_6H2JYD
+Xcurrm_p_9 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
+Xcurrm_p_8 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
+Xcurrm_ps_19 m1_n6550_3300# m1_n6550_3300# VP currm_ps_19/m1_80_400# currm_ps
+Xcurrm_ps_18 m1_9390_670# m1_n6550_3300# VP currm_ps_18/m1_80_400# currm_ps
 Xcurrm_ps_2 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_n_7 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_n_6 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xcurrm_n_7 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_ps_3 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_n_8 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_ps_4 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_n_9 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
-Xcurrm_p_10 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
 Xcurrm_ps_5 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_20 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_21 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xcurrm_p_20 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_21 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_10 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_6 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_11 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_11 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_7 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_ps_8 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_12 currm_p_12/m1_60_n360# VP m1_n5100_670# m1_7940_2770# currm_p
-Xcurrm_p_13 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xcurrm_p_12 currm_p_12/m1_60_n360# VP m1_n5100_670# Vm14d currm_p
+Xcurrm_p_13 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
 Xcurrm_ps_9 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_14 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_15 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_16 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xsky130_fd_pr__cap_mim_m3_2_N3PKNJ_1 VN I_Bias sky130_fd_pr__cap_mim_m3_2_N3PKNJ
+Xcurrm_p_14 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_15 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_16 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_17 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xsky130_fd_pr__res_xhigh_po_0p69_PAXYNN_0 m1_1820_4580# VN Vm16d sky130_fd_pr__res_xhigh_po_0p69_PAXYNN
 Xsky130_fd_pr__cap_mim_m3_2_N3PKNJ_0 VN I_Bias sky130_fd_pr__cap_mim_m3_2_N3PKNJ
-Xcurrm_p_17 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
 Xsky130_fd_pr__nfet_01v8_9A2JGL_1 m1_9390_670# VN Disable_FB m1_9390_670# m1_9390_670#
 + VN VN Disable_FB Disable_FB VN Disable_FB Disable_FB Disable_FB VN Disable_FB VN
 + m1_9390_670# Disable_FB Disable_FB Disable_FB VN m1_9390_670# m1_9390_670# sky130_fd_pr__nfet_01v8_9A2JGL
-Xcurrm_p_18 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_19 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xsky130_fd_pr__cap_mim_m3_2_N3PKNJ_1 VN I_Bias sky130_fd_pr__cap_mim_m3_2_N3PKNJ
 Xcurrm_n_40 m2_9090_740# Out m1_9390_670# VN currm_n
+Xcurrm_p_18 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_19 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
 Xsky130_fd_pr__pfet_01v8_VCBWSW_0 VP m1_9810_5770# VP VP m1_9810_5770# m1_n830_1270#
 + m1_n830_1270# m1_n830_1270# m1_9810_5770# m1_n830_1270# m1_n830_1270# m1_n830_1270#
 + VP VP m1_9810_5770# m1_9810_5770# m1_n830_1270# VP VP VP m1_n830_1270# m1_n830_1270#
@@ -204,31 +213,30 @@ Xsky130_fd_pr__pfet_01v8_VCBWSW_0 VP m1_9810_5770# VP VP m1_9810_5770# m1_n830_1
 Xcurrm_n_41 m2_9090_740# Out m1_9390_670# VN currm_n
 Xsky130_fd_pr__cap_mim_m3_2_MJMGTW_0 VP VN sky130_fd_pr__cap_mim_m3_2_MJMGTW
 Xcurrm_n_42 m2_9090_740# Out m1_9390_670# VN currm_n
-Xcurrm_n_20 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_31 m2_n6460_740# m1_9390_670# m1_9390_670# VN currm_n
-Xcurrm_n_32 m2_9090_740# Out m1_9390_670# VN currm_n
+Xcurrm_n_20 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_43 currm_n_43/m1_68_150# m1_9810_5770# I_Bias VN currm_n
 Xcurrm_n_10 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xcurrm_n_32 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_21 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
-Xcurrm_n_12 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_n_11 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
-Xcurrm_n_44 m2_200_n880# I_Bias I_Bias VN currm_n
+Xcurrm_n_12 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_n_45 m2_200_n880# I_Bias I_Bias VN currm_n
+Xcurrm_n_44 m2_200_n880# I_Bias I_Bias VN currm_n
+Xcurrm_n_33 currm_n_33/m1_68_150# m1_n6550_3300# I_Bias VN currm_n
 Xcurrm_n_23 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_22 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
-Xcurrm_n_33 currm_n_33/m1_68_150# m1_n6550_3300# I_Bias VN currm_n
 Xcurrm_n_35 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_13 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xsky130_fd_pr__cap_mim_m3_2_D7CHNQ_0 Vm14d Vm16d sky130_fd_pr__cap_mim_m3_2_D7CHNQ
 Xcurrm_n_46 m2_200_n880# I_Bias I_Bias VN currm_n
-Xsky130_fd_pr__nfet_01v8_E6B2KN_0 m1_950_1560# InP InP VN m1_970_2720# m1_950_1560#
-+ sky130_fd_pr__nfet_01v8_E6B2KN
 Xcurrm_n_36 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_14 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xsky130_fd_pr__nfet_01v8_E6B2KN_0 m1_950_1560# InP InP VN Vm16d m1_950_1560# sky130_fd_pr__nfet_01v8_E6B2KN
 Xcurrm_n_47 m2_200_n880# I_Bias I_Bias VN currm_n
 Xsky130_fd_pr__pfet_01v8_UAQRRG_0 m1_n830_1270# VP VP Disable_FB sky130_fd_pr__pfet_01v8_UAQRRG
-Xsky130_fd_pr__nfet_01v8_E6B2KN_1 m1_950_1560# InN InN VN m1_7940_2770# m1_950_1560#
-+ sky130_fd_pr__nfet_01v8_E6B2KN
 Xcurrm_n_37 m2_9090_740# Out m1_9390_670# VN currm_n
+Xsky130_fd_pr__nfet_01v8_E6B2KN_1 m1_950_1560# InN InN VN Vm14d m1_950_1560# sky130_fd_pr__nfet_01v8_E6B2KN
 Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_0 Disable_FB VN I_Bias Disable_FB VN VN sky130_fd_pr__nfet_01v8_lvt_LH2JGW
 Xcurrm_n_15 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_38 m2_9090_740# Out m1_9390_670# VN currm_n
@@ -237,14 +245,13 @@ Xcurrm_n_39 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_17 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_18 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_19 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
-Xcurrm_p_0 currm_p_0/m1_60_n360# VP m1_970_2720# m1_970_2720# currm_p
-Xcurrm_p_1 currm_p_1/m1_60_n360# VP m1_7940_2770# m1_7940_2770# currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_2 m1_970_2720# VP sky130_fd_pr__cap_mim_m3_2_LJ5JLG
-Xcurrm_p_2 currm_p_2/m1_60_n360# VP m1_4960_670# m1_970_2720# currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_3 m1_7940_2770# VP sky130_fd_pr__cap_mim_m3_2_LJ5JLG
-Xcurrm_p_3 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_0 currm_p_0/m1_60_n360# VP Vm16d Vm16d currm_p
+Xcurrm_p_1 currm_p_1/m1_60_n360# VP Vm14d Vm14d currm_p
+Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_2 m1_1820_4580# Vm14d sky130_fd_pr__cap_mim_m3_2_LJ5JLG
+Xcurrm_p_2 currm_p_2/m1_60_n360# VP m1_4960_670# Vm16d currm_p
 Xcurrm_n_0 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_4 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_3 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_n_1 m2_250_740# m1_950_1560# I_Bias VN currm_n
+Xcurrm_p_4 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 
 

@@ -78,6 +78,7 @@ Cell pin lists for comp_adv3_di and comp_adv3_di altered to match.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+Equate elements:  no current cell.
 
 Class sky130_fd_sc_hs__inv_16 (0):  Merged 30 parallel devices.
 Class sky130_fd_sc_hs__inv_16 (1):  Merged 30 parallel devices.
@@ -156,12 +157,13 @@ Circuit 1: comp_to_logic                   |Circuit 2: comp_to_logic
 -------------------------------------------|-------------------------------------------
 Out                                        |Out                                        
 VP                                         |VP                                         
-VN                                         |VSUBS **Mismatch**                         
+VN                                         |VN                                         
 I_Bias                                     |I_Bias                                     
 In_n                                       |In_n                                       
 In_p                                       |In_p                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists for comp_to_logic and comp_to_logic altered to match.
+Cell pin lists are equivalent.
+Device classes comp_to_logic and comp_to_logic are equivalent.
 Flattening unmatched subcell lvds_currm_n in circuit transmitter (1)(32 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HR8DH9 in circuit transmitter (1)(32 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_XZXALN in circuit transmitter (1)(32 instances)
@@ -312,14 +314,16 @@ Flattening unmatched subcell currm_ps in circuit mpw6_submission.spice (1)(12 in
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_PD4XN5 in circuit mpw6_submission.spice (1)(12 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_U4PWGH in circuit mpw6_submission.spice (1)(12 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_6H2JYD in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_0p69_PAXYNN in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_N3PKNJ in circuit mpw6_submission.spice (1)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_9A2JGL in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VCBWSW in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_MJMGTW#0 in circuit mpw6_submission.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_D7CHNQ in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_E6B2KN in circuit mpw6_submission.spice (1)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_UAQRRG in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_LH2JGW#0 in circuit mpw6_submission.spice (1)(1 instance)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4 in circuit mpw6_submission.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4 in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell isource in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ#0 in circuit mpw6_submission.spice (1)(1 instance)
 Flattening unmatched subcell isource_out in circuit mpw6_submission.spice (1)(1 instance)
@@ -368,358 +372,56 @@ sky130_fd_pr__nfet_01v8_lvt (1276->16)     |sky130_fd_pr__nfet_01v8_lvt (1276->1
 sky130_fd_pr__nfet_01v8 (5677->55)         |sky130_fd_pr__nfet_01v8 (5677->55)         
 sky130_fd_pr__res_high_po_5p73 (80->4)     |sky130_fd_pr__res_high_po_5p73 (80->4)     
 sky130_fd_pr__res_high_po_2p85 (8->2)      |sky130_fd_pr__res_high_po_2p85 (8->2)      
-sky130_fd_pr__cap_mim_m3_2 (27->12)        |sky130_fd_pr__cap_mim_m3_2 (26->11) **Mism 
+sky130_fd_pr__cap_mim_m3_2 (26->11)        |sky130_fd_pr__cap_mim_m3_2 (26->11)        
 sky130_fd_pr__cap_mim_m3_1 (7->5)          |sky130_fd_pr__cap_mim_m3_1 (7->5)          
 sky130_fd_pr__pfet_01v8 (2051->68)         |sky130_fd_pr__pfet_01v8 (2051->68)         
 sky130_fd_pr__res_xhigh_po_1p41 (15->3)    |sky130_fd_pr__res_xhigh_po_1p41 (15->3)    
 sky130_fd_pr__cap_var_lvt (5->1)           |sky130_fd_pr__cap_var_lvt (5->1)           
 sky130_fd_pr__pfet_01v8_lvt (220->12)      |sky130_fd_pr__pfet_01v8_lvt (220->12)      
-sky130_fd_pr__res_xhigh_po_0p69 (1)        |(no matching element)                      
+sky130_fd_pr__res_xhigh_po_0p69 (1)        |sky130_fd_pr__res_xhigh_po_0p69 (1)        
 transmitter (1)                            |transmitter (1)                            
 comp_adv3 (5)                              |comp_adv3 (5)                              
 comp_to_logic (1)                          |comp_to_logic (1)                          
 comp_adv3_di (1)                           |comp_adv3_di (1)                           
 sky130_fd_pr__res_xhigh_po_0p35 (3)        |sky130_fd_pr__res_xhigh_po_0p35 (12->3)    
-Number of devices: 190 **Mismatch**        |Number of devices: 188 **Mismatch**        
-Number of nets: 143 **Mismatch**           |Number of nets: 146 **Mismatch**           
+Number of devices: 189                     |Number of devices: 189                     
+Number of nets: 143                        |Number of nets: 143                        
 ---------------------------------------------------------------------------------------
-NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: ../xschem/mpw6_submission.spice |Circuit 2: mpw6_submission.spice           
-
----------------------------------------------------------------------------------------
-Net: VP_an                                 |Net: /fb_dark_current_0/currm_n_43/m1_68_1 
-  sky130_fd_pr__res_high_po_5p73/(1|2) = 4 |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__res_high_po_2p85/(1|2) = 2 |                                           
-  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 38       |                                           
-  sky130_fd_pr__pfet_01v8/4 = 68           |                                           
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__cap_mim_m3_1/1 = 1         |                                           
-  sky130_fd_pr__cap_mim_m3_2/1 = 6         |                                           
-  sky130_fd_pr__pfet_01v8_lvt/4 = 12       |                                           
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    |                                           
-  comp_adv3/VP = 5                         |                                           
-  comp_to_logic/VP = 1                     |                                           
-  comp_adv3_di/VP = 1                      |                                           
-                                           |                                           
-Net: Comp_Bias_2                           |Net: /fb_dark_current_0/m2_200_n880#       
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  comp_adv3/bias = 1                       |                                           
-                                           |                                           
-Net: Comp_Bias_1                           |Net: /fb_dark_current_0/m2_4260_3100#      
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
-  comp_adv3/bias = 1                       |                                           
-                                           |                                           
-Net: feedback_sukwani:1/net2               |Net: /fb_dark_current_0/currm_p_0/m1_60_n3 
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
-                                           |                                           
-Net: feedback_sukwani:1/net22              |Net: /fb_dark_current_0/currm_p_1/m1_60_n3 
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
-                                           |                                           
-Net: feedback_sukwani:1/net4               |Net: /fb_dark_current_0/currm_p_12/m1_60_n 
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    
-                                           |                                           
-Net: feedback_sukwani:1/net7               |Net: /fb_dark_current_0/m2_250_740#        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: feedback_sukwani:1/net8               |Net: /fb_dark_current_0/Out                
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |                                           
-Net: feedback_sukwani:1/net3               |Net: /fb_dark_current_0/currm_n_33/m1_68_1 
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |                                           
-Net: feedback_sukwani:1/net23              |Net: outd_0/InputRef                       
-  sky130_fd_pr__cap_mim_m3_2/2 = 1         |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
-  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8_lvt/2 = 2        
-                                           |  sky130_fd_pr__cap_mim_m3_2/1 = 1         
-                                           |  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  
-                                           |  sky130_fd_pr__nfet_01v8/2 = 1            
-                                           |                                           
-Net: Tia_ref                               |Net: /curr_mirror_channel_0/FB_Bias_1      
-  sky130_fd_pr__cap_mim_m3_2/1 = 1         |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8_lvt/2 = 2        |                                           
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-  sky130_fd_pr__nfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__res_xhigh_po_0p35/(1|2) =  |                                           
-                                           |                                           
-Net: In_TIA                                |Net: /comparator_0/comp_adv3_0/bias        
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  comp_adv3/bias = 1                       
-  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |                                           
-  sky130_fd_pr__nfet_01v8_lvt/4 = 1        |                                           
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
-                                           |                                           
-Net: VN                                    |Net: VN                                    
-  sky130_fd_pr__nfet_01v8/(1|3) = 31       |  sky130_fd_pr__nfet_01v8/(1|3) = 31       
-  sky130_fd_pr__nfet_01v8/4 = 55           |  sky130_fd_pr__nfet_01v8/4 = 55           
-  sky130_fd_pr__nfet_01v8_lvt/4 = 5        |  sky130_fd_pr__nfet_01v8_lvt/4 = 5        
-  sky130_fd_pr__pfet_01v8/2 = 2            |  sky130_fd_pr__pfet_01v8/2 = 2            
-  sky130_fd_pr__cap_mim_m3_1/1 = 2         |  sky130_fd_pr__cap_mim_m3_1/1 = 2         
-  sky130_fd_pr__cap_var_lvt/2 = 1          |  sky130_fd_pr__cap_var_lvt/2 = 1          
-  sky130_fd_pr__cap_var_lvt/(1|3) = 1      |  sky130_fd_pr__cap_var_lvt/(1|3) = 1      
-  sky130_fd_pr__cap_mim_m3_2/2 = 2         |  sky130_fd_pr__cap_mim_m3_2/2 = 2         
-  transmitter/VN = 1                       |  transmitter/VN = 1                       
-  sky130_fd_pr__cap_mim_m3_2/1 = 3         |  sky130_fd_pr__cap_mim_m3_2/1 = 3         
-  sky130_fd_pr__res_high_po_5p73/3 = 4     |  sky130_fd_pr__res_high_po_5p73/3 = 4     
-  sky130_fd_pr__res_high_po_2p85/3 = 2     |  sky130_fd_pr__res_high_po_2p85/3 = 2     
-  sky130_fd_pr__res_xhigh_po_0p35/3 = 3    |  sky130_fd_pr__res_xhigh_po_0p35/3 = 3    
-  comp_adv3_di/VN = 1                      |  comp_adv3_di/VN = 1                      
-  comp_adv3/VN = 5                         |  comp_adv3/VN = 5                         
-  sky130_fd_pr__res_xhigh_po_0p69/3 = 1    |  comp_to_logic/VSUBS = 1                  
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 2    
-  sky130_fd_pr__res_xhigh_po_1p41/(1|2) =  |  sky130_fd_pr__res_xhigh_po_1p41/(1|2) =  
-  sky130_fd_pr__res_xhigh_po_1p41/3 = 3    |  sky130_fd_pr__res_xhigh_po_1p41/3 = 3    
-  comp_to_logic/VN = 1                     |                                           
-                                           |                                           
-Net: feedback_sukwani:1/VM16D              |Net: tia_core_0/Input                      
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8_lvt/2 = 6        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__cap_mim_m3_2/1 = 1         |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
-  sky130_fd_pr__res_xhigh_po_0p69/(1|2) =  |  sky130_fd_pr__nfet_01v8_lvt/4 = 1        
-                                           |                                           
-Net: net11                                 |Net: /fb_dark_current_0/m1_970_2720#       
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/2 = 6        
-  sky130_fd_pr__nfet_01v8/2 = 8            |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
-  sky130_fd_pr__cap_mim_m3_2/2 = 1         |                                           
-                                           |                                           
-Net: feedback_sukwani:1/VM34D              |Net: /fb_dark_current_0/m1_9810_5770#      
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/2 = 4            
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |                                           
-(no matching net)                          |Net: /fb_dark_current_0/m1_7940_2770#      
-                                           |  sky130_fd_pr__pfet_01v8_lvt/2 = 6        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
-                                           |                                           
-(no matching net)                          |Net: VP                                    
-                                           |  sky130_fd_pr__pfet_01v8/4 = 68           
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 38       
-                                           |  sky130_fd_pr__cap_mim_m3_2/1 = 7         
-                                           |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
-                                           |  sky130_fd_pr__res_high_po_5p73/(1|2) = 4 
-                                           |  sky130_fd_pr__res_high_po_2p85/(1|2) = 2 
-                                           |  comp_adv3_di/VP = 1                      
-                                           |  comp_adv3/VP = 5                         
-                                           |  comp_to_logic/VP = 1                     
-                                           |  sky130_fd_pr__pfet_01v8_lvt/4 = 12       
-                                           |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 6    
-                                           |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
-                                           |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
-                                           |                                           
-(no matching net)                          |Net: /comparator_0/comp_adv3_1/bias        
-                                           |  comp_adv3/bias = 1                       
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: current_mirror_channel:7/vm12d        |Net: /curr_mirror_channel_0/vm12d          
-  sky130_fd_pr__pfet_01v8/2 = 22           |  sky130_fd_pr__pfet_01v8/2 = 22           
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-  sky130_fd_pr__cap_mim_m3_2/2 = 1         |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: Dis_FB                                |Net: /fb_dark_current_0/Disable_FB         
-  sky130_fd_pr__nfet_01v8/2 = 2            |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
-  sky130_fd_pr__nfet_01v8_lvt/2 = 1        |  sky130_fd_pr__nfet_01v8_lvt/2 = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: feedback_sukwani:1/VM13D              |Net: /fb_dark_current_0/m1_950_1560#       
-  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 3        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: feedback_sukwani:1/VM9D               |Net: /fb_dark_current_0/m1_n6550_3300#     
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
-  sky130_fd_pr__pfet_01v8/2 = 4            |  sky130_fd_pr__pfet_01v8/2 = 4            
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: feedback_sukwani:1/net5               |Net: /fb_dark_current_0/m1_n5100_670#      
-  sky130_fd_pr__nfet_01v8/2 = 4            |  sky130_fd_pr__nfet_01v8/2 = 4            
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: feedback_sukwani:1/VM14D              |Net: /fb_dark_current_0/I_Bias             
-  sky130_fd_pr__pfet_01v8_lvt/(1|3) = 1    |  sky130_fd_pr__nfet_01v8/2 = 8            
-  sky130_fd_pr__cap_mim_m3_2/2 = 2         |  sky130_fd_pr__cap_mim_m3_2/2 = 1         
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-  sky130_fd_pr__pfet_01v8_lvt/2 = 6        |  sky130_fd_pr__nfet_01v8_lvt/(1|3) = 1    
-  sky130_fd_pr__cap_mim_m3_2/1 = 1         |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: ../xschem/mpw6_submission.spice |Circuit 2: mpw6_submission.spice           
-
----------------------------------------------------------------------------------------
-Instance: outdriver:4/sky130_fd_pr__cap_mi |Instance: tia_core_0/sky130_fd_pr__cap_mim 
-  1 = 7                                    |  1 = 147                                  
-  2 = 127                                  |  2 = 126                                  
-                                           |                                           
-Instance: outdriver:4/sky130_fd_pr__cap_mi |Instance: outd_0/sky130_fd_pr__cap_mim_m3_ 
-  1 = 127                                  |  1 = 126                                  
-  2 = 146                                  |  2 = 147                                  
-                                           |                                           
-Instance: current_mirror_channel:7/sky130_ |Instance: outd_0/sky130_fd_pr__cap_mim_m3_ 
-  1 = 146                                  |  1 = 7                                    
-  2 = 127                                  |  2 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
-  1 = 127                                  |  1 = 147                                  
-  2 = 12                                   |  2 = 9                                    
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
-  1 = 146                                  |  1 = 147                                  
-  2 = 11                                   |  2 = 9                                    
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//sky130_fd_pr_ 
-  1 = 10                                   |  1 = 126                                  
-  2 = 11                                   |  2 = 11                                   
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |(no matching instance)                     
-  1 = 11                                   |                                           
-  2 = 2                                    |                                           
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |(no matching instance)                     
-  (1,2) = (10,2)                           |                                           
-  3 = 127                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_1//sk 
-  (1,3) = (10,2)                           |  (1,3) = (147,2)                          
-  2 = 10                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_1//sk 
-  (1,3) = (146,2)                          |  (1,3) = (9,2)                            
-  2 = 10                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_0//sk 
-  (1,3) = (9,2)                            |  (1,3) = (147,2)                          
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_0//sk 
-  (1,3) = (146,2)                          |  (1,3) = (9,2)                            
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_12//s 
-  (1,3) = (146,2)                          |  (1,3) = (147,2)                          
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_20//s 
-  (1,3) = (146,2)                          |  (1,3) = (147,2)                          
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_20//s 
-  (1,3) = (6,2)                            |  (1,3) = (9,2)                            
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_p_12//s 
-  (1,3) = (11,2)                           |  (1,3) = (6,2)                            
-  2 = 11                                   |  2 = 9                                    
-  4 = 146                                  |  4 = 147                                  
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
-  (1,3) = (146,2)                          |                                           
-  2 = 25                                   |                                           
-  4 = 146                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
-  (1,3) = (2,2)                            |                                           
-  2 = 25                                   |                                           
-  4 = 146                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
-  (1,3) = (146,2)                          |                                           
-  2 = 25                                   |                                           
-  4 = 146                                  |                                           
-                                           |                                           
-                                           |                                           
-Instance: current_mirror_channel:7/sky130_ |(no matching instance)                     
-  (1,3) = (2,2)                            |                                           
-  2 = 25                                   |                                           
-  4 = 146                                  |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_33//s 
-  (1,3) = (9,2)                            |  (1,3) = (8,2)                            
-  2 = 12                                   |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_33//s 
-  (1,3) = (127,2)                          |  (1,3) = (126,2)                          
-  2 = 12                                   |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_45//s 
-  (1,3) = (12,2)                           |  (1,3) = (126,2)                          
-  2 = 12                                   |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_43//s 
-  (1,3) = (127,2)                          |  (1,3) = (9,2)                            
-  2 = 12                                   |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_43//s 
-  (1,3) = (8,2)                            |  (1,3) = (126,2)                          
-  2 = 12                                   |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0//currm_n_2//sk 
-  (1,3) = (11,3)                           |  (1,3) = (126,2)                          
-  2 = 7                                    |  2 = 11                                   
-  4 = 127                                  |  4 = 126                                  
-                                           |                                           
-(no matching instance)                     |Instance: fb_dark_current_0//currm_n_45//s 
-                                           |  (1,3) = (11,2)                           
-                                           |  2 = 11                                   
-                                           |  4 = 126                                  
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: fb_dark_current_0//currm_n_2//sk 
-                                           |  (1,3) = (3,2)                            
-                                           |  2 = 11                                   
-                                           |  4 = 126                                  
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: feedback_sukwani:1/sky130_fd_pr_ |Instance: fb_dark_current_0/sky130_fd_pr__ 
-  (1,3) = (127,12)                         |  (1,3) = (126,11)                         
-  2 = 4                                    |  2 = 4                                    
-  4 = 127                                  |  4 = 126                                  
----------------------------------------------------------------------------------------
-Netlists do not match.
-Cells failed matching, or top level cell failed pin matching.
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
+Netlists match with 4 symmetries.
+Circuits match correctly.
+There were property errors.
+tia_rgc_core:8/sky130_fd_pr__cap_var_lvt:C10 vs. tia_core_0//sky130_fd_pr__cap_var_lvt_MZUN4J_0/sky130_fd_pr__cap_var_lvt:0:
+Property VM in circuit1 has no matching property in circuit2
+tia_rgc_core:8/sky130_fd_pr__cap_mim_m3_2:C1 vs. tia_core_0//tia_one_tia_1//sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+tia_rgc_core:8/sky130_fd_pr__cap_mim_m3_2:C2 vs. tia_core_0//tia_one_tia_0//sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+current_mirror_channel:7/sky130_fd_pr__cap_mim_m3_2:C2 vs. tia_core_0/sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+current_mirror_channel:7/sky130_fd_pr__cap_mim_m3_2:C2 vs. tia_core_0/sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+outdriver:4/sky130_fd_pr__cap_mim_m3_2:C6 vs. outd_0/sky130_fd_pr__cap_mim_m3_2_LJ5JLG#2:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_6/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+outdriver:4/sky130_fd_pr__cap_mim_m3_2:C2 vs. outd_0/sky130_fd_pr__cap_mim_m3_2_LJ5JLG#2:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_9/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+current_mirror_channel:7/sky130_fd_pr__cap_mim_m3_2:C4 vs. curr_mirror_channel_0//sky130_fd_pr__cap_mim_m3_2_26U9NK_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+current_mirror_channel:7/sky130_fd_pr__cap_mim_m3_2:C1 vs. curr_mirror_channel_0//sky130_fd_pr__cap_mim_m3_2_26U9NK_1/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+comparator_complete:2/sky130_fd_pr__cap_mim_m3_2:C1 vs. comparator_0//sky130_fd_pr__cap_mim_m3_2_MJMGTW_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+feedback_sukwani:1/sky130_fd_pr__cap_mim_m3_2:C3 vs. fb_dark_current_0//sky130_fd_pr__cap_mim_m3_2_N3PKNJ_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+feedback_sukwani:1/sky130_fd_pr__cap_mim_m3_2:C4 vs. fb_dark_current_0//sky130_fd_pr__cap_mim_m3_2_D7CHNQ_0/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+feedback_sukwani:1/sky130_fd_pr__cap_mim_m3_2:C2 vs. fb_dark_current_0/sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_2/sky130_fd_pr__cap_mim_m3_2:0:
+Property VM in circuit1 has no matching property in circuit2
+Cells have no pins;  pin matching not needed.
+Device classes ../xschem/mpw6_submission.spice and mpw6_submission.spice are equivalent.
+Circuits match uniquely.
+Property errors were found.
 The following cells had property errors:
  transmitter
+ ../xschem/mpw6_submission.spice

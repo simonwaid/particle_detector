@@ -1,8 +1,5 @@
-
-* expanding   symbol:  tia/tia_rgc_core.sym # of pins=8
-** sym_path: /home/simon/code/particle_detector/xschem/tia/tia_rgc_core.sym
 ** sch_path: /home/simon/code/particle_detector/xschem/tia/tia_rgc_core.sch
-.subckt tia_rgc_core  VP Out_2 Out_ref Out_1 Disable_TIA Input I_Bias1 VN
+**.subckt tia_rgc_core VN VP Out_2 I_Bias1 Input Disable_TIA Out_1 Out_ref
 *.iopin VN
 *.iopin VP
 *.opin Out_2
@@ -79,5 +76,5 @@ XC3 Disable_TIA_B VN VN sky130_fd_pr__cap_var_lvt W=5 L=2 VM=1 m=1
 XC6 Disable_TIA_B VN VN sky130_fd_pr__cap_var_lvt W=5 L=2 VM=1 m=1
 XC8 Disable_TIA_B VN VN sky130_fd_pr__cap_var_lvt W=5 L=2 VM=1 m=1
 XC9 Disable_TIA_B VN VN sky130_fd_pr__cap_var_lvt W=5 L=2 VM=1 m=1
-.ends
-
+**.ends
+.end

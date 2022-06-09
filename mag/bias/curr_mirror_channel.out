@@ -16,7 +16,7 @@ Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit curr_m
 
 Class curr_mirror_channel.spice (1):  Merged 1528 parallel devices.
 Subcircuit summary:
-Circuit 1: ../../../particle_detector/xsch |Circuit 2: curr_mirror_channel.spice       
+Circuit 1: ../../xschem/current_mirror_cha |Circuit 2: curr_mirror_channel.spice       
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8 (80->6)            |sky130_fd_pr__nfet_01v8 (80->6)            
 sky130_fd_pr__pfet_01v8 (1480->26)         |sky130_fd_pr__pfet_01v8 (1480->26)         
@@ -36,8 +36,8 @@ Property VM in circuit1 has no matching property in circuit2
 sky130_fd_pr__cap_mim_m3_2:C2 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG_1/sky130_fd_pr__cap_mim_m3_2:0:
 Property VM in circuit1 has no matching property in circuit2
 Cells have no pins;  pin matching not needed.
-Device classes ../../../particle_detector/xschem/current_mirror_channel.spice and curr_mirror_channel.spice are equivalent.
+Device classes ../../xschem/current_mirror_channel.spice and curr_mirror_channel.spice are equivalent.
 Circuits match uniquely.
 Property errors were found.
 The following cells had property errors:
- ../../../particle_detector/xschem/current_mirror_channel.spice
+ ../../xschem/current_mirror_channel.spice

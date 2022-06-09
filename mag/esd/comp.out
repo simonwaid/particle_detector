@@ -1,29 +1,3 @@
 
-Class ../../xschem/esd/esd_diodes.spice (0):  Merged 18 parallel devices.
-Class esd-array.spice (1):  Merged 18 parallel devices.
-Subcircuit summary:
-Circuit 1: ../../xschem/esd/esd_diodes.spi |Circuit 2: esd-array.spice                 
--------------------------------------------|-------------------------------------------
-sky130_fd_pr__diode_pd2nw_11v0 (10->1)     |sky130_fd_pr__diode_pd2nw_11v0 (10->1)     
-sky130_fd_pr__diode_pw2nd_11v0 (10->1)     |sky130_fd_pr__diode_pw2nd_11v0 (10->1)     
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 3                          |Number of nets: 3                          
----------------------------------------------------------------------------------------
-Circuits match uniquely.
-Property errors were found.
-Netlists match uniquely.
-There were property errors.
-sky130_fd_pr__diode_pw2nd_11v0:11 vs. sky130_fd_pr__diode_pw2nd_11v0:10:
- area circuit1: 4e+12   circuit2: 4   (delta=200%, cutoff=2%)
-sky130_fd_pr__diode_pw2nd_11v0:11 vs. sky130_fd_pr__diode_pw2nd_11v0:10:
-Property pj in circuit2 has no matching property in circuit1
-sky130_fd_pr__diode_pd2nw_11v0:1 vs. sky130_fd_pr__diode_pd2nw_11v0:0:
- area circuit1: 4e+12   circuit2: 4   (delta=200%, cutoff=2%)
-sky130_fd_pr__diode_pd2nw_11v0:1 vs. sky130_fd_pr__diode_pd2nw_11v0:0:
-Property pj in circuit2 has no matching property in circuit1
-Cells have no pins;  pin matching not needed.
-Device classes ../../xschem/esd/esd_diodes.spice and esd-array.spice are equivalent.
-Circuits match uniquely.
-Property errors were found.
-The following cells had property errors:
- ../../xschem/esd/esd_diodes.spice
+Equate elements:  no current cell.
+Verify:  no current cell to verify.

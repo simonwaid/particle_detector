@@ -69,15 +69,15 @@ Flattening unmatched subcell sky130_fd_pr__pfet_01v8_VCB4SW in circuit transmitt
 Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_N3PKNJ in circuit transmitter.spice (1)(1 instance)
 Flattening unmatched subcell lvds_nswitch in circuit transmitter.spice (1)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_RE4MKQ in circuit transmitter.spice (1)(2 instances)
-Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG in circuit transmitter.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3 in circuit transmitter.spice (1)(2 instances)
 Flattening unmatched subcell lvds_diffamp in circuit transmitter.spice (1)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZHX6G9 in circuit transmitter.spice (1)(2 instances)
 
-Class ../../analog/test/transmitter.spice (0):  Merged 1 parallel devices.
+Class ../../xschem/transmitter.spice (0):  Merged 1 parallel devices.
 Class transmitter.spice (1):  Merged 4463 parallel devices.
 Class transmitter.spice (1):  Merged 5 series devices.
 Subcircuit summary:
-Circuit 1: ../../analog/test/transmitter.s |Circuit 2: transmitter.spice               
+Circuit 1: ../../xschem/transmitter.spice  |Circuit 2: transmitter.spice               
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__res_xhigh_po_0p35 (4)        |sky130_fd_pr__res_xhigh_po_0p35 (9->4)     
 sky130_fd_pr__pfet_01v8 (2412->8)          |sky130_fd_pr__pfet_01v8 (2412->8)          
@@ -95,11 +95,11 @@ Resolving automorphisms by pin name.
 Netlists match with 2 symmetries.
 Circuits match correctly.
 There were property errors.
-sky130_fd_pr__cap_mim_m3_2:C1 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
+sky130_fd_pr__cap_mim_m3_2:C1 vs. sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3:sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0/sky130_fd_pr__cap_mim_m3_2:0:
 Property VM in circuit1 has no matching property in circuit2
 Cells have no pins;  pin matching not needed.
-Device classes ../../analog/test/transmitter.spice and transmitter.spice are equivalent.
+Device classes ../../xschem/transmitter.spice and transmitter.spice are equivalent.
 Circuits match uniquely.
 Property errors were found.
 The following cells had property errors:
- ../../analog/test/transmitter.spice
+ ../../xschem/transmitter.spice

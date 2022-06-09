@@ -411,7 +411,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1540 -810 0 1 {name=C8 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} -1120 -850 0 1 {name=C20 model=cap_mim_m3_2 W=30 L=20 MF=1 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8_lvt.sym} -290 -270 0 1 {name=M55
 L=0.15
@@ -978,7 +977,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/cap_mim_m3_2.sym} 950 -280 2 1 {name=C1 model=cap_mim_m3_2 W=30 L=10 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_2.sym} 1100 -690 3 0 {name=C4 model=cap_mim_m3_2 W=15 L=15 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1100 -690 1 1 {name=C4 model=cap_mim_m3_2 W=15 L=15 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1130 -540 1 1 {name=C2 model=cap_mim_m3_2 W=30 L=30 MF=1 spiceprefix=X}
 C {sky130_fd_pr/res_xhigh_po_0p69.sym} 1020 -540 3 0 {name=R1
 W=0.69

@@ -1,7 +1,7 @@
 magic
-tech sky130B
+tech sky130A
 magscale 1 2
-timestamp 1654174923
+timestamp 1654750515
 << nwell >>
 rect 1482 3720 1644 3786
 rect 1992 3720 2154 3786
@@ -1233,4 +1233,5 @@ rlabel metal2 3370 3050 3430 3110 1 VM11D
 rlabel metal2 1530 2980 1590 3040 1 VM1D
 rlabel metal2 2050 2980 2110 3040 1 VM6D
 rlabel metal2 1790 2220 1850 2280 1 VM4D
+rlabel metal2 3458 2114 3576 2222 1 VN
 << end >>

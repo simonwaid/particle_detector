@@ -1,9 +1,6 @@
-
-* expanding   symbol:  bias/current_mirror_channel.sym # of pins=14
-** sym_path: /home/simon/code/particle_detector/xschem/bias/current_mirror_channel.sym
 ** sch_path: /home/simon/code/particle_detector/xschem/bias/current_mirror_channel.sch
-.subckt current_mirror_channel  VP LVDS_Bias Comp_Bias_2 A_Out_I_Bias Comp_Bias_1 Comp_To_Logic_Bias
-+ TIA_I_Bias1 Comp_Bias_3 Comp_Bias_4 Comp_Bias_5 Comp_Bias_6 FB_Bias_1 I_in_channel VN
+**.subckt current_mirror_channel I_in_channel VP VN TIA_I_Bias1 A_Out_I_Bias Comp_Bias_1
+*+ Comp_To_Logic_Bias Comp_Bias_2 Comp_Bias_3 Comp_Bias_4 Comp_Bias_5 Comp_Bias_6 FB_Bias_1 LVDS_Bias
 *.ipin I_in_channel
 *.iopin VP
 *.iopin VN
@@ -117,5 +114,5 @@ XM30 LVDS_Bias vm12d net14 VP sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((n
 + nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4*4*8 m=4*4*8
 XC1 VP vm12d sky130_fd_pr__cap_mim_m3_2 W=30 L=15 VM=1 m=1
 XC2 VP VN sky130_fd_pr__cap_mim_m3_2 W=30 L=30 VM=1 m=1
-.ends
-
+**.ends
+.end

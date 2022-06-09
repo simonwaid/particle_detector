@@ -1,4 +1,4 @@
-* SPICE3 file created from transmitter.ext - technology: sky130B
+* SPICE3 file created from transmitter.ext - technology: sky130A
 
 .subckt sky130_fd_pr__nfet_01v8_HR8DH9 a_262_n288# a_n328_n288# a_n501_n200# a_616_n288#
 + a_561_n200# a_144_n288# a_n839_n374# a_n383_n200# a_498_n288# a_n737_n200# a_443_n200#
@@ -524,7 +524,7 @@ X6 VGND A Y VNB sky130_fd_pr__nfet_01v8_lvt ad=0p pd=0u as=0p ps=0u w=740000u l=
 X7 VPWR A Y VPB sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.12e+06u l=150000u
 .ends
 
-.subckt sky130_fd_pr__cap_mim_m3_2_LJ5JLG m4_n3351_n3100# c2_n3251_n3000#
+.subckt sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3 m4_n3351_n3100# c2_n3251_n3000#
 X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
@@ -640,12 +640,12 @@ Xlvds_currm_n_0 m1_20_640# lvds_currm_n_0/m1_n20_420# m1_20_640# VN lvds_currm_n
 Xsky130_fd_sc_hs__inv_4_1 vx9y VN VP vx14y VN VP sky130_fd_sc_hs__inv_4
 Xlvds_currm_n_30 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n
 Xlvds_currm_p_4 m2_19260_4160# vm6d m3_9390_18600# VP lvds_currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_0 VP VN sky130_fd_pr__cap_mim_m3_2_LJ5JLG
+Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_0 VP VN sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3
 Xlvds_currm_n_1 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n
 Xlvds_currm_n_31 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n
 Xlvds_currm_n_20 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n
 Xlvds_currm_p_5 m1_17940_7520# m1_17940_7520# m2_17720_10420# VP lvds_currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_1 VP VN sky130_fd_pr__cap_mim_m3_2_LJ5JLG
+Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_1 VP VN sky130_fd_pr__cap_mim_m3_2_LJ5JLG#3
 Xlvds_currm_n_10 m2_17470_3120# m2_18900_460# m1_20_640# VN lvds_currm_n
 Xlvds_currm_n_2 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n
 Xlvds_currm_n_21 vm1d m2_1870_1020# m1_20_640# VN lvds_currm_n

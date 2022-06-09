@@ -2266,7 +2266,8 @@ X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
 .subckt curr_mirror_channel TIA_Bias Comp_Bias_6 Comp_Bias_5 ctl_Bias VP Comp_Bias_3
-+ Comp_Bias_2 Comp_Bias_1 LVDS_Bias I_in m3_14070_2720# Bias_Analog_out VSUBS
++ Comp_Bias_2 Comp_Bias_1 LVDS_Bias FB_Bias_1 I_in m3_14070_2720# Bias_Analog_out
++ VSUBS
 Xbias_curm_p_6 TIA_Bias m2_3110_8460# vm12d VP bias_curm_p
 Xbias_curm_n_3 m2_3220_480# vm12d I_in VSUBS bias_curm_n
 Xbias_curm_p_7 FB_Bias_1 bias_curm_p_7/m1_120_n692# vm4d VP bias_curm_p
@@ -2489,34 +2490,33 @@ X18 a_443_n200# a_380_n288# a_325_n200# a_n1311_n374# sky130_fd_pr__nfet_01v8 ad
 X19 a_n383_n200# a_n446_n288# a_n501_n200# a_n1311_n374# sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
 .ends
 
-.subckt comp_to_logic Out VP In_p In_n I_Bias VSUBS
+.subckt comp_to_logic Out VP In_p In_n I_Bias VN
 Xsky130_fd_pr__pfet_01v8_XJ7GBL_1 VM6D VM1D VP VP sky130_fd_pr__pfet_01v8_XJ7GBL
 Xsky130_fd_pr__pfet_01v8_XJ7GBL_0 VM1D VP VP VM6D sky130_fd_pr__pfet_01v8_XJ7GBL
 Xsky130_fd_pr__pfet_01v8_U47ZGH_0 VP VM11D VM11D VM1D VM1D VP VM1D VP VP VM1D sky130_fd_pr__pfet_01v8_U47ZGH
-Xsky130_fd_pr__nfet_01v8_GV8PGY_0 VSUBS VM11D VM11D VM11D VM11D VM11D VSUBS VSUBS
-+ sky130_fd_pr__nfet_01v8_GV8PGY
+Xsky130_fd_pr__nfet_01v8_GV8PGY_0 VN VM11D VM11D VM11D VM11D VM11D VN VN sky130_fd_pr__nfet_01v8_GV8PGY
 Xsky130_fd_pr__pfet_01v8_U47ZGH_1 VP VM12D VM12D VM6D VM6D VP VM6D VP VP VM6D sky130_fd_pr__pfet_01v8_U47ZGH
-Xsky130_fd_pr__nfet_01v8_GV8PGY_1 VSUBS VM11D VM12D VM12D VM11D VM11D VSUBS VSUBS
-+ sky130_fd_pr__nfet_01v8_GV8PGY
+Xsky130_fd_pr__nfet_01v8_GV8PGY_1 VN VM11D VM12D VM12D VM11D VM11D VN VN sky130_fd_pr__nfet_01v8_GV8PGY
 Xsky130_fd_pr__pfet_01v8_U47ZGH_2 VP VM13D VM13D VM17D VM17D VP VM17D VP VP VM17D
 + sky130_fd_pr__pfet_01v8_U47ZGH
 Xsky130_fd_pr__pfet_01v8_U47ZGH_3 VP Out Out VM13D VM13D VP VM13D VP VP VM13D sky130_fd_pr__pfet_01v8_U47ZGH
 Xsky130_fd_pr__pfet_01v8_X4XKHL_0 VP VM1D VM1D VP VM1D VP sky130_fd_pr__pfet_01v8_X4XKHL
 Xsky130_fd_pr__pfet_01v8_X4XKHL_2 VP VM12D VM17D VP VM12D VP sky130_fd_pr__pfet_01v8_X4XKHL
 Xsky130_fd_pr__pfet_01v8_X4XKHL_1 VP VM6D VM6D VP VM6D VP sky130_fd_pr__pfet_01v8_X4XKHL
-Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_0 In_n VM4D VM1D In_n VSUBS VM4D sky130_fd_pr__nfet_01v8_lvt_LH2JGW
-Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_2 VM13D VSUBS Out VM13D VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_LH2JGW
-Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_1 In_p VM4D VM6D In_p VSUBS VM4D sky130_fd_pr__nfet_01v8_lvt_LH2JGW
-Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_3 VM17D VSUBS VM13D VM17D VSUBS VSUBS sky130_fd_pr__nfet_01v8_lvt_LH2JGW
-Xsky130_fd_pr__nfet_01v8_YT8PGU_0 VM17D VSUBS VSUBS VM12D sky130_fd_pr__nfet_01v8_YT8PGU
-Xsky130_fd_pr__nfet_01v8_PL8DH5_0 VSUBS I_Bias I_Bias VSUBS VM4D VSUBS I_Bias VSUBS
-+ I_Bias VSUBS I_Bias VM4D VSUBS VM4D VM4D VSUBS VSUBS VM4D I_Bias I_Bias VSUBS I_Bias
-+ VSUBS I_Bias VM4D VSUBS I_Bias VSUBS VM4D I_Bias I_Bias I_Bias I_Bias VM4D I_Bias
-+ I_Bias VSUBS I_Bias VSUBS I_Bias I_Bias VSUBS sky130_fd_pr__nfet_01v8_PL8DH5
+Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_0 In_n VM4D VM1D In_n VN VM4D sky130_fd_pr__nfet_01v8_lvt_LH2JGW
+Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_2 VM13D VN Out VM13D VN VN sky130_fd_pr__nfet_01v8_lvt_LH2JGW
+Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_1 In_p VM4D VM6D In_p VN VM4D sky130_fd_pr__nfet_01v8_lvt_LH2JGW
+Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_3 VM17D VN VM13D VM17D VN VN sky130_fd_pr__nfet_01v8_lvt_LH2JGW
+Xsky130_fd_pr__nfet_01v8_YT8PGU_0 VM17D VN VN VM12D sky130_fd_pr__nfet_01v8_YT8PGU
+Xsky130_fd_pr__nfet_01v8_PL8DH5_0 VN I_Bias I_Bias VN VM4D VN I_Bias VN I_Bias VN
++ I_Bias VM4D VN VM4D VM4D VN VN VM4D I_Bias I_Bias VN I_Bias VN I_Bias VM4D VN I_Bias
++ VN VM4D I_Bias I_Bias I_Bias I_Bias VM4D I_Bias I_Bias VN I_Bias VN I_Bias I_Bias
++ VN sky130_fd_pr__nfet_01v8_PL8DH5
 .ends
 
-.subckt comparator comp_adv3_4/bias VP comp_adv3_2/bias comp_adv3_di_0/bias InRef
-+ comp_to_logic_0/I_Bias comp_adv3_3/bias comp_to_logic_0/Out In VN
+.subckt comparator comp_adv3_4/bias comp_adv3_1/bias VP comp_adv3_2/bias comp_adv3_di_0/bias
++ InRef comp_to_logic_0/I_Bias comp_adv3_3/bias comp_to_logic_0/Out comp_adv3_0/bias
++ In VN
 Xsky130_fd_pr__res_xhigh_po_0p35_Z7KPPL_0 VN m1_n2250_2600# m1_n3200_150# m1_n2870_2590#
 + m1_n2560_340# m1_n3200_150# m1_n2560_340# comp_adv3_0/OutP m1_n2870_2590# sky130_fd_pr__res_xhigh_po_0p35_Z7KPPL
 Xsky130_fd_pr__res_xhigh_po_0p35_Z7KPPL_1 VN m1_n8540_2590# m1_n9500_160# m1_n9180_2590#
@@ -2619,6 +2619,10 @@ Xsky130_fd_pr__pfet_01v8_U4PWGH_0 m1_170_170# m1_170_170# m1_80_400# a_132_72# a
 X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=2.9e+11p pd=2.58e+06u as=2.9e+11p ps=2.58e+06u w=1e+06u l=150000u
 .ends
 
+.subckt sky130_fd_pr__res_xhigh_po_0p69_PAXYNN a_n69_n632# a_n199_n762# a_n69_200#
+X0 a_n69_n632# a_n69_200# a_n199_n762# sky130_fd_pr__res_xhigh_po_0p69 l=2e+06u
+.ends
+
 .subckt sky130_fd_pr__cap_mim_m3_2_N3PKNJ c2_n3251_n1000# m4_n3351_n1100#
 X0 c2_n3251_n1000# m4_n3351_n1100# sky130_fd_pr__cap_mim_m3_2 l=1e+07u w=3e+07u
 .ends
@@ -2672,6 +2676,10 @@ X19 a_n33_n200# a_n81_231# a_n129_n200# w_n1127_n419# sky130_fd_pr__pfet_01v8 ad
 X0 c2_n3251_n2000# m4_n3351_n2100# sky130_fd_pr__cap_mim_m3_2 l=2e+07u w=3e+07u
 .ends
 
+.subckt sky130_fd_pr__cap_mim_m3_2_D7CHNQ c2_n1751_n1500# m4_n1851_n1600#
+X0 c2_n1751_n1500# m4_n1851_n1600# sky130_fd_pr__cap_mim_m3_2 l=1.5e+07u w=1.5e+07u
+.ends
+
 .subckt sky130_fd_pr__nfet_01v8_E6B2KN a_129_n200# a_29_n288# a_n129_n288# a_n289_n374#
 + a_n29_n200# a_n187_n200#
 X0 a_129_n200# a_29_n288# a_n29_n200# a_n289_n374# sky130_fd_pr__nfet_01v8 ad=5.8e+11p pd=4.58e+06u as=5.8e+11p ps=4.58e+06u w=2e+06u l=500000u
@@ -2692,51 +2700,52 @@ X1 a_63_n200# a_15_222# a_n33_n200# a_n227_n374# sky130_fd_pr__nfet_01v8_lvt ad=
 X0 c2_n3251_n3000# m4_n3351_n3100# sky130_fd_pr__cap_mim_m3_2 l=3e+07u w=3e+07u
 .ends
 
-.subckt fb_dark_current VP InP InN VN
+.subckt fb_dark_current Out Disable_FB VP InP InN I_Bias VN
 Xcurrm_n_2 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_5 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_5 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_n_3 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_6 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_6 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_0 m1_9810_5770# m1_9810_5770# VP currm_ps_0/m1_80_400# currm_ps
 Xcurrm_n_4 currm_n_4/m1_68_150# m1_n5100_670# m1_n5100_670# VN currm_n
-Xcurrm_p_7 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_7 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_1 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_n_5 currm_n_5/m1_68_150# m1_4960_670# m1_4960_670# VN currm_n
 Xsky130_fd_pr__nfet_01v8_6H2JYD_0 m1_n830_1270# Disable_FB VN VN sky130_fd_pr__nfet_01v8_6H2JYD
-Xcurrm_p_9 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
-Xcurrm_p_8 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_9 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
+Xcurrm_p_8 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_19 m1_n6550_3300# m1_n6550_3300# VP currm_ps_19/m1_80_400# currm_ps
 Xcurrm_ps_18 m1_9390_670# m1_n6550_3300# VP currm_ps_18/m1_80_400# currm_ps
 Xcurrm_ps_2 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_n_7 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_n_6 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xcurrm_n_7 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_ps_3 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_n_8 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_ps_4 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_n_9 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
 Xcurrm_ps_5 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_20 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_21 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_10 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_20 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_21 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_10 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_6 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_11 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_11 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_ps_7 Out m1_9810_5770# VP m2_9370_4730# currm_ps
 Xcurrm_ps_8 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_12 currm_p_12/m1_60_n360# VP m1_n5100_670# m1_7940_2770# currm_p
-Xcurrm_p_13 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xcurrm_p_12 currm_p_12/m1_60_n360# VP m1_n5100_670# Vm14d currm_p
+Xcurrm_p_13 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
 Xcurrm_ps_9 Out m1_9810_5770# VP m2_9370_4730# currm_ps
-Xcurrm_p_14 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_15 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_16 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_17 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xcurrm_p_14 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_15 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_16 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_17 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xsky130_fd_pr__res_xhigh_po_0p69_PAXYNN_0 m1_1820_4580# VN Vm16d sky130_fd_pr__res_xhigh_po_0p69_PAXYNN
 Xsky130_fd_pr__cap_mim_m3_2_N3PKNJ_0 VN I_Bias sky130_fd_pr__cap_mim_m3_2_N3PKNJ
 Xsky130_fd_pr__nfet_01v8_9A2JGL_1 m1_9390_670# VN Disable_FB m1_9390_670# m1_9390_670#
 + VN VN Disable_FB Disable_FB VN Disable_FB Disable_FB Disable_FB VN Disable_FB VN
 + m1_9390_670# Disable_FB Disable_FB Disable_FB VN m1_9390_670# m1_9390_670# sky130_fd_pr__nfet_01v8_9A2JGL
 Xsky130_fd_pr__cap_mim_m3_2_N3PKNJ_1 VN I_Bias sky130_fd_pr__cap_mim_m3_2_N3PKNJ
 Xcurrm_n_40 m2_9090_740# Out m1_9390_670# VN currm_n
-Xcurrm_p_18 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
-Xcurrm_p_19 m2_4260_3100# VP m1_9810_5770# m1_7940_2770# currm_p
+Xcurrm_p_18 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
+Xcurrm_p_19 m2_4260_3100# VP m1_9810_5770# Vm14d currm_p
 Xsky130_fd_pr__pfet_01v8_VCBWSW_0 VP m1_9810_5770# VP VP m1_9810_5770# m1_n830_1270#
 + m1_n830_1270# m1_n830_1270# m1_9810_5770# m1_n830_1270# m1_n830_1270# m1_n830_1270#
 + VP VP m1_9810_5770# m1_9810_5770# m1_n830_1270# VP VP VP m1_n830_1270# m1_n830_1270#
@@ -2761,16 +2770,15 @@ Xcurrm_n_23 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_22 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_35 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_13 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
+Xsky130_fd_pr__cap_mim_m3_2_D7CHNQ_0 Vm14d Vm16d sky130_fd_pr__cap_mim_m3_2_D7CHNQ
 Xcurrm_n_46 m2_200_n880# I_Bias I_Bias VN currm_n
 Xcurrm_n_36 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_14 m2_4080_740# m1_9810_5770# m1_4960_670# VN currm_n
-Xsky130_fd_pr__nfet_01v8_E6B2KN_0 m1_950_1560# InP InP VN m1_970_2720# m1_950_1560#
-+ sky130_fd_pr__nfet_01v8_E6B2KN
+Xsky130_fd_pr__nfet_01v8_E6B2KN_0 m1_950_1560# InP InP VN Vm16d m1_950_1560# sky130_fd_pr__nfet_01v8_E6B2KN
 Xcurrm_n_47 m2_200_n880# I_Bias I_Bias VN currm_n
 Xsky130_fd_pr__pfet_01v8_UAQRRG_0 m1_n830_1270# VP VP Disable_FB sky130_fd_pr__pfet_01v8_UAQRRG
 Xcurrm_n_37 m2_9090_740# Out m1_9390_670# VN currm_n
-Xsky130_fd_pr__nfet_01v8_E6B2KN_1 m1_950_1560# InN InN VN m1_7940_2770# m1_950_1560#
-+ sky130_fd_pr__nfet_01v8_E6B2KN
+Xsky130_fd_pr__nfet_01v8_E6B2KN_1 m1_950_1560# InN InN VN Vm14d m1_950_1560# sky130_fd_pr__nfet_01v8_E6B2KN
 Xsky130_fd_pr__nfet_01v8_lvt_LH2JGW_0 Disable_FB VN I_Bias Disable_FB VN VN sky130_fd_pr__nfet_01v8_lvt_LH2JGW#0
 Xcurrm_n_15 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_38 m2_9090_740# Out m1_9390_670# VN currm_n
@@ -2779,15 +2787,14 @@ Xcurrm_n_39 m2_9090_740# Out m1_9390_670# VN currm_n
 Xcurrm_n_17 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_18 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
 Xcurrm_n_19 m2_n5090_n880# m1_n6550_3300# m1_n5100_670# VN currm_n
-Xcurrm_p_0 currm_p_0/m1_60_n360# VP m1_970_2720# m1_970_2720# currm_p
-Xcurrm_p_1 currm_p_1/m1_60_n360# VP m1_7940_2770# m1_7940_2770# currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_2 m1_970_2720# VP sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4
-Xcurrm_p_2 currm_p_2/m1_60_n360# VP m1_4960_670# m1_970_2720# currm_p
-Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_3 m1_7940_2770# VP sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4
+Xcurrm_p_0 currm_p_0/m1_60_n360# VP Vm16d Vm16d currm_p
+Xcurrm_p_1 currm_p_1/m1_60_n360# VP Vm14d Vm14d currm_p
+Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_2 m1_1820_4580# Vm14d sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4
+Xcurrm_p_2 currm_p_2/m1_60_n360# VP m1_4960_670# Vm16d currm_p
 Xcurrm_n_0 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_3 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_3 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 Xcurrm_n_1 m2_250_740# m1_950_1560# I_Bias VN currm_n
-Xcurrm_p_4 m2_n5120_4740# VP m1_n6550_3300# m1_970_2720# currm_p
+Xcurrm_p_4 m2_n5120_4740# VP m1_n6550_3300# Vm16d currm_p
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_1_WXTTNJ#0 c1_n2050_n2000# m3_n2150_n2100#
@@ -3134,20 +3141,20 @@ Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_1 VP VN sky130_fd_pr__cap_mim_m3_2_LJ5JLG#1
 .ends
 
 
-Xcurr_mirror_distribution_0 VP isource_0/I_ref curr_mirror_channel_0/I_in curr_mirror_distribution
-Xtia_core_0 VP tia_core_0/Out_2 comparator_0/In tia_core_0/Disable_TIA tia_core_0/I_Bias1
-+ outd_0/InputRef tia_core_0/VM39D tia_core_0/Input VN tia_core
-Xtransmitter_0 VN curr_mirror_channel_0/LVDS_Bias transmitter_0/In transmitter
-Xoutd_0 VP outd_0/InputRef outd_0/I_Bias outd_0/outd_stage1_0/isource_out outd_0/VM1_D
+Xcurr_mirror_distribution_0 VP_an isource_0/I_ref curr_mirror_channel_0/I_in curr_mirror_distribution
+Xtia_core_0 VP_an tia_core_0/Out_2 comparator_0/In Dis_TIA tia_core_0/I_Bias1 outd_0/InputRef
++ tia_core_0/VM39D In_Tia VN tia_core
+Xtransmitter_0 VN bias_lvds transmitter_0/In transmitter
+Xoutd_0 VP_an outd_0/InputRef outd_0/I_Bias outd_0/outd_stage1_0/isource_out outd_0/VM1_D
 + outd_0/VM14D comparator_0/In VN outd
-Xcurr_mirror_channel_0 tia_core_0/I_Bias1 curr_mirror_channel_0/Comp_Bias_6 curr_mirror_channel_0/Comp_Bias_5
-+ curr_mirror_channel_0/ctl_Bias VP curr_mirror_channel_0/Comp_Bias_3 curr_mirror_channel_0/Comp_Bias_2
-+ curr_mirror_channel_0/Comp_Bias_1 curr_mirror_channel_0/LVDS_Bias curr_mirror_channel_0/I_in
-+ comparator_0/comp_adv3_2/bias outd_0/I_Bias VN curr_mirror_channel
-Xcomparator_0 curr_mirror_channel_0/Comp_Bias_6 VP comparator_0/comp_adv3_2/bias curr_mirror_channel_0/Comp_Bias_3
-+ outd_0/InputRef curr_mirror_channel_0/ctl_Bias curr_mirror_channel_0/Comp_Bias_5
-+ transmitter_0/In comparator_0/In VN comparator
-Xfb_dark_current_0 VP comparator_0/In outd_0/InputRef VN fb_dark_current
-Xisource_0 VP isource_0/I_ref isource_0/VM12G isource_0/VM11D VN isource_0/VM2D isource
+Xcurr_mirror_channel_0 tia_core_0/I_Bias1 comp_bias_6 comp_bias_5 ctl_bias VP_an comp_bias_3
++ comp_bias_2 comp_bias_1 bias_lvds fb_dark_current_0/I_Bias curr_mirror_channel_0/I_in
++ comp_bias_4 outd_0/I_Bias VN curr_mirror_channel
+Xcomparator_0 comp_bias_6 comp_bias_1 VP_an comp_bias_4 comp_bias_3 outd_0/InputRef
++ ctl_bias comp_bias_5 transmitter_0/In comp_bias_2 comparator_0/In VN comparator
+Xfb_dark_current_0 In_Tia Dis_Feedback VP_an comparator_0/In outd_0/InputRef fb_dark_current_0/I_Bias
++ VN fb_dark_current
+Xisource_0 VP_an isource_0/I_ref isource_0/VM12G isource_0/VM11D VN isource_0/VM2D
++ isource
 
 

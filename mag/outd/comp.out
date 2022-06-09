@@ -4,11 +4,40 @@ Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#2 in circuit outd.spice (1)(11 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ in circuit outd.spice (1)(2 instances)
+Flattening unmatched subcell outd_stage2 in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_PA2QZX in circuit outd.spice (1)(16 instances)
+Flattening unmatched subcell outd_diffamp in circuit outd.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit outd.spice (1)(8 instances)
+Flattening unmatched subcell outd_cmirror_64t in circuit outd.spice (1)(5 instances)
+Flattening unmatched subcell outd_cmirror_transistors in circuit outd.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit outd.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit outd.spice (1)(5 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_DJG2KN in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage3 in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage2 in circuit outd.spice (1)(4 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_5p73_PA2QZX in circuit outd.spice (1)(64 instances)
+Flattening unmatched subcell outd_diffamp in circuit outd.spice (1)(16 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit outd.spice (1)(32 instances)
+Flattening unmatched subcell outd_cmirror_64t in circuit outd.spice (1)(20 instances)
+Flattening unmatched subcell outd_cmirror_transistors in circuit outd.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit outd.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit outd.spice (1)(20 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_LH2JGW in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_stage1 in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_cmirror_64t in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_cmirror_transistors in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_ED72KE in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_A574RZ in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell outd_diffamp in circuit outd.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_324MKY in circuit outd.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__res_high_po_2p85_8GE2XM in circuit outd.spice (1)(2 instances)
 
 Class ../../xschem/outdriver/outdriver.spice (0):  Merged 10 parallel devices.
-Class outd_flat.spice (1):  Merged 6000 parallel devices.
+Class outd.spice (1):  Merged 6000 parallel devices.
 Subcircuit summary:
-Circuit 1: ../../xschem/outdriver/outdrive |Circuit 2: outd_flat.spice                 
+Circuit 1: ../../xschem/outdriver/outdrive |Circuit 2: outd.spice                      
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__nfet_01v8_lvt (924->6)       |sky130_fd_pr__nfet_01v8_lvt (924->6)       
 sky130_fd_pr__nfet_01v8 (4998->8)          |sky130_fd_pr__nfet_01v8 (4998->8)          
@@ -22,5 +51,5 @@ Number of nets: 18                         |Number of nets: 18
 Circuits match uniquely.
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes ../../xschem/outdriver/outdriver.spice and outd_flat.spice are equivalent.
+Device classes ../../xschem/outdriver/outdriver.spice and outd.spice are equivalent.
 Circuits match uniquely.

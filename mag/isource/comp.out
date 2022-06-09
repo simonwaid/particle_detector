@@ -4,13 +4,48 @@ Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 Equate elements:  no current cell.
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_1_WXTTNJ#0 in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_out in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_834VMG in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv_tsmal in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_26RGPZ in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_transistor in circuit isource.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit isource.spice (1)(2 instances)
+Flattening unmatched subcell isource_cmirror#0 in circuit isource.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ACY9XJ#0#0 in circuit isource.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_J24RLQ#0#0 in circuit isource.spice (1)(3 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_JAGHGM in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv_tsmal_nwell in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_26RGPZ in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_startup in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_QDYTZD in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_U3V43Z in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_E9U3PA in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_transistor in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_ref_5transistors in circuit isource.spice (1)(2 instances)
+Flattening unmatched subcell isource_ref_transistor in circuit isource.spice (1)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_HZ8P49 in circuit isource.spice (1)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_TV3VM6 in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_WY4VMC in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_conv in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_cmirror in circuit isource.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_ACY9XJ#0 in circuit isource.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_J24RLQ#0 in circuit isource.spice (1)(6 instances)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_BQY2W7 in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_WY4VMC in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__res_xhigh_po_1p41_J2NVFM in circuit isource.spice (1)(1 instance)
+Flattening unmatched subcell isource_diffamp in circuit isource.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_lvt_ZZ3Y87 in circuit isource.spice (1)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__cap_mim_m3_2_LJ5JLG#1 in circuit isource.spice (1)(2 instances)
 
 Class ../../xschem/bias/low_pvt_source.spice (0):  Merged 1 parallel devices.
 Class ../../xschem/bias/low_pvt_source.spice (0):  Merged 12 series devices.
-Class isource_flat.spice (1):  Merged 303 parallel devices.
-Class isource_flat.spice (1):  Merged 12 series devices.
+Class isource.spice (1):  Merged 303 parallel devices.
+Class isource.spice (1):  Merged 12 series devices.
 Subcircuit summary:
-Circuit 1: ../../xschem/bias/low_pvt_sourc |Circuit 2: isource_flat.spice              
+Circuit 1: ../../xschem/bias/low_pvt_sourc |Circuit 2: isource.spice                   
 -------------------------------------------|-------------------------------------------
 sky130_fd_pr__pfet_01v8 (109->9)           |sky130_fd_pr__pfet_01v8 (109->9)           
 sky130_fd_pr__nfet_01v8 (124->7)           |sky130_fd_pr__nfet_01v8 (124->7)           
@@ -24,5 +59,5 @@ Number of nets: 19                         |Number of nets: 19
 Circuits match uniquely.
 Netlists match uniquely.
 Cells have no pins;  pin matching not needed.
-Device classes ../../xschem/bias/low_pvt_source.spice and isource_flat.spice are equivalent.
+Device classes ../../xschem/bias/low_pvt_source.spice and isource.spice are equivalent.
 Circuits match uniquely.
