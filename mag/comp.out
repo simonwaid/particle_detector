@@ -448,15 +448,15 @@ outd_0/VM1_D                               |(no matching pin)
 isource_0/VM2D                             |(no matching pin)                          
 ---------------------------------------------------------------------------------------
 Cell pin lists for mpw6_submission and mpw6_submission altered to match.
-Flattening unmatched subcell esd-array in circuit user_analog_proj_wrapper.spice (0)(7 instances)
-Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_11v0_33C8ED in circuit user_analog_proj_wrapper.spice (0)(7 instances)
-Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_11v0_T9UBGD in circuit user_analog_proj_wrapper.spice (0)(7 instances)
+Flattening unmatched subcell esd-array in circuit user_analog_project_wrapper.spice (0)(7 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pd2nw_11v0_33C8ED in circuit user_analog_project_wrapper.spice (0)(7 instances)
+Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_11v0_T9UBGD in circuit user_analog_project_wrapper.spice (0)(7 instances)
 Flattening unmatched subcell esd_diodes in circuit ../xschem/user_analog_project_wrapper.spice (1)(7 instances)
 
-Class user_analog_proj_wrapper.spice (0):  Merged 126 parallel devices.
+Class user_analog_project_wrapper.spice (0):  Merged 126 parallel devices.
 Class ../xschem/user_analog_project_wrapper.spice (1):  Merged 126 parallel devices.
 Subcircuit summary:
-Circuit 1: user_analog_proj_wrapper.spice  |Circuit 2: ../xschem/user_analog_project_w 
+Circuit 1: user_analog_project_wrapper.spi |Circuit 2: ../xschem/user_analog_project_w 
 -------------------------------------------|-------------------------------------------
 mpw6_submission (1)                        |mpw6_submission (1)                        
 sky130_fd_pr__diode_pd2nw_11v0 (70->7)     |sky130_fd_pr__diode_pd2nw_11v0 (70->7)     
@@ -499,10 +499,10 @@ Property pj in circuit1 has no matching property in circuit2
 esd-array_2//sky130_fd_pr__diode_pd2nw_11v0_33C8ED_0/sky130_fd_pr__diode_pd2nw_11v0:0 vs. esd_diodes:2/sky130_fd_pr__diode_pd2nw_11v0:1:
 Property pj in circuit1 has no matching property in circuit2
 Cells have no pins;  pin matching not needed.
-Device classes user_analog_proj_wrapper.spice and ../xschem/user_analog_project_wrapper.spice are equivalent.
+Device classes user_analog_project_wrapper.spice and ../xschem/user_analog_project_wrapper.spice are equivalent.
 Circuits match uniquely.
 Property errors were found.
 The following cells had property errors:
  transmitter
  mpw6_submission
- user_analog_proj_wrapper.spice
+ user_analog_project_wrapper.spice

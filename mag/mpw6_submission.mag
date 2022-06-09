@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654763975
+timestamp 1654771420
 << metal1 >>
 rect 51790 18560 51800 18660
 rect 51980 18560 51990 18660
@@ -520,35 +520,35 @@ rect 139420 -21060 141100 -1090
 rect -1470 -22860 141290 -21060
 rect -1470 -24020 136810 -22860
 use comparator  comparator_0 ~/code/particle_detector/mag/comp
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 74820 0 1 964
 box -9660 -2484 5770 3520
 use curr_mirror_channel  curr_mirror_channel_0 ~/code/particle_detector/mag/bias
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 27070 0 1 -1680
 box -20 0 21830 11434
 use curr_mirror_distribution  curr_mirror_distribution_0 ~/code/particle_detector/mag/bias
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 27190 0 1 10240
 box 0 0 9830 2300
 use fb_dark_current  fb_dark_current_0 ~/code/particle_detector/mag/feedback
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 50550 0 1 16570
 box -7920 -2510 12812 7750
 use isource  isource_0 ~/code/particle_detector/mag/isource
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -180 0 1 4490
 box -280 -4830 23120 15920
 use outd  outd_0 ~/code/particle_detector/mag/outd
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 80030 0 1 -18650
 box -30220 -60 57040 15224
 use tia_core  tia_core_0 ~/code/particle_detector/mag/tia
-timestamp 1654763975
+timestamp 1654768133
 transform 1 0 51540 0 1 10030
 box -1860 -11680 11730 2790
 use transmitter  transmitter_0 ~/code/particle_detector/mag/lvds
-timestamp 1654760956
+timestamp 1654771420
 transform 1 0 92230 0 1 5554
 box -10 -6994 21080 20114
 << labels >>

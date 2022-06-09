@@ -1,12 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654760956
-<< pwell >>
-rect 82 1150 2452 1216
-rect 82 640 2452 706
-rect 82 532 2452 598
-rect 82 22 2452 88
+timestamp 1654768133
 << poly >>
 rect 82 1200 2452 1216
 rect 82 1166 194 1200
@@ -558,7 +553,7 @@ rect 2206 110 2344 260
 rect 2398 110 2510 260
 rect 40 100 2510 110
 use sky130_fd_pr__nfet_01v8_lvt_RE4MKQ  sky130_fd_pr__nfet_01v8_lvt_RE4MKQ_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1267 0 1 619
 box -1367 -719 1367 719
 << end >>

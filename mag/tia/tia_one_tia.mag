@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654760956
+timestamp 1654768133
 << error_s >>
 rect -331 -1140 -90 -1109
 rect 230 -1140 471 -1109
@@ -10,15 +10,7 @@ rect 230 -1380 231 -1349
 << nwell >>
 rect 1650 2620 1660 2790
 << pwell >>
-rect -180 2030 850 2110
-rect -1950 1380 -1780 1530
-rect 670 1380 850 1530
-rect -1950 860 -1750 920
-rect 660 860 850 920
-rect -1950 560 -1750 630
-rect 660 560 850 620
-rect -1950 -60 -1760 90
-rect 690 -60 850 90
+rect 1686 386 3554 1894
 << locali >>
 rect -1910 3600 1710 3680
 rect -190 2220 -80 3600
@@ -395,23 +387,23 @@ rect -440 -1680 -416 -1670
 rect -784 -1704 -416 -1680
 rect 2610 -1790 3760 -1670
 use dis_tran  dis_tran_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -1907 0 1 -3307
 box -53 -53 2681 2621
 use fb_transistor  fb_transistor_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -4020 0 1 -1780
 box 5420 1880 7860 4782
 use rf_transistors  rf_transistors_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -2380 0 1 2280
 box 440 -2984 4042 1374
 use sky130_fd_pr__cap_mim_m3_2_ZWVPUJ  sky130_fd_pr__cap_mim_m3_2_ZWVPUJ_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 891 0 -1 760
 box -2851 -1901 2873 1901
 use tia_cur_mirror  tia_cur_mirror_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 910 0 1 -660
 box -60 -900 1822 740
 << end >>

@@ -1,16 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654760956
+timestamp 1654768133
 << nwell >>
 rect -6340 4280 -6170 4450
 rect -1290 4230 -1060 4450
 rect 8150 4270 8320 4450
-<< pwell >>
-rect 4450 1180 4770 1210
-rect 4960 1180 7980 1210
-rect 4460 670 4780 700
-rect 4960 670 7970 700
 << locali >>
 rect 1420 1400 1520 2140
 rect 850 1310 2090 1400
@@ -1638,351 +1633,351 @@ rect 5576 -1904 6094 -1900
 rect 8626 -1914 9324 -1900
 rect 11820 -1930 12600 -1900
 use currm_n  currm_n_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 820 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1520 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_2
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 2220 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_3
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 120 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_4
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 2920 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_5
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -580 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_6
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 4010 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_7
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 4710 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_8
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 5410 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_9
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 7510 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_10
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6810 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_11
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6110 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_12
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 7510 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_13
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6810 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_14
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6110 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_15
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5170 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_16
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -4470 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_17
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3770 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_18
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -2370 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_19
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3070 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_20
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -1670 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_21
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5170 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_22
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3770 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_23
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -4470 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_31
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -6700 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_32
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11800 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_33
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5870 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_35
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9700 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_36
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 10400 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_37
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11100 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_38
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9000 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_39
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11100 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_40
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 10400 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_41
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9700 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_42
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11800 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_43
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 8210 0 1 590
 box -60 -870 658 760
 use currm_n  currm_n_44
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1520 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_45
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 2220 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_46
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 120 0 1 -1030
 box -60 -870 658 760
 use currm_n  currm_n_47
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 820 0 1 -1030
 box -60 -870 658 760
 use currm_p  currm_p_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 170 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1510 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_2
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -1170 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_3
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -2510 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_4
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -2510 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_5
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -2510 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_6
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3850 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_7
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3850 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_8
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -3850 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_9
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5190 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_10
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5190 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_11
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5190 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_12
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 2850 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_13
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6870 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_14
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6870 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_15
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6870 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_16
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 5530 0 1 3450
 box -60 -810 1298 848
 use currm_p  currm_p_17
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 5530 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_18
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 5530 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_19
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 4190 0 1 6730
 box -60 -810 1298 848
 use currm_p  currm_p_20
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 4190 0 1 5090
 box -60 -810 1298 848
 use currm_p  currm_p_21
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 4190 0 1 3450
 box -60 -810 1298 848
 use currm_ps  currm_ps_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 8200 0 1 2690
 box -50 -50 1052 1608
 use currm_ps  currm_ps_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9290 0 1 2690
 box -50 -50 1052 1608
 use currm_ps  currm_ps_2
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9290 0 1 4330
 box -50 -50 1052 1608
 use currm_ps  currm_ps_3
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 9290 0 1 5970
 box -50 -50 1052 1608
 use currm_ps  currm_ps_4
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 10380 0 1 5970
 box -50 -50 1052 1608
 use currm_ps  currm_ps_5
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 10380 0 1 4330
 box -50 -50 1052 1608
 use currm_ps  currm_ps_6
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 10380 0 1 2690
 box -50 -50 1052 1608
 use currm_ps  currm_ps_7
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11470 0 1 5970
 box -50 -50 1052 1608
 use currm_ps  currm_ps_8
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11470 0 1 4330
 box -50 -50 1052 1608
 use currm_ps  currm_ps_9
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 11470 0 1 2690
 box -50 -50 1052 1608
 use currm_ps  currm_ps_18
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -7380 0 1 2690
 box -50 -50 1052 1608
 use currm_ps  currm_ps_19
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -6290 0 1 2690
 box -50 -50 1052 1608
 use sky130_fd_pr__cap_mim_m3_2_D7CHNQ  sky130_fd_pr__cap_mim_m3_2_D7CHNQ_0
-timestamp 1654760956
+timestamp 1654768133
 transform 0 1 4241 -1 0 3443
 box -1851 -1601 1873 1601
 use sky130_fd_pr__cap_mim_m3_2_LJ5JLG#4  sky130_fd_pr__cap_mim_m3_2_LJ5JLG_2
-timestamp 1654760956
+timestamp 1654768133
 transform 0 1 -2379 -1 0 3393
 box -3351 -3101 3373 3101
 use sky130_fd_pr__cap_mim_m3_2_MJMGTW#0  sky130_fd_pr__cap_mim_m3_2_MJMGTW_0
-timestamp 1654760956
+timestamp 1654768133
 transform 0 1 10711 -1 0 3403
 box -3351 -2101 3373 2101
 use sky130_fd_pr__cap_mim_m3_2_N3PKNJ  sky130_fd_pr__cap_mim_m3_2_N3PKNJ_0
-timestamp 1654760956
+timestamp 1654768133
 transform 0 -1 -6819 1 0 3291
 box -3351 -1101 3373 1101
 use sky130_fd_pr__cap_mim_m3_2_N3PKNJ  sky130_fd_pr__cap_mim_m3_2_N3PKNJ_1
-timestamp 1654760956
+timestamp 1654768133
 transform -1 0 -4547 0 -1 -1409
 box -3351 -1101 3373 1101
 use sky130_fd_pr__nfet_01v8_6H2JYD  sky130_fd_pr__nfet_01v8_6H2JYD_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -669 0 1 -1560
 box -211 -310 211 310
 use sky130_fd_pr__nfet_01v8_9A2JGL  sky130_fd_pr__nfet_01v8_9A2JGL_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -5943 0 1 -1021
 box -407 -719 407 719
 use sky130_fd_pr__nfet_01v8_E6B2KN  sky130_fd_pr__nfet_01v8_E6B2KN_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1155 0 1 1760
 box -325 -410 325 410
 use sky130_fd_pr__nfet_01v8_E6B2KN  sky130_fd_pr__nfet_01v8_E6B2KN_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 1795 0 1 1760
 box -325 -410 325 410
 use sky130_fd_pr__nfet_01v8_lvt_LH2JGW#0  sky130_fd_pr__nfet_01v8_lvt_LH2JGW_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -207 0 1 -1460
 box -263 -410 263 410
 use sky130_fd_pr__pfet_01v8_UAQRRG  sky130_fd_pr__pfet_01v8_UAQRRG_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 -689 0 1 -911
 box -211 -319 211 319
 use sky130_fd_pr__pfet_01v8_VCBWSW  sky130_fd_pr__pfet_01v8_VCBWSW_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6957 0 1 2229
 box -1127 -419 1127 419
 use sky130_fd_pr__res_xhigh_po_0p69_PAXYNN  sky130_fd_pr__res_xhigh_po_0p69_PAXYNN_0
-timestamp 1654760956
+timestamp 1654768133
 transform 0 -1 1635 1 0 4662
 box -235 -798 235 798
 << labels >>

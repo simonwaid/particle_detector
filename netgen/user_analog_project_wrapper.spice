@@ -1,4 +1,4 @@
-* SPICE3 file created from user_analog_proj_wrapper.ext - technology: sky130A
+* SPICE3 file created from user_analog_project_wrapper.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_01v8_U4PLGH a_n321_n518# a_n33_118# a_15_549# a_207_n615#
 + a_n225_118# a_n413_118# a_111_21# a_n369_n615# a_207_549# a_n33_n518# a_111_n87#
@@ -640,13 +640,14 @@ X0 a_100_n50# a_n100_n147# a_n158_n50# w_n296_n269# sky130_fd_pr__pfet_01v8 ad=1
 X0 c1_n1550_n1200# m3_n1650_n1300# sky130_fd_pr__cap_mim_m3_1 l=1.2e+07u w=1.5e+07u
 .ends
 
-.subckt sky130_fd_pr__cap_var_lvt_MZUN4J a_n2040_n588# w_1507_n618# w_n2173_n618#
-+ w_n333_n618# a_n1120_n588# w_587_n618# w_n1253_n618# a_n200_n588# a_1640_n588# a_720_n588#
-X0 a_n200_n588# w_n333_n618# w_n333_n618# sky130_fd_pr__cap_var_lvt pd=2.194e+07u ps=0u ad=0p as=0p w=5e+06u l=2e+06u
-X1 a_n1120_n588# w_n1253_n618# w_n1253_n618# sky130_fd_pr__cap_var_lvt pd=2.194e+07u ps=0u ad=0p as=0p w=5e+06u l=2e+06u
-X2 a_720_n588# w_587_n618# w_587_n618# sky130_fd_pr__cap_var_lvt pd=2.194e+07u ps=0u ad=0p as=0p w=5e+06u l=2e+06u
-X3 a_1640_n588# w_1507_n618# w_1507_n618# sky130_fd_pr__cap_var_lvt pd=2.194e+07u ps=0u ad=0p as=0p w=5e+06u l=2e+06u
-X4 a_n2040_n588# w_n2173_n618# w_n2173_n618# sky130_fd_pr__cap_var_lvt pd=2.194e+07u ps=0u ad=0p as=0p w=5e+06u l=2e+06u
+.subckt sky130_fd_pr__cap_var_lvt_MZUN4J a_n2247_n692# a_n2040_n588# w_1507_n618#
++ w_n2173_n618# w_n333_n618# a_n1120_n588# w_587_n618# w_n1253_n618# a_n200_n588#
++ a_1640_n588# a_720_n588#
+X0 a_n200_n588# w_n333_n618# a_n2247_n692# sky130_fd_pr__cap_var_lvt w=5e+06u l=2e+06u
+X1 a_n1120_n588# w_n1253_n618# a_n2247_n692# sky130_fd_pr__cap_var_lvt w=5e+06u l=2e+06u
+X2 a_720_n588# w_587_n618# a_n2247_n692# sky130_fd_pr__cap_var_lvt w=5e+06u l=2e+06u
+X3 a_1640_n588# w_1507_n618# a_n2247_n692# sky130_fd_pr__cap_var_lvt w=5e+06u l=2e+06u
+X4 a_n2040_n588# w_n2173_n618# a_n2247_n692# sky130_fd_pr__cap_var_lvt w=5e+06u l=2e+06u
 .ends
 
 .subckt sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0 m4_n3351_n3100# c2_n3251_n3000#
@@ -671,8 +672,8 @@ Xtia_one_tia_1 Disable_TIA_B VN VM31D VM36D VM39D VPP I_Bias1 VM40D VN Out_ref t
 Xsky130_fd_pr__pfet_01v8_GCYTE7_0 VPP VPP Disable_TIA_B Disable_TIA sky130_fd_pr__pfet_01v8_GCYTE7
 Xsky130_fd_pr__cap_mim_m3_1_J5CT7Z_1 VN I_Bias1 sky130_fd_pr__cap_mim_m3_1_J5CT7Z
 Xsky130_fd_pr__cap_mim_m3_1_J5CT7Z_0 VN I_Bias1 sky130_fd_pr__cap_mim_m3_1_J5CT7Z
-Xsky130_fd_pr__cap_var_lvt_MZUN4J_0 Disable_TIA_B VN VN VN Disable_TIA_B VN VN Disable_TIA_B
-+ Disable_TIA_B Disable_TIA_B sky130_fd_pr__cap_var_lvt_MZUN4J
+Xsky130_fd_pr__cap_var_lvt_MZUN4J_0 VN Disable_TIA_B VN VN VN Disable_TIA_B VN VN
++ Disable_TIA_B Disable_TIA_B Disable_TIA_B sky130_fd_pr__cap_var_lvt_MZUN4J
 Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_0 VN VPP sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0
 Xsky130_fd_pr__cap_mim_m3_2_LJ5JLG_1 VN VPP sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0
 Xsky130_fd_pr__nfet_01v8_SC2JGL_0 VN VN I_Bias1 Disable_TIA Disable_TIA I_Bias1 Disable_TIA
@@ -3204,15 +3205,15 @@ Xsky130_fd_pr__diode_pw2nd_11v0_T9UBGD_0 m1_n9140_490# m1_n9140_490# m1_n9140_49
 + m1_n9140_490# VSUBS VSUBS m1_n9140_490# VSUBS sky130_fd_pr__diode_pw2nd_11v0_T9UBGD
 .ends
 
-.subckt user_analog_proj_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11] gpio_analog[12]
-+ gpio_analog[13] gpio_analog[14] gpio_analog[15] gpio_analog[16] gpio_analog[17]
-+ gpio_analog[1] gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5] gpio_analog[6]
-+ gpio_analog[7] gpio_analog[8] gpio_analog[9] gpio_noesd[0] gpio_noesd[10] gpio_noesd[11]
-+ gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16] gpio_noesd[17]
-+ gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5] gpio_noesd[6]
-+ gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10] io_analog[1]
-+ io_analog[2] io_analog[3] io_analog[5] io_analog[7] io_analog[8] io_analog[9] io_analog[4]
-+ io_analog[6] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
+.subckt user_analog_project_wrapper gpio_analog[0] gpio_analog[10] gpio_analog[11]
++ gpio_analog[12] gpio_analog[13] gpio_analog[14] gpio_analog[15] gpio_analog[16]
++ gpio_analog[17] gpio_analog[1] gpio_analog[2] gpio_analog[3] gpio_analog[4] gpio_analog[5]
++ gpio_analog[6] gpio_analog[7] gpio_analog[8] gpio_analog[9] gpio_noesd[0] gpio_noesd[10]
++ gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
++ gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
++ gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
++ io_analog[1] io_analog[2] io_analog[3] io_analog[5] io_analog[7] io_analog[8] io_analog[9]
++ io_analog[4] io_analog[6] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
 + io_clamp_low[1] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
 + io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] io_in[2] io_in[3] io_in[4] io_in[5]

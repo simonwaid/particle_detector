@@ -1,8 +1,6 @@
 magic
 tech sky130A
-timestamp 1647868710
-<< pwell >>
-rect -2022 -186 2022 186
+timestamp 1654768133
 << mvpsubdiff >>
 rect -2004 162 -1668 168
 rect -2004 145 -1950 162

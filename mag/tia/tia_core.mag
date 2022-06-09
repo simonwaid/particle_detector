@@ -1,7 +1,10 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1654763975
+timestamp 1654768133
+<< pwell >>
+rect 2300 -504 4168 1004
+rect 2300 -7574 4168 -6066
 << locali >>
 rect 3230 -2570 5340 -2130
 rect 4108 -7934 4420 -7920
@@ -285,47 +288,47 @@ rect 1360 -9800 1384 -9380
 rect 4300 -9750 5060 -9430
 rect 1036 -9824 1384 -9800
 use sky130_fd_pr__cap_mim_m3_1_J5CT7Z  sky130_fd_pr__cap_mim_m3_1_J5CT7Z_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 3290 0 1 -10380
 box -1650 -1300 1649 1300
 use sky130_fd_pr__cap_mim_m3_1_J5CT7Z  sky130_fd_pr__cap_mim_m3_1_J5CT7Z_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 3280 0 1 -3290
 box -1650 -1300 1649 1300
 use sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0  sky130_fd_pr__cap_mim_m3_2_LJ5JLG_0
-timestamp 1654763975
+timestamp 1654768133
 transform -1 0 8373 0 -1 -8409
 box -3351 -3101 3373 3101
 use sky130_fd_pr__cap_mim_m3_2_LJ5JLG#0  sky130_fd_pr__cap_mim_m3_2_LJ5JLG_1
-timestamp 1654763975
+timestamp 1654768133
 transform -1 0 8373 0 -1 -1099
 box -3351 -3101 3373 3101
 use sky130_fd_pr__cap_var_lvt_MZUN4J  sky130_fd_pr__cap_var_lvt_MZUN4J_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 3733 0 1 -10422
 box -2283 -728 2283 728
 use sky130_fd_pr__nfet_01v8_CDW43Z  sky130_fd_pr__nfet_01v8_CDW43Z_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6476 0 1 -10820
 box -296 -260 296 260
 use sky130_fd_pr__nfet_01v8_SC2JGL  sky130_fd_pr__nfet_01v8_SC2JGL_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 5717 0 1 -9110
 box -407 -410 407 410
 use sky130_fd_pr__pfet_01v8_GCYTE7  sky130_fd_pr__pfet_01v8_GCYTE7_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 6476 0 1 -10261
 box -296 -269 296 269
 use tia_cur_mirror  tia_cur_mirror_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 3420 0 1 -8620
 box -60 -900 1822 740
 use tia_one_tia  tia_one_tia_0
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 614 0 1 -890
 box -2010 -3360 3840 3680
 use tia_one_tia  tia_one_tia_1
-timestamp 1654760956
+timestamp 1654768133
 transform 1 0 614 0 1 -7960
 box -2010 -3360 3840 3680
 << labels >>

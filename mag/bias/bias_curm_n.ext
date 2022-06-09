@@ -1,4 +1,4 @@
-timestamp 1654760956
+timestamp 1654768133
 version 8.3
 tech sky130A
 style ngspice()
@@ -11,23 +11,23 @@ node "m1_176_1194#" 7 736.478 176 1194 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "li_330_n30#" 43 606.672 330 -30 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15400 580 59080 2152 153672 2396 0 0 0 0 0 0 0 0
 node "a_132_882#" 3668 2711.87 132 882 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 194832 6432 0 0 100368 6176 330500 13320 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_176_1194#" "m1_80_970#" 1131.97
-cap "li_330_n30#" "m1_80_970#" 217.707
+cap "m1_80_970#" "li_330_n30#" 217.707
 cap "a_132_882#" "m1_80_970#" 1860.98
 cap "a_132_882#" "m1_176_1194#" 1161.52
+cap "m1_176_1194#" "m1_80_970#" 1131.97
 cap "a_132_882#" "li_330_n30#" 844.823
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 484.819
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 202.541
-cap "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 1309.12
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 980.123
 cap "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 476.482
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" -28
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" 1108.82
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" 57.6273
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 484.819
 cap "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" -28
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 888.692
-cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" 682.106
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" 202.541
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 980.123
+cap "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 1309.12
 cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" 515.902
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" -28
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 888.692
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" 1108.82
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n321_109#" "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n369_531#" 682.106
+cap "sky130_fd_pr__nfet_01v8_QQ8PGA_0/a_n413_109#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n447_n374#" 57.6273
 merge "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_187_n288#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_29_n288#" 1963.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 990768 -5312 0 0 312048 -3200 184560 -5536 0 0 0 0 0 0 0 0 0 0
 merge "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_29_n288#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n129_n288#"
 merge "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n129_n288#" "sky130_fd_pr__nfet_01v8_6YE2KS_0/a_n287_n288#"
