@@ -150,7 +150,7 @@ C {devices/opin.sym} 3270 600 0 0 {name=p32 lab=user_irq[2:0]}
 C {devices/ipin.sym} 3290 210 0 0 {name=p28 lab=la_oenb[127:0]}
 C {sky130_fd_pr/res_generic_m1.sym} 3670 370 0 0 {name=R1
 W=11
-L=0.5
+L=0.515
 model=res_generic_m3
 mult=1}
 C {devices/lab_pin.sym} 3630 300 0 0 {name=l13 sig_type=std_logic lab=io_clamp_low[0]}
@@ -192,33 +192,33 @@ mult=1}
 C {devices/lab_pin.sym} 3630 420 0 0 {name=l20 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3630 580 0 0 {name=l5 sig_type=std_logic lab=vssd1}
 C {devices/lab_pin.sym} 3630 740 0 0 {name=l6 sig_type=std_logic lab=vssd1}
-C {sky130_fd_pr/res_generic_m1.sym} 3670 530 0 0 {name=R2
-W=11
-L=0.5
-model=res_generic_m3
-mult=1}
-C {sky130_fd_pr/res_generic_m1.sym} 3670 690 0 0 {name=R3
-W=11
-L=0.5
-model=res_generic_m3
-mult=1}
-C {sky130_fd_pr/res_generic_m1.sym} 4160 360 0 0 {name=R4
-W=11
-L=0.5
-model=res_generic_m3
-mult=1}
-C {sky130_fd_pr/res_generic_m1.sym} 4160 520 0 0 {name=R5
-W=11
-L=0.5
-model=res_generic_m3
-mult=1}
-C {sky130_fd_pr/res_generic_m1.sym} 4160 680 0 0 {name=R6
-W=11
-L=0.5
-model=res_generic_m3
-mult=1}
 C {devices/code.sym} 5540 -600 0 0 {name=DIGITAL only_toplevel=true value="
 
 .include /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hs/spice/sky130_fd_sc_hs.spice
 
 "}
+C {sky130_fd_pr/res_generic_m1.sym} 3670 530 0 0 {name=R2
+W=11
+L=0.515
+model=res_generic_m3
+mult=1}
+C {sky130_fd_pr/res_generic_m1.sym} 3670 690 0 0 {name=R3
+W=11
+L=0.515
+model=res_generic_m3
+mult=1}
+C {sky130_fd_pr/res_generic_m1.sym} 4160 680 0 0 {name=R4
+W=11
+L=0.515
+model=res_generic_m3
+mult=1}
+C {sky130_fd_pr/res_generic_m1.sym} 4160 520 0 0 {name=R5
+W=11
+L=0.515
+model=res_generic_m3
+mult=1}
+C {sky130_fd_pr/res_generic_m1.sym} 4160 360 0 0 {name=R6
+W=11
+L=0.515
+model=res_generic_m3
+mult=1}
