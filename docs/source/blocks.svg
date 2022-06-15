@@ -9,6 +9,9 @@
    id="svg5"
    inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    sodipodi:docname="blocks.svg"
+   inkscape:export-filename="/home/simon/code/particle_detector/docs/source/blocks.png"
+   inkscape:export-xdpi="150"
+   inkscape:export-ydpi="150"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -106,7 +109,10 @@
        style="font-style:normal;font-weight:normal;font-size:3px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
        x="59.293003"
        y="47.907742"
-       id="text3504"><tspan
+       id="text3504"
+       inkscape:export-filename="/home/simon/code/particle_detector/docs/source/blocs.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300"><tspan
          sodipodi:role="line"
          id="tspan3502"
          style="font-size:3px;stroke-width:0.264583"
