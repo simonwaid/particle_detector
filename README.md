@@ -19,7 +19,7 @@ License:
 The Biasing circuit and TIA have been previously published and were submitted to the MPW-5. The documentation can be found here: [https://github.com/simonwaid/caravel_tia](https://github.com/simonwaid/caravel_tia)
 
 ## Active dark current compensation
-The dark current of the detector may lead to saturation of the input TIA. To prevent this, an active dark current compensation circuit was implemented. The circuit is based on [1].
+The dark current of the detector may lead to saturation of the TIA input. To prevent this, an active dark current compensation circuit was implemented. The circuit is based on [1].
 
 * Schematic: xschem/tia/feedback_sukwani.sch
 * Layout: mag/feedback/fb_dark_current.mag
